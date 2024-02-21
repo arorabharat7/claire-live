@@ -1,0 +1,10 @@
+[12-Feb-2024 06:27:44 UTC] PHP Parse error:  syntax error, unexpected ''/tailwind_output.css'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/dmprojects/public_html/claire/wp-content/themes/astra-child/functions.php on line 36
+[12-Feb-2024 06:54:52 UTC] PHP Parse error:  syntax error, unexpected '$current_page_id' (T_VARIABLE) in /home/dmprojects/public_html/claire/wp-content/themes/astra-child/footer.php on line 169
+[12-Feb-2024 10:30:30 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/dmprojects/public_html/claire/wp-content/themes/astra-child/production-second.php on line 480
+[12-Feb-2024 11:46:23 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/dmprojects/public_html/claire/wp-content/themes/astra-child/production-second.php on line 354
+[12-Feb-2024 11:47:09 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/dmprojects/public_html/claire/wp-content/themes/astra-child/production-second.php on line 354
+[12-Feb-2024 11:47:26 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/dmprojects/public_html/claire/wp-content/themes/astra-child/production-second.php on line 354
+[12-Feb-2024 11:51:25 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/dmprojects/public_html/claire/wp-content/themes/astra-child/production-second.php on line 379
+[20-Feb-2024 12:49:09 UTC] PHP Parse error:  syntax error, unexpected ''] before:absolute before:h-fu' (T_CONSTANT_ENCAPSED_STRING) in /home/dmprojects/public_html/vijay/claire/wp-content/themes/astra-child/functions.php on line 301
+[20-Feb-2024 12:49:46 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/dmprojects/public_html/vijay/claire/wp-content/themes/astra-child/functions.php on line 305
+[20-Feb-2024 12:50:08 UTC] PHP Parse error:  syntax error, unexpected '']  before:absolute before:h-f' (T_CONSTANT_ENCAPSED_STRING) in /home/dmprojects/public_html/vijay/claire/wp-content/themes/astra-child/functions.php on line 301
