@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+body{
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+h1,h2,h3,h4,.font-michroma{
+  font-family: "Michroma", sans-serif;
+}
+.btn-arrow input,
+.btn-arrow a{
+  background-image: url(./assets/images/claire_button-arrow.svg);
+}
+
+.navbar li:nth-child(3):before,
+.navbar li:nth-child(4):before,
+.navbar li:nth-child(2):before {
+  content: url(./assets/images/claire_ecllipse.svg);
+  position: absolute;
+  left: -15px;
+  color: #000;
+  font-size: 20px;
+  top: -6px;
+}
+.transform-middle{
+  transform: translate(-50%,-50%);
+}
+.claire-production-small-second .swiper-slide-thumb-active,
+.claire-production-small .swiper-slide-thumb-active,
+.claire-service-small .swiper-slide-thumb-active{
+  border: 7px solid #000;
+  box-shadow: 0px -1px 10px 3px rgb(0,0,0,0.5);
+ 
+}
+
+.services-production .swiper-button-prev:after,
+.services-production .swiper-button-next:after,
+.claire-service-full .swiper-button-prev:after,
+.claire-service-full .swiper-button-next:after,
+.claire-project .swiper-button-prev:after,
+.claire-project .swiper-button-next:after{
+  content: "";
+}
+
+.container{
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+body.open .navigation-menu__overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.navigation-menu__labels {
+  transition: translate 0.3s;
+  translate: -100% 0;
+}
+body.open .navigation-menu__labels {
+  translate: 0 0;
+  visibility: visible;
+  transition: translate 0.3s;
+}
+.claire-portfolio span.swiper-pagination-bullet,
+.claire-project span.swiper-pagination-bullet,
+.claire_team span.swiper-pagination-bullet {
+  background-color: #6D6D6D !important;
+  height: 4px;
+  width:56px;
+  border-radius: 0px;
+}
+
+#portfolio-box .active .overlay-loader {
+  position: absolute;
+  right: 0;
+  top: 26%;
+  transform: translate(-50%, 0);
+  background: url(https://dmprojects.xyz/vijay/claire/wp-content/uploads/2024/02/ajax-loader-1.gif) center no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.protofolio-box .active{
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+.protofolio-box .width-full{
+  width: 100%;
+}
+.claire-portfolio.slider-mini span.swiper-pagination-bullet{
+  background-color: #6D6D6D !important;
+  height: 4px;
+  width:30px !important;
+  border-radius: 0px;
+ }
+ span.swiper-pagination-total:before {
+  content: "";
+  background-color: #030303;
+  width: 80px;
+  height: 1px;
+  position: absolute;
+  left: 12px;
+  top: 60%;
+}
+span.swiper-pagination-total {
+  font-size: 12px;
+  position: relative;
+  padding-left: 100px;
+  font-family: "Michroma", sans-serif;
+}
+.swiper-pagination-fraction{
+  font-size: 0;
+}
+span.swiper-pagination-current{
+  font-size: 12px;
+  font-family: "Michroma", sans-serif;
+}
+button:hover{
+  background-color: inherit ;
+  border-color: black ;
+}
+
+a:hover{
+  color: inherit;
+}
+#portfolio-box button:focus{
+  border-color: black;
+}
+.contact-us #contact-form input {
+  border: 0 !important;
+  border-bottom: 1px solid #8b8b8b!important;
+  border-radius: 0 !important;
+  padding: 0;
+  font-weight: 600;
+  color: #fff;
+}
+.contact-us #contact-form .btn-arrow:hover{
+  background-color: #fff !important;
+}
+
+.contact-us #contact-form button input {
+  background-color: #fff;
+  color: #000;
+  border: 0 !important;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 25px;
+  position: relative;
+  top: -2px;
+  font-family: "Michroma", sans-serif;
+}
+
+.contact-us span.wpcf7-spinner {
+  margin-right: -50px;
+}
+.contact-us #contact-form button:focus{
+  background-color: #fff !important;
+}
+
+.contact-us span.wpcf7-spinner {
+  margin-right: -50px;
+}
+#ast-scroll-top {
+  background-color: #000000;
+  font-size: 1.25rem;
+  padding: 16px 5px;
+  border-radius: 100%;
+}
+.wpcf7-response-output{
+  color: #fff !important;
+}
+
+@media screen and (min-width:1600px){
+
+.navbar li:nth-child(3):before,
+.navbar li:nth-child(4):before,
+.navbar li:nth-child(2):before {
+  content: url(./assets/images/claire_ecllipse.svg);
+    left: -27px;
+    top: -6px;
+}
+ 
+ }
+    
+
+ 
+ @media screen and (max-width:1276px){
+  .navbar li:nth-child(3):before,
+  .navbar li:nth-child(4):before,
+  .navbar li:nth-child(2):before {
+    content: "";
+    
+  }
+   
+}
+
+
+
+
+
+
+ @media screen and (max-width:1080px){
+
+  .claire-portfolio span.swiper-pagination-bullet,
+  .claire-project span.swiper-pagination-bullet,
+  .claire_team span.swiper-pagination-bullet {
+    width:30px;
+  }
+  .protofolio-box .width-full{
+    width: 130%;
+  }
+.font-michroma br{
+  display: none;
+}
+#ast-scroll-top {
+  padding: 14px 10px;
+}
+.ast-scroll-to-top-right {
+  right: 10px;
+  bottom: 10px;
+}
+
+ }
+ 
+
+
+ @media screen and (max-width:767px){
+  .protofolio-box .width-full{
+    width: 160%;
+  }
+
+
+ }
+
+ @media screen and (max-width:600px){
+  .protofolio-box .width-full{
+    width: 180%;
+  }
+
+
+ }
+
+ @media screen and (max-width:500px){
+  .protofolio-box .width-full{
+    width: 220%;
+  }
+  .btn-arrow input, .btn-arrow a {
+    background-size: 13px;
+}
+
+ }
+
+ @media screen and (max-width:400px){
+  .protofolio-box .width-full{
+    width: 300%;
+  }
+
+
+ }

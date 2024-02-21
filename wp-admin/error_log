@@ -1,0 +1,20 @@
+[13-Feb-2024 04:33:17 UTC] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/dmprojects/public_html/claire/wp-content/plugins/photo-gallery-builder/default_image.php on line 12
+[13-Feb-2024 04:33:17 UTC] PHP Warning:  file_get_contents(https://dmprojects.xyz/claire/wp-content/plugins/photo-gallery-builder/assets/images/default-img.jpg): failed to open stream: no suitable wrapper could be found in /home/dmprojects/public_html/claire/wp-content/plugins/photo-gallery-builder/default_image.php on line 12
+[20-Feb-2024 09:35:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in /home/dmprojects/public_html/vijay/claire/wp-content/themes/astra-child/functions.php:393
+Stack trace:
+#0 /home/dmprojects/public_html/vijay/claire/wp-includes/class-wp-hook.php(324): potrfolio_tabs_posts('')
+#1 /home/dmprojects/public_html/vijay/claire/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 /home/dmprojects/public_html/vijay/claire/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home/dmprojects/public_html/vijay/claire/wp-admin/admin-ajax.php(188): do_action('wp_ajax_potrfol...')
+#4 {main}
+  thrown in /home/dmprojects/public_html/vijay/claire/wp-content/themes/astra-child/functions.php on line 393
+[20-Feb-2024 09:37:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in /home/dmprojects/public_html/vijay/claire/wp-content/themes/astra-child/functions.php:392
+Stack trace:
+#0 /home/dmprojects/public_html/vijay/claire/wp-includes/class-wp-hook.php(324): potrfolio_tabs_posts('')
+#1 /home/dmprojects/public_html/vijay/claire/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 /home/dmprojects/public_html/vijay/claire/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home/dmprojects/public_html/vijay/claire/wp-admin/admin-ajax.php(188): do_action('wp_ajax_potrfol...')
+#4 {main}
+  thrown in /home/dmprojects/public_html/vijay/claire/wp-content/themes/astra-child/functions.php on line 392
+[20-Feb-2024 12:50:07 UTC] PHP Parse error:  syntax error, unexpected '']  before:absolute before:h-f' (T_CONSTANT_ENCAPSED_STRING) in /home/dmprojects/public_html/vijay/claire/wp-content/themes/astra-child/functions.php on line 301
+[20-Feb-2024 12:50:40 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'potrfolio_tabs_posts' not found or invalid function name in /home/dmprojects/public_html/vijay/claire/wp-includes/class-wp-hook.php on line 324
