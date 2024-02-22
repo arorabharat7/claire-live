@@ -174,9 +174,12 @@ if ($page_id_string != 'page-id-17') { ?>
 	</section>
 
 <?php  }
-$current_page_id = get_the_ID();
-$page_id_string = 'page-id-' . $current_page_id;
-if ($page_id_string != 'page-id-17') { ?>
+ ?>
+
+<?php
+$page_ids = get_the_ID();
+$excluded_idss = array(17, 469, 471, 473, 479, 477, 474);
+if (!in_array($page_ids, $excluded_idss)) {  ?>
 	<section class="our-partners bg-dark-grey lg:py-100 md:py-60 py-10">
 		<div class="container m-auto">
 			<div class="mt-[150px]">

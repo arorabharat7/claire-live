@@ -129,35 +129,18 @@ $all_projects_section_sub_heading = get_field('all_projects_section_sub_heading'
 $all_projects_section_main_heading = get_field('all_projects_section_main_heading');
 ?>
 
+<?php $all_projects_section_sub_heading = get_field('all_projects_section_sub_heading'); ?>
 <section class="projects lg:py-12 md:py-10 py-6">
-    <h2 class="text-right lg:mb-20 md:mb-12 mb-10 text-17 font-michroma text-[#030303] relative pr-6 uppercase after:content-[''] after:absolute after:w-52 after:h-[1px] md:after:bottom-[-20px] after:bottom-[-10px] after:right-6 after:bg-[#030303]">
-        <?php echo  $all_projects_section_sub_heading; ?></h2>
-    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper claire-project ">
-        <div class="swiper-wrapper lg:mb-16 mb-10">
-            <?php if (have_rows('all_projects_section_all_details')) :
+    <div class="container m-auto">
+        <h2
+            class="text-right lg:mb-20 md:mb-12 mb-10 text-17 font-michroma text-[#030303] relative pr-6 uppercase after:content-[''] after:absolute after:w-52 after:h-[1px] md:after:bottom-[-20px] after:bottom-[-10px] after:right-6 after:bg-[#030303]">
+            ALL PROJECTS</h2>
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper claire-project ">
+      <h2 class="lg:text-4xl md:text-3xl  text-2xl font-michroma text-black relative text-center uppercase after:content-[''] after:absolute after:w-24 after:h-[1px] after:bottom-0 lg:pb-6 pb-3 after:left-[50%] after:translate-x-[-50%] after:bg-black">
+      SIMILAR PROJECTS</h2>
+        <?php echo do_shortcode('[portfolio_category_posts]'); ?>
 
-                // Loop through rows.
-                while (have_rows('all_projects_section_all_details')) : the_row();
-
-                    // Load sub field value.
-                    $all_projects_section_all_details_images = get_sub_field('all_projects_section_all_details_images');
-                    $all_projects_section_all_details_images_heading = get_sub_field('all_projects_section_all_details_images_heading');
-            ?>
-                    <div class="swiper-slide relative">
-                        <img src="<?php echo  $all_projects_section_all_details_images['url']; ?>" width="314" height="202" alt="<?php echo  $all_projects_section_all_details_images['alt']; ?>" class="w-full">
-                        <div class="absolute left-4 bottom-6">
-                            <h3 class="lg:text-17 text-sm font-michroma text-white uppercase"><?php echo  $all_projects_section_all_details_images_heading; ?> </h3>
-                        </div>
-                    </div>
-            <?php
-
-                endwhile;
-            endif; ?>
-        </div>
-        <div class="swiper-button-next !right-16 xl:!top-28 lg:!top-24 md:!top-20 sm:!top-24 !top-12"><img class="max-w-max sm:block hidden" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_project-right-arrow.svg" alt=""></div>
-        <div class="swiper-button-prev !left-16 xl:!top-28 lg:!top-24 md:!top-20 sm:!top-24 !top-12"><img class="max-w-max sm:block hidden" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_project-left-arrow.svg" alt=""></div>
-        <div class="swiper-pagination "></div>
-
+    </div> 
     </div>
 </section>
 
@@ -215,7 +198,7 @@ $all_projects_section_main_heading = get_field('all_projects_section_main_headin
             ?>
            
                     <div class="lg:!col-span-4 sm:!col-span-6 col-span-12">
-                    
+                    <a href="<?php echo $production_services_btn_url; ?>">
                         <div class="group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]  overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
                             <img src="<?php echo $common_production_services_section_all_details_image['url']; ?>" width="<?php echo $common_production_services_section_all_details_image['width']; ?>" height="<?php echo $common_production_services_section_all_details_image['height']; ?>" alt="<?php echo $common_production_services_section_all_details_image['alt']; ?>" class="w-full">
                             <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 group-hover:h-1/2  overflow-hidden">
@@ -224,7 +207,7 @@ $all_projects_section_main_heading = get_field('all_projects_section_main_headin
                                 <p class="lg:text-17 text-sm text-white font-bold "><?php echo $common_production_services_section_all_details_description; ?></p>
                             </div>
                         </div>
-                       
+                        </a>
                     </div>
                    
             <?php
