@@ -272,53 +272,55 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
       OUR RESULTS</h2>
 
     <div class="grid production_img grid-cols-12 gap-5 lg:my-16 md:my-10 my-6">
-      <?php if (have_rows('our_results_all_details')) :
+      <?php 
+      if (have_rows('our_results_all_details')) :
         $i = 1;
+      
         // Loop through rows.
-        while (have_rows('our_results_all_details')) : the_row();
+        while (have_rows('our_results_all_details')) : 
+          the_row();
 
           // Load sub field value.
           $our_results_main_image = get_sub_field('our_results_main_image');
           $our_results_small_image = get_sub_field('our_results_small_image');
-
+        
       ?>
           <?php if ($i % 2 == 0) { ?>
-            <div class="md:!col-span-4 sm:!col-span-6 col-span-12">
+            <div class="md:!col-span-4 sm:!col-span-6 col-span-12 repeater-item">
               <img src="<?php echo $our_results_small_image['url'] ?>" width="758" height="411" alt="curtain-result" class="w-full object-cover lg:h-[411px] md:h-[250px] h-[220px]">
             </div>
 
-            <div class="md:!col-span-8 sm:!col-span-6 col-span-12">
+            <div class="md:!col-span-8 sm:!col-span-6 col-span-12 repeater-item">
               <img src="<?php echo $our_results_main_image['url'] ?>" width="502" height="411" alt="curtain-result" class="w-full object-cover lg:h-[411px] md:h-[250px] h-[220px]">
             </div>
 
           <?php } else { ?>
-            <div class="md:!col-span-8 sm:!col-span-6 col-span-12">
+            <div class="md:!col-span-8 sm:!col-span-6 col-span-12 repeater-item">
               <img src="<?php echo $our_results_main_image['url'] ?>" width="758" height="411" alt="curtain-result" class="w-full object-cover lg:h-[411px] md:h-[250px] h-[220px]">
             </div>
 
-            <div class="md:!col-span-4 sm:!col-span-6 col-span-12">
-
-
+            <div class="md:!col-span-4 sm:!col-span-6 col-span-12 repeater-item">
               <img src="<?php echo $our_results_small_image['url'] ?>" width="502" height="411" alt="curtain-result" class="w-full object-cover lg:h-[411px] md:h-[250px] h-[220px]">
             </div>
-      <?php }
+      <?php } 
           $i++;
         endwhile;
       endif; ?>
-
-
-
     </div>
 
-    <!-- <div class="flex justify-center items-center">
+    <div class="flex justify-center items-center">
       <button id="loadMore-production" class="py-3 lg:px-9 md:px-5 px-3 border rounded-none border-i-primary group hover:bg-black transition-all lg:text-17 md:text-base text-sm bg-no-repeat bg-right  group-hover:text-white  font-michroma"> LOAD
         MORE</button>
 
 
-    </div> -->
+    </div>
 
   </div>
 </section>
+
+
+
+
 
 
 <?php
@@ -389,6 +391,25 @@ $why_choose_us_section_main_heading = get_field('why_choose_us_section_main_head
 
 
 
+</script>
+
+<script>
+jQuery(document).ready(function($) {
+    var visibleItems = 4; // Number of initially visible items
+    var itemsToShow = 2; // Number of items to show on each "Load More" click
+
+    $('.production_img .repeater-item:gt(' + (visibleItems - 1) + ')').hide();
+
+    $('#loadMore-production').on('click', function() {
+        var $hiddenItems = $('.production_img .repeater-item:hidden');
+        var numToShow = Math.min(itemsToShow, $hiddenItems.length);
+        if (numToShow === 0) {
+            $(this).hide();
+        }
+        $hiddenItems.slice(0, numToShow).slideDown();
+        visibleItems += itemsToShow; 
+    });
+});
 </script>
 
 
