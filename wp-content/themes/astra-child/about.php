@@ -218,16 +218,24 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
         </div>
 
         <div class="flex items-center gap-2 justify-center">
+            <?php 
+
+$how_we_work_help_btn_text  = get_field('how_we_work_help_btn_text');
+$how_we_work_help_btn_url  = get_field('how_we_work_help_btn_url');
+$how_we_work_contact_btn_text  = get_field('how_we_work_contact_btn_text');
+$how_we_work_contact_btn_url  = get_field('how_we_work_contact_btn_url');
+
+?>
             <button
                 class="py-3 md:px-9 group hover:bg-black rounded-none transition-all px-4 border border-i-primary lg:mt-2.5 mt-1.5"><a
-                    href="https://dmprojects.xyz/vijay/claire/contact-us/"
+                    href=" <?php echo $how_we_work_help_btn_url; ?>"
                     class="group-hover:brightness-[10] group-hover:text-white md:text-17 text-sm bg-no-repeat bg-right font-michroma ">
-                    Need help? </a></button>
+                    <?php echo $how_we_work_help_btn_text; ?> </a></button>
             <button
                 class="btn-arrow group hover:bg-white rounded-none transition-all border border-i-primary py-3 md:px-9 px-4  bg-black lg:mt-2.5 mt-1.5"><a
-                    href="https://dmprojects.xyz/vijay/claire/contact-us/"
-                    class="group-hover:brightness-[0] group-hover:text-black md:text-17 text-sm bg-no-repeat bg-right brightness-[10] pr-7 font-michroma text-white">Contact
-                    us
+                    href=" <?php echo $how_we_work_contact_btn_text; ?>"
+                    class="group-hover:brightness-[0] group-hover:text-black md:text-17 text-sm bg-no-repeat bg-right brightness-[10] pr-7 font-michroma text-white">
+                     <?php echo $how_we_work_contact_btn_text; ?>
                 </a></button>
         </div>
     </div>
@@ -344,7 +352,7 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
 
 <section class="our-partners bg-dark-grey lg:py-12 md:py-10 py-6">
     <div class="container m-auto">
-        <?php $our_partners_section_main_heading = get_field('our_partners_section_main_heading', 'option'); ?>
+        <?php $our_partners_section_main_heading = get_field('our_partners_section_main_heading'); ?>
         <h2
             class="lg:text-4xl md:text-3xl text-2xl font-michroma text-black relative text-center after:content-[''] after:absolute after:w-24 after:h-[1px] after:bottom-0 lg:pb-6 pb-3 after:left-[50%] after:translate-x-[-50%] after:bg-black">
             <?php echo $our_partners_section_main_heading; ?></h2>
@@ -352,10 +360,10 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
         <div class="lg:mt-12 md:mt-10 mt-6">
 
             <div class=" grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5">
-                <?php if (have_rows('our_partners_section_details', 'option')) :
+                <?php if (have_rows('our_partners_section_details')) :
                     $i = 0;
                     // Loop through rows.
-                    while (have_rows('our_partners_section_details', 'option')) : the_row();
+                    while (have_rows('our_partners_section_details')) : the_row();
                         if ($i == 5) { ?>
             </div>
             <div class=" grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5">

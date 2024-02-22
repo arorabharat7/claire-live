@@ -19,9 +19,9 @@ if (!defined('ABSPATH')) {
 
 
 <?php
-$current_page_id = get_the_ID();
-$page_id_string = 'page-id-' . $current_page_id;
-if ($page_id_string != 'page-id-341') { ?>
+$page_id = get_the_ID();
+$excluded_ids = array(341, 469, 471, 473, 479, 477, 474);
+if (!in_array($page_id, $excluded_ids)) {  ?>
 	<section class="our-results lg:py-100 md:py-60 py-10">
 		<div class="container m-auto">
 			<?php
