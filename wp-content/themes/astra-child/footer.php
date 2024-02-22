@@ -227,8 +227,57 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 
 			</div>
 	</section>
-<?php } ?>
+<?php }else{ ?>
 
+	<section class="our-partners bg-dark-grey lg:py-100 md:py-60 py-10">
+		<div class="container m-auto">
+			<div class="mt-[150px]">
+				<?php $our_partners_section_main_heading = get_field('our_partners_section_main_heading'); ?>
+				<h2 class="lg:text-4xl md:text-3xl text-2xl font-michroma text-black relative text-center after:content-[''] after:absolute after:w-24 after:h-[1px] after:bottom-0 lg:pb-6 pb-3 after:left-[50%] after:translate-x-[-50%] after:bg-black">
+					<?php echo $our_partners_section_main_heading; ?></h2>
+			</div>
+
+
+			<div class="lg:mt-10 md:mt-8 mt-6">
+
+				<div class="grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5">
+					<?php if (have_rows('our_partners_section_details')) :
+						$i = 0;
+						// Loop through rows.
+						while (have_rows('our_partners_section_details')) : the_row();
+							if ($i == 5) { ?>
+				</div>
+				<div class="grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5">
+				<?php  } elseif ($i == 10) { ?>
+				</div>
+				<div class="grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5 ">
+				<?php	} elseif ($i == 15) { ?>
+				</div>
+				<div class="grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5 ">
+				<?php	}
+							// Load sub field value.
+							$our_partners_section_images = get_sub_field('our_partners_section_images');
+				?>
+				<div class="md:col-span-2 col-span-5">
+					<img src="<?php echo $our_partners_section_images['url']; ?>" width="<?php echo $our_partners_section_images['width']; ?>" height="<?php echo $our_partners_section_images['height']; ?>" alt="<?php echo $our_partners_section_images['alt']; ?>" class="m-auto">
+				</div>
+		<?php
+							$i++;
+						endwhile;
+					endif; ?>
+
+
+
+
+				</div>
+
+
+
+
+			</div>
+	</section>
+
+	<?php } ><
 <footer class=" bg-dark-grey  border-t border-i-grey md:pb-4 pb-3 sm:overflow-auto overflow-hidden">
 	<div class="container m-auto">
 
