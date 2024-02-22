@@ -277,7 +277,7 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 			</div>
 	</section>
 
-	<?php } ><
+	<?php } ?>
 <footer class=" bg-dark-grey  border-t border-i-grey md:pb-4 pb-3 sm:overflow-auto overflow-hidden">
 	<div class="container m-auto">
 
