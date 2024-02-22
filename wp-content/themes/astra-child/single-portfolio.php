@@ -141,10 +141,10 @@ $our_services_section_main_heading = get_field('our_services_section_main_headin
         <h2
             class="text-right lg:mb-20 md:mb-12 mb-10 text-17 font-michroma text-[#030303] relative pr-6 uppercase after:content-[''] after:absolute after:w-52 after:h-[1px] md:after:bottom-[-20px] after:bottom-[-10px] after:right-6 after:bg-[#030303]">
             ALL PROJECTS</h2>
-        <!-- <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper claire-project ">
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper claire-project ">
         <?php echo do_shortcode('[portfolio_category_posts]'); ?>
 
-    </div> -->
+    </div> 
     </div>
 </section>
 

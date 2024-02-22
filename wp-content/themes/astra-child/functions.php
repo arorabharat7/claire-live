@@ -83,38 +83,31 @@ if (function_exists('acf_add_options_page')) {
 
 
 function portfolio_category_posts_shortcode()
-{ ?>
+{ 
+    $args = array(
+        'post_type' => 'portfolio', // Custom post type name
+        'posts_per_page' => -1, // Retrieve all posts
+    );
+    
+    // The Query
+    $portfolio_query = new WP_Query($args);
+    
+    ?>
     <div class="swiper-wrapper lg:mb-16 mb-10">
         <?php
         // Get the portfolio category ID
-        $portfolio_category = get_category_by_slug('portfolio');
-
-        if ($portfolio_category) {
-            // Get the portfolio category's sub-categories
-            $portfolio_subcategories = get_categories(array(
-                'parent' => $portfolio_category->term_id, // Get sub-categories of the portfolio category
-                'hide_empty' => false, // Include even if they are empty
-            ));
-
-            // Include the portfolio category itself in the array of categories
-            $category_ids = array($portfolio_category->term_id);
-            foreach ($portfolio_subcategories as $subcategory) {
-                $category_ids[] = $subcategory->term_id;
-            }
-
-            // Query posts from portfolio category and its sub-categories
-            $args = array(
-                'post_type' => 'page',
-                'cat' => implode(',', $category_ids), // Include posts from the portfolio category and its sub-categories
-                'posts_per_page' => -1, // Retrieve all posts
-            );
-
-            $query = new WP_Query($args);
+        if ($portfolio_query->have_posts()) {
+            while ($portfolio_query->have_posts()) {
+                $portfolio_query->the_post();
+                // Get post featured image
+                $featured_image_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
+                // Get post title
+                $post_title = get_the_title();
+                // Get post URL
+                $post_url = get_permalink();
 
             // Start the loop
-            if ($query->have_posts()) {
-                while ($query->have_posts()) {
-                    $query->the_post();
+            
         ?>
 
                     <a class="swiper-slide" href="<?php echo get_permalink(); ?>">
@@ -122,7 +115,7 @@ function portfolio_category_posts_shortcode()
                             <?php if (has_post_thumbnail()) : ?>
                                 <?php
                                 $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-                                echo '<img class="w-full" src="' . $image_url[0] . '" alt="' . get_the_title() . '" />';
+                                echo '<img class="w-full" src="' . $featured_image_url . '" alt="' . $post_title  . '" />';
                                 ?>
                             <?php endif; ?>
                             <div class="absolute left-4 bottom-6">
@@ -137,9 +130,7 @@ function portfolio_category_posts_shortcode()
             } else {
                 echo '<p>No posts found.</p>';
             }
-        } else {
-            echo '<p>portfolio category not found.</p>';
-        }
+      
         ?>
     </div>
     <div class="swiper-button-next !right-16 xl:!top-28 lg:!top-24 md:!top-20 sm:!top-24 !top-12"><img class="max-w-max sm:block hidden" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_project-right-arrow.svg" alt=""></div>

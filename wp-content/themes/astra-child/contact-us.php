@@ -64,19 +64,19 @@ get_header(); ?>
 
 
                             <ul class="flex lg:gap-6 gap-4 lg:mt-6 mt-4">
-                                <?php if (have_rows('global_settings_social_icons_repeater', 'option')) :
+                                <?php if (have_rows('contact_us_social_icons_details')) :
                                     $i = 0;
                                     // Loop through rows.
-                                    while (have_rows('global_settings_social_icons_repeater', 'option')) : the_row();
+                                    while (have_rows('contact_us_social_icons_details')) : the_row();
 
                                         // Load sub field value.
-                                        $global_settings_social_icons = get_sub_field('global_settings_social_icons_repeater_image_image');
-                                        $global_settings_social_icons_url = get_sub_field('global_settings_social_icons_repeater_url');
+                                        $contact_us_social_url = get_sub_field('contact_us_social_url');
+                                        $contact_us_social_image = get_sub_field('contact_us_social_image');
 
                                 ?>
-                                        <li><a href="<?php echo $global_settings_social_icons_url; ?>">
-                                                <?php if (!empty($global_settings_social_icons)) : ?>
-                                                    <img src="<?php echo $global_settings_social_icons['url']; ?>" width="30" height="30" alt="<?php echo $global_settings_social_icons['alt']; ?>" class="md:h-auto h-[26px]">
+                                        <li><a href="<?php echo $contact_us_social_url; ?>">
+                                                <?php if (!empty($contact_us_social_image)) : ?>
+                                                    <img src="<?php echo $contact_us_social_image['url']; ?>" width="30" height="30" alt="<?php echo $contact_us_social_image['alt']; ?>" class="md:h-auto h-[26px]">
                                                 <?php endif; ?>
                                             </a></li>
                                 <?php
