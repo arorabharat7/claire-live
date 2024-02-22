@@ -11,7 +11,7 @@ get_header(); ?>
 <section class="hero">
     <div class="relative before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
 
-        <img class="w-full lg:h-[27rem] md:h-64 h-56 object-cover" src="http://localhost/claire/wp-content/uploads/2024/02/claire_curtain-video.webp">
+        <img class="w-full lg:h-[27rem] md:h-64 h-56 object-cover" src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2024/02/claire_curtain-video.webp">
 
         <h1 class="absolute text-center xl:text-5xl md:text-5xl sm:text-4xl text-3xl  top-3/4 left-2/4 text-white transform-middle break-keep w-full">
             Portfolio
