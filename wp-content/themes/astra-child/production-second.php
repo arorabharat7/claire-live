@@ -260,7 +260,9 @@ $production_video_url = get_field('production_video_url');
       <div id="myModal" class="modal hidden fixed left-0 top-0 w-full h-full overflow-auto bg-black/[0.7] z-50">
         <div class="modal-content relative bg-white rounded-md shadow lg:w-1/2 md:w-3/4 w-11/12 md:px-7 md:py-7 px-4 py-6 mx-auto my-[10%] z-40">
           <span id="closeModalBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-3 leading-[0]">&times;</span>
-          <iframe class="w-full h-80" src="<?php echo $production_video_url; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <video autoplay muted loop playsinline preload="metadata" class="w-full xl:h-[34rem] lg:h-[30rem] object-cover">
+        <source src="<?php echo $production_video_url; ?>" type="video/mp4">
+      </video>
         </div>
       </div>
 
