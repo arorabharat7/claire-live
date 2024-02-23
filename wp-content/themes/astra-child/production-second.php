@@ -261,7 +261,7 @@ $production_video_url = get_field('production_video_url');
         <div class="modal-content relative bg-white rounded-md shadow lg:w-1/2 md:w-3/4 w-11/12 md:px-7 md:py-7 px-4 py-6 mx-auto my-[10%] z-40">
           <span id="closeModalBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-3 leading-[0]">&times;</span>
           <video autoplay muted loop playsinline preload="metadata" class="w-full xl:h-[34rem] lg:h-[30rem] object-cover">
-        <source src="<?php echo $production_video_url; ?>" type="video/mp4">
+        <source src="<?php echo $production_video_url;   ?>" type="video/mp4">
       </video>
         </div>
       </div>
