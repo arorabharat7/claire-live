@@ -227,61 +227,62 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 
 			</div>
 	</section>
-<?php } else {
+	<?php } else {
 	$page_idsss = get_the_ID();
 	$excluded_idsss = array(17);
 	if (!in_array($page_idsss, $excluded_idsss)) {  ?>
 
 
-	<section class="our-partners bg-dark-grey lg:py-100 md:py-60 py-10">
-		<div class="container m-auto">
-			<div class="mt-[150px]">
-				<?php $production_inner_company_main_heading = get_field('production_inner_company_main_heading', 'option'); ?>
-				<h2 class="lg:text-4xl md:text-3xl text-2xl font-michroma text-black relative text-center after:content-[''] after:absolute after:w-24 after:h-[1px] after:bottom-0 lg:pb-6 pb-3 after:left-[50%] after:translate-x-[-50%] after:bg-black">
-					<?php echo $production_inner_company_main_heading; ?></h2>
-			</div>
-
-
-			<div class="lg:mt-10 md:mt-8 mt-6">
-
-				<div class="grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5">
-					<?php if (have_rows('our_partners_section_for_production_inner_pages_details', 'option')) :
-						$i = 0;
-						// Loop through rows.
-						while (have_rows('our_partners_section_for_production_inner_pages_details', 'option')) : the_row();
-							if ($i == 5) { ?>
-				</div>
-				<div class="grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5">
-				<?php  } elseif ($i == 10) { ?>
-				</div>
-				<div class="grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5 ">
-				<?php	} elseif ($i == 15) { ?>
-				</div>
-				<div class="grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5 ">
-				<?php	}
-							// Load sub field value.
-							$production_inner_pages_company_logo = get_sub_field('production_inner_pages_company_logo');
-				?>
-				<div class="md:col-span-2 col-span-5">
-					<img src="<?php echo $production_inner_pages_company_logo['url']; ?>" width="<?php echo $production_inner_pages_company_logo['width']; ?>" height="<?php echo $production_inner_pages_company_logo['height']; ?>" alt="<?php echo $production_inner_pages_company_logo['alt']; ?>" class="m-auto">
-				</div>
-		<?php
-							$i++;
-						endwhile;
-					endif; ?>
-
-
-
-
+		<section class="our-partners bg-dark-grey lg:py-100 md:py-60 py-10">
+			<div class="container m-auto">
+				<div class="mt-[150px]">
+					<?php $production_inner_company_main_heading = get_field('production_inner_company_main_heading', 'option'); ?>
+					<h2 class="lg:text-4xl md:text-3xl text-2xl font-michroma text-black relative text-center after:content-[''] after:absolute after:w-24 after:h-[1px] after:bottom-0 lg:pb-6 pb-3 after:left-[50%] after:translate-x-[-50%] after:bg-black">
+						<?php echo $production_inner_company_main_heading; ?></h2>
 				</div>
 
 
+				<div class="lg:mt-10 md:mt-8 mt-6">
+
+					<div class="grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5">
+						<?php if (have_rows('our_partners_section_for_production_inner_pages_details', 'option')) :
+							$i = 0;
+							// Loop through rows.
+							while (have_rows('our_partners_section_for_production_inner_pages_details', 'option')) : the_row();
+								if ($i == 5) { ?>
+					</div>
+					<div class="grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5">
+					<?php  } elseif ($i == 10) { ?>
+					</div>
+					<div class="grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5 ">
+					<?php	} elseif ($i == 15) { ?>
+					</div>
+					<div class="grid grid-cols-10 lg:gap-0 gap-5 items-center justify-between lg:mb-8 mb-5 ">
+					<?php	}
+								// Load sub field value.
+								$production_inner_pages_company_logo = get_sub_field('production_inner_pages_company_logo');
+					?>
+					<div class="md:col-span-2 col-span-5">
+						<img src="<?php echo $production_inner_pages_company_logo['url']; ?>" width="<?php echo $production_inner_pages_company_logo['width']; ?>" height="<?php echo $production_inner_pages_company_logo['height']; ?>" alt="<?php echo $production_inner_pages_company_logo['alt']; ?>" class="m-auto">
+					</div>
+			<?php
+								$i++;
+							endwhile;
+						endif; ?>
 
 
-			</div>
-	</section>
 
-<?php } } ?>
+
+					</div>
+
+
+
+
+				</div>
+		</section>
+
+<?php }
+} ?>
 <footer class=" bg-dark-grey  border-t border-i-grey md:pb-4 pb-3 sm:overflow-auto overflow-hidden">
 	<div class="container m-auto">
 
@@ -386,10 +387,36 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 					$footer_settings_copyright_text = get_field('footer_settings_copyright_text', 'option');
 
 					?>
-					<li><button  class="group hover:bg-black transition-all btn-arrow rounded-none  py-3 px-9 border border-i-primary lg:mt-2.5 mt-1.5">
-							<a href="<?php echo $footer_settings_consult_btn_url; ?>" class="group-hover:brightness-[10] group-hover:text-white text-17 font-bold bg-no-repeat bg-right pr-7"><?php echo $footer_settings_consult_btn_text; ?> </a></button></li>
+					<li><button id="openFormBtn" class="group hover:bg-black transition-all btn-arrow rounded-none  py-3 px-9 border border-i-primary lg:mt-2.5 mt-1.5">
+							<a href="javascript:void(0)" class="group-hover:brightness-[10] group-hover:text-white text-17 font-bold bg-no-repeat bg-right pr-7"><?php echo $footer_settings_consult_btn_text; ?> </a></button></li>
 				</ul>
-				
+				<div id="myForm" class="modal hidden fixed left-0 top-0 w-full h-full overflow-auto bg-black/[0.7] z-50">
+					<div class="modal-content relative bg-white rounded-md shadow lg:w-1/2 md:w-3/4 w-11/12 md:px-7 md:py-7 px-4 py-6 mx-auto my-[3%] z-40">
+						<span id="closeFormBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-4 leading-[0]">&times;</span>
+						<div id="contact-form">
+							<h2 class="lg:text-3xl md:text-2xl  text-xl font-michroma text-black text-left uppercase lg:mb-4 mb-3 ">Tell us more <br> about your project</h2>
+
+							<?php echo do_shortcode('[contact-form-7 id="57a2b38" title="popup Contact"]'); ?>
+							<!-- <div class="md:col-span-12 col-span-12">
+									<input type="text" placeholder="Name" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
+								</div>
+
+								<div class="md:col-span-12 col-span-12">
+									<input type="text" placeholder="Telephone" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
+								</div>
+
+
+								<div class="md:col-span-12 col-span-12">
+									<input type="email" placeholder="E-mail" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
+								</div>
+
+								<div class="col-span-6">
+									<button class="btn-arrow bg-black py-3 w-full"><a href="#" class="md:text-17 text-sm text-white brightness-[10] bg-no-repeat bg-right pr-7  font-michroma uppercase">Send </a></button>
+								</div> -->
+
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</div>
