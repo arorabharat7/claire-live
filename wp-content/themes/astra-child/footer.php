@@ -84,7 +84,7 @@ if ($page_id_string != 'page-id-17') { ?>
 					<?php echo $call_to_action_section_description; ?></p>
 
 				<div id="contact-form">
-				<?php echo do_shortcode('[contact-form-7 id="34372bb" title="Contact form 1"]'); ?>
+					<?php echo do_shortcode('[contact-form-7 id="34372bb" title="Contact form 1"]'); ?>
 					<!-- <div class="grid grid-cols-12 items-center lg:gap-12 md:gap-7 gap-5 lg:mt-14 md:mt-10 mt-6 lg:mb-11 mb-7">
 						<?php //echo do_shortcode('[contact-form-7 id="34372bb" title="Contact form 1"]'); 
 						?>
@@ -174,7 +174,7 @@ if ($page_id_string != 'page-id-17') { ?>
 	</section>
 
 <?php  }
- ?>
+?>
 
 <?php
 $page_ids = get_the_ID();
@@ -227,7 +227,7 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 
 			</div>
 	</section>
-<?php }else{ ?>
+<?php } else { ?>
 
 	<section class="our-partners bg-dark-grey lg:py-100 md:py-60 py-10">
 		<div class="container m-auto">
@@ -277,7 +277,7 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 			</div>
 	</section>
 
-	<?php } ?>
+<?php } ?>
 <footer class=" bg-dark-grey  border-t border-i-grey md:pb-4 pb-3 sm:overflow-auto overflow-hidden">
 	<div class="container m-auto">
 
@@ -382,9 +382,10 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 					$footer_settings_copyright_text = get_field('footer_settings_copyright_text', 'option');
 
 					?>
-					<li><button class="group hover:bg-black transition-all btn-arrow rounded-none  py-3 px-9 border border-i-primary lg:mt-2.5 mt-1.5">
+					<li><button  class="group hover:bg-black transition-all btn-arrow rounded-none  py-3 px-9 border border-i-primary lg:mt-2.5 mt-1.5">
 							<a href="<?php echo $footer_settings_consult_btn_url; ?>" class="group-hover:brightness-[10] group-hover:text-white text-17 font-bold bg-no-repeat bg-right pr-7"><?php echo $footer_settings_consult_btn_text; ?> </a></button></li>
 				</ul>
+				
 			</div>
 
 		</div>
@@ -393,6 +394,8 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 	</div>
 
 </footer>
+
+
 
 <?php wp_footer(); ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
