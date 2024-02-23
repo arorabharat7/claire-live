@@ -190,9 +190,9 @@ if ($page_id_string != 'page-id-18') { ?>
 						<span id="closeFormBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-4 leading-[0]">&times;</span>
 						<div id="contact-form">
 							<h2 class="lg:text-3xl md:text-2xl  text-xl font-michroma text-black text-left uppercase lg:mb-4 mb-3 ">Tell us more <br> about your project</h2>
-							
-<?php echo do_shortcode('[contact-form-7 id="57a2b38" title="popup Contact"]'); ?>
-								<!-- <div class="md:col-span-12 col-span-12">
+
+							<?php echo do_shortcode('[contact-form-7 id="57a2b38" title="popup Contact"]'); ?>
+							<!-- <div class="md:col-span-12 col-span-12">
 									<input type="text" placeholder="Name" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
 								</div>
 
@@ -208,8 +208,8 @@ if ($page_id_string != 'page-id-18') { ?>
 								<div class="col-span-6">
 									<button class="btn-arrow bg-black py-3 w-full"><a href="#" class="md:text-17 text-sm text-white brightness-[10] bg-no-repeat bg-right pr-7  font-michroma uppercase">Send </a></button>
 								</div> -->
-							
-				</div>
+
+						</div>
 					</div>
 				</div>
 			</div>
