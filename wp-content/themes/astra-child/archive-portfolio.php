@@ -57,7 +57,7 @@ get_header(); ?>
 
 
             </div>
-            <div class="text-center lg:pt-20 md:pt-12 pt-8">
+            <div class="text-center md:pt-8 pt-6">
                 <button id="loadMoreBtn" class="relative py-3 rounded-none uppercase font-michroma md:px-9 group hover:bg-black transition-all px-4 border border-i-primary lg:mt-2.5 mt-1.5">
                     Load More </button>
                 <?php
