@@ -187,24 +187,25 @@ if ($page_id_string != 'page-id-18') { ?>
 				</ul>
 				<div id="myForm" class="modal hidden fixed left-0 top-0 w-full h-full overflow-auto bg-black/[0.7] z-50">
 					<div class="modal-content relative bg-white rounded-md shadow lg:w-1/2 md:w-3/4 w-11/12 md:px-7 md:py-7 px-4 py-6 mx-auto my-[10%] z-40">
-						<span id="closeModalBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-3 leading-[0]">&times;</span>
+						<span id="closeFormBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-3 leading-[0]">&times;</span>
 						<form id="contact-form">
+							<h2 class="lg:text-4xl md:text-3xl  text-2xl font-michroma text-black text-left uppercase lg:mb-5 mb-3 ">Tell us more <br> about your project</h2>
 							<div class="grid grid-cols-12 items-center lg:gap-12 md:gap-7 gap-5 lg:mt-14 md:mt-10 mt-6 lg:mb-11 mb-7">
 
-								<div class="lg:col-span-3 md:col-span-12 col-span-12">
+								<div class="md:col-span-12 col-span-12">
 									<input type="text" placeholder="Name" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
 								</div>
 
-								<div class="lg:col-span-3 md:col-span-12 col-span-12">
+								<div class="md:col-span-12 col-span-12">
 									<input type="text" placeholder="Telephone" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
 								</div>
 
 
-								<div class="lg:col-span-3 md:col-span-12 col-span-12">
+								<div class="md:col-span-12 col-span-12">
 									<input type="email" placeholder="E-mail" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
 								</div>
 
-								<div class="lg:col-span-3 col-span-6">
+								<div class="col-span-6">
 									<button class="btn-arrow bg-white py-3 w-full"><a href="#" class="md:text-17 text-sm bg-no-repeat bg-right pr-7  font-michroma uppercase">Send </a></button>
 								</div>
 							</div>
