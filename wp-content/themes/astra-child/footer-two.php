@@ -44,7 +44,7 @@ if ($page_id_string != 'page-id-18') { ?>
 					<?php echo $call_to_action_section_description; ?></p>
 
 				<div id="contact-form">
-				<?php echo do_shortcode('[contact-form-7 id="34372bb" title="Contact form 1"]'); ?>
+					<?php echo do_shortcode('[contact-form-7 id="34372bb" title="Contact form 1"]'); ?>
 					<!-- <div class="grid grid-cols-12 items-center lg:gap-12 md:gap-7 gap-5 lg:mt-14 md:mt-10 mt-6 lg:mb-11 mb-7">
 						<?php //echo do_shortcode('[contact-form-7 id="34372bb" title="Contact form 1"]'); 
 						?>
@@ -182,9 +182,35 @@ if ($page_id_string != 'page-id-18') { ?>
 					$footer_settings_copyright_text = get_field('footer_settings_copyright_text', 'option');
 
 					?>
-					<li><button class="group hover:bg-black transition-all btn-arrow rounded-none  py-3 px-9 border border-i-primary lg:mt-2.5 mt-1.5">
+					<li><button id="openFormBtn" class="group hover:bg-black transition-all btn-arrow rounded-none  py-3 px-9 border border-i-primary lg:mt-2.5 mt-1.5">
 							<a href="<?php echo $footer_settings_consult_btn_url; ?>" class="group-hover:brightness-[10] group-hover:text-white text-17 font-bold bg-no-repeat bg-right pr-7"><?php echo $footer_settings_consult_btn_text; ?> </a></button></li>
 				</ul>
+				<div id="myForm" class="modal hidden fixed left-0 top-0 w-full h-full overflow-auto bg-black/[0.7] z-50">
+					<div class="modal-content relative bg-white rounded-md shadow lg:w-1/2 md:w-3/4 w-11/12 md:px-7 md:py-7 px-4 py-6 mx-auto my-[10%] z-40">
+						<span id="closeModalBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-3 leading-[0]">&times;</span>
+						<form id="contact-form">
+							<div class="grid grid-cols-12 items-center lg:gap-12 md:gap-7 gap-5 lg:mt-14 md:mt-10 mt-6 lg:mb-11 mb-7">
+
+								<div class="lg:col-span-3 md:col-span-12 col-span-12">
+									<input type="text" placeholder="Name" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
+								</div>
+
+								<div class="lg:col-span-3 md:col-span-12 col-span-12">
+									<input type="text" placeholder="Telephone" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
+								</div>
+
+
+								<div class="lg:col-span-3 md:col-span-12 col-span-12">
+									<input type="email" placeholder="E-mail" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
+								</div>
+
+								<div class="lg:col-span-3 col-span-6">
+									<button class="btn-arrow bg-white py-3 w-full"><a href="#" class="md:text-17 text-sm bg-no-repeat bg-right pr-7  font-michroma uppercase">Send </a></button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 
 		</div>
@@ -193,7 +219,25 @@ if ($page_id_string != 'page-id-18') { ?>
 	</div>
 
 </footer>
+<script>
+	let openModalBtn = document.getElementById("openFormBtn");
+	let modal = document.getElementById("myForm");
+	let closeModalBtn = document.getElementById("closeFormBtn");
 
+	openModalBtn.addEventListener("click", function() {
+		modal.style.display = "block";
+	});
+
+	closeModalBtn.addEventListener("click", function() {
+		modal.style.display = "none";
+	});
+
+	window.addEventListener("click", function(event) {
+		if (event.target === modal) {
+			modal.style.display = "none";
+		}
+	});
+</script>
 <?php wp_footer(); ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
