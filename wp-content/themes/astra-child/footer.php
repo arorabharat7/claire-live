@@ -392,7 +392,7 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 				</ul>
 				<div id="myFormm" class="modal hidden fixed left-0 top-0 w-full h-full overflow-auto bg-black/[0.7] z-50">
 					<div class="modal-content relative bg-white rounded-md shadow lg:w-1/2 md:w-3/4 w-11/12 md:px-7 md:py-7 px-4 py-6 mx-auto my-[3%] z-40">
-						<span id="closeFormBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-4 leading-[0]">&times;</span>
+						<span id="closeFormBtnn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-4 leading-[0]">&times;</span>
 						<div id="contact-form">
 							<h2 class="lg:text-3xl md:text-2xl  text-xl font-michroma text-black text-left uppercase lg:mb-4 mb-3 ">Tell us more <br> about your project</h2>
 
