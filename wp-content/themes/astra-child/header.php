@@ -61,7 +61,7 @@
 						?>
 						<?php for ($i = 0; $i < count($items); $i++) { ?>
 							<li class="xl:pb-7 md:pb-5 pb-2 <?php if ($items[$i]->title ==  "PRODUCTION") { ?>lg:hidden <?php } ?> ">
-								<a href="<?php echo $items[$i]->url; ?>" class=" xl:text-base  md:text-lg text-base font-medium uppercase "><?php echo $items[$i]->title; ?></a>
+								<a href="<?php echo $items[$i]->url; ?>" class=" xl:text-base   text-base font-medium uppercase "><?php echo $items[$i]->title; ?></a>
 							</li>
 						<?php } ?>
 
