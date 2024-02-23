@@ -3404,6 +3404,21 @@ a:hover{
   color: #fff !important;
 }
 
+.popup_form input {
+  border-radius: 0;
+  border-color: #000;
+  height: 45px;
+}
+
+.popup_form  button{
+  width: 200px;
+  padding: 5px 5px 12px 5px;
+}
+
+.popup_form  button span.wpcf7-spinner{
+  margin-right: -30px;
+}
+
 @media screen and (min-width:1600px){
   .navbar li:nth-child(3):before,
 .navbar li:nth-child(4):before,
