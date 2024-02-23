@@ -186,10 +186,18 @@ a:hover{
 .popup_form  button{
 width: 200px;
 padding: 5px 5px 12px 5px;
+border-radius: 0;
+}
+.popup_form  button:hover{
+  background-color: #000;
 }
 .popup_form  button span.wpcf7-spinner{
   margin-right: -30px;
 }
+.popup_form .wpcf7-response-output {
+  color: #000 !important;
+}
+
 @media screen and (min-width:1600px){
 
 .navbar li:nth-child(3):before,
