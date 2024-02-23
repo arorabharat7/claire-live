@@ -1160,10 +1160,6 @@ video {
   height: 14rem;
 }
 
-.h-80 {
-  height: 20rem;
-}
-
 .h-9 {
   height: 2.25rem;
 }
@@ -2644,10 +2640,6 @@ video {
   padding-top: 1.5rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
-}
-
 .\!text-left {
   text-align: left !important;
 }
@@ -3413,10 +3405,19 @@ a:hover{
 .popup_form  button{
   width: 200px;
   padding: 5px 5px 12px 5px;
+  border-radius: 0;
+}
+
+.popup_form  button:hover{
+  background-color: #000;
 }
 
 .popup_form  button span.wpcf7-spinner{
   margin-right: -30px;
+}
+
+.popup_form .wpcf7-response-output {
+  color: #000 !important;
 }
 
 @media screen and (min-width:1600px){
@@ -4743,10 +4744,6 @@ a:hover{
 
   .lg\:pt-16 {
     padding-top: 4rem;
-  }
-
-  .lg\:pt-20 {
-    padding-top: 5rem;
   }
 
   .lg\:pt-24 {
