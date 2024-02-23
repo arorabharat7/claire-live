@@ -227,7 +227,11 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 
 			</div>
 	</section>
-<?php } else { ?>
+<?php } else {
+	$page_idsss = get_the_ID();
+	$excluded_idsss = array(17);
+	if (!in_array($page_idsss, $excluded_idsss)) {  ?>
+
 
 	<section class="our-partners bg-dark-grey lg:py-100 md:py-60 py-10">
 		<div class="container m-auto">
@@ -277,7 +281,7 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 			</div>
 	</section>
 
-<?php } ?>
+<?php } } ?>
 <footer class=" bg-dark-grey  border-t border-i-grey md:pb-4 pb-3 sm:overflow-auto overflow-hidden">
 	<div class="container m-auto">
 
