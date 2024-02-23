@@ -186,7 +186,7 @@ if ($page_id_string != 'page-id-18') { ?>
 							<a href="javascript:void(0)" class="group-hover:brightness-[10] group-hover:text-white text-17 font-bold bg-no-repeat bg-right pr-7"><?php echo $footer_settings_consult_btn_text; ?> </a></button></li>
 				</ul>
 				<div id="myForm" class="modal hidden fixed left-0 top-0 w-full h-full overflow-auto bg-black/[0.7] z-50">
-					<div class="modal-content relative bg-white rounded-md shadow lg:w-1/2 md:w-3/4 w-11/12 md:px-7 md:py-7 px-4 py-6 mx-auto my-[3%] z-40">
+					<div class="modal-content relative bg-white rounded-md shadow lg:w-1/2 md:w-3/4 w-11/12 md:px-7 md:py-7 px-4 py-6 mx-auto my-[5%] z-40">
 						<span id="closeFormBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-4 leading-[0]">&times;</span>
 						<div id="contact-form">
 							<h2 class="lg:text-3xl md:text-2xl  text-xl font-michroma text-black text-left uppercase lg:mb-4 mb-3 ">Tell us more <br> about your project</h2>
