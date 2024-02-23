@@ -275,7 +275,7 @@ $production_video_url = get_field('production_video_url');
         <source src="<?php echo $production_video_url; ?>" type="video/mp4">
       </video>
       <div class="absolute text-center top-2/4 left-2/4 transform-middle break-keep">
-        <button id="openModalBtn playButton"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_play-btn.svg" width="86" height="86" alt="play-btn" class="lg:w-[86px] md:w-[60px] w-[50px]"></button>
+        <button id=" playButton"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_play-btn.svg" width="86" height="86" alt="play-btn" class="lg:w-[86px] md:w-[60px] w-[50px]"></button>
       </div>
         <?php } ?>
             
@@ -427,11 +427,11 @@ $why_choose_us_section_main_heading = get_field('why_choose_us_section_main_head
 </script>
 
 <script> 
-$(document).ready(function() {
+jQuery(document).ready(function() {
   var video = document.getElementById("myVideo");
   video.pause(); // Pausing the video on page load
 
-  $("#playButton").click(function() {
+  jQuery("#playButton").click(function() {
     video.play(); // Playing the video when the button is clicked
   });
 });
