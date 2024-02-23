@@ -183,35 +183,35 @@ if ($page_id_string != 'page-id-18') { ?>
 
 					?>
 					<li><button id="openFormBtn" class="group hover:bg-black transition-all btn-arrow rounded-none  py-3 px-9 border border-i-primary lg:mt-2.5 mt-1.5">
-							<a href="" class="group-hover:brightness-[10] group-hover:text-white text-17 font-bold bg-no-repeat bg-right pr-7"><?php echo $footer_settings_consult_btn_text; ?> </a></button></li>
+							<a href="javascript:void(0)" class="group-hover:brightness-[10] group-hover:text-white text-17 font-bold bg-no-repeat bg-right pr-7"><?php echo $footer_settings_consult_btn_text; ?> </a></button></li>
 				</ul>
 				<div id="myForm" class="modal hidden fixed left-0 top-0 w-full h-full overflow-auto bg-black/[0.7] z-50">
-            <div class="modal-content relative bg-white rounded-md shadow lg:w-1/2 md:w-3/4 w-11/12 md:px-7 md:py-7 px-4 py-6 mx-auto my-[3%] z-40">
-              <span id="closeFormBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-4 leading-[0]">&times;</span>
-              <form id="contact-form">
-                <h2 class="lg:text-3xl md:text-2xl  text-xl font-michroma text-black text-left uppercase lg:mb-4 mb-3 ">Tell us more <br> about your project</h2>
-                <div class="grid grid-cols-12 items-center lg:gap-12 md:gap-7 gap-5 lg:mt-14 md:mt-10 mt-6 lg:mb-8 mb-4">
-  
-                  <div class="md:col-span-12 col-span-12">
-                    <input type="text" placeholder="Name" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
-                  </div>
-  
-                  <div class="md:col-span-12 col-span-12">
-                    <input type="text" placeholder="Telephone" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
-                  </div>
-  
-  
-                  <div class="md:col-span-12 col-span-12">
-                    <input type="email" placeholder="E-mail" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
-                  </div>
-  
-                  <div class="col-span-6">
-                    <button class="btn-arrow bg-black py-3 w-full"><a href="#" class="md:text-17 text-sm text-white brightness-[10] bg-no-repeat bg-right pr-7  font-michroma uppercase">Send </a></button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+					<div class="modal-content relative bg-white rounded-md shadow lg:w-1/2 md:w-3/4 w-11/12 md:px-7 md:py-7 px-4 py-6 mx-auto my-[3%] z-40">
+						<span id="closeFormBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-4 leading-[0]">&times;</span>
+						<div id="contact-form">
+							<h2 class="lg:text-3xl md:text-2xl  text-xl font-michroma text-black text-left uppercase lg:mb-4 mb-3 ">Tell us more <br> about your project</h2>
+							
+<?php echo do_shortcode('[contact-form-7 id="57a2b38" title="popup Contact"]'); ?>
+								<!-- <div class="md:col-span-12 col-span-12">
+									<input type="text" placeholder="Name" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
+								</div>
+
+								<div class="md:col-span-12 col-span-12">
+									<input type="text" placeholder="Telephone" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
+								</div>
+
+
+								<div class="md:col-span-12 col-span-12">
+									<input type="email" placeholder="E-mail" class="md:text-17 text-sm font-bold pb-3 text-i-grey border-b border-i-grey !bg-transparent placeholder:text-i-grey w-full focus-visible:outline-0">
+								</div>
+
+								<div class="col-span-6">
+									<button class="btn-arrow bg-black py-3 w-full"><a href="#" class="md:text-17 text-sm text-white brightness-[10] bg-no-repeat bg-right pr-7  font-michroma uppercase">Send </a></button>
+								</div> -->
+							
+				</div>
+					</div>
+				</div>
 			</div>
 
 		</div>
