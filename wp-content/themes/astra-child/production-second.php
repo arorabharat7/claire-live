@@ -242,10 +242,12 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
 
 
-<?php $production_video_url_image = get_field('production_video_url_image'); ?>
+<?php $production_video_url_image = get_field('production_video_url_image');
+$production_video_url = get_field('production_video_url');
+?>
 
 
-<?php if (!empty($production_video_url_image)) : ?>
+<?php if (!empty($production_video_url)) : ?>
   <section class="video lg:py-100 md:py-60 py-10">
     <div class="relative before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.29)]">
       <img class="w-full md:min-h-64 min-h-52 object-cover" src="<?php echo $production_video_url_image['url']; ?>" width="<?php echo $production_video_url_image['width']; ?>" height="<?php echo $production_video_url_image['height']; ?>" alt="<?php echo $production_video_url_image['alt']; ?>">
@@ -258,7 +260,9 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
       <div id="myModal" class="modal hidden fixed left-0 top-0 w-full h-full overflow-auto bg-black/[0.7] z-50">
         <div class="modal-content relative bg-white rounded-md shadow lg:w-1/2 md:w-3/4 w-11/12 md:px-7 md:py-7 px-4 py-6 mx-auto my-[10%] z-40">
           <span id="closeModalBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-3 leading-[0]">&times;</span>
-          <iframe class="w-full h-80" src="https://www.youtube.com/embed/qnbWtA9if-o?si=-S2G6rN_EODzK3tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <video autoplay muted loop playsinline preload="metadata" class="w-full xl:h-[34rem] lg:h-[30rem] object-cover">
+        <source src="<?php echo $production_video_url; ?>" type="video/mp4">
+      </video>
         </div>
       </div>
 
@@ -272,18 +276,18 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
       OUR RESULTS</h2>
 
     <div class="grid production_img grid-cols-12 gap-5 lg:my-16 md:my-10 my-6">
-      <?php 
+      <?php
       if (have_rows('our_results_all_details')) :
         $i = 1;
-      
+
         // Loop through rows.
-        while (have_rows('our_results_all_details')) : 
+        while (have_rows('our_results_all_details')) :
           the_row();
 
           // Load sub field value.
           $our_results_main_image = get_sub_field('our_results_main_image');
           $our_results_small_image = get_sub_field('our_results_small_image');
-        
+
       ?>
           <?php if ($i % 2 == 0) { ?>
             <div class="md:!col-span-4 sm:!col-span-6 col-span-12 repeater-item">
@@ -302,7 +306,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
             <div class="md:!col-span-4 sm:!col-span-6 col-span-12 repeater-item">
               <img src="<?php echo $our_results_small_image['url'] ?>" width="502" height="411" alt="curtain-result" class="w-full object-cover lg:h-[411px] md:h-[250px] h-[220px]">
             </div>
-      <?php } 
+      <?php }
           $i++;
         endwhile;
       endif; ?>
@@ -387,29 +391,25 @@ $why_choose_us_section_main_heading = get_field('why_choose_us_section_main_head
       modal.style.display = "none";
     }
   });
-
-
-
-
 </script>
 
 <script>
-jQuery(document).ready(function($) {
+  jQuery(document).ready(function($) {
     var visibleItems = 4; // Number of initially visible items
     var itemsToShow = 2; // Number of items to show on each "Load More" click
 
     $('.production_img .repeater-item:gt(' + (visibleItems - 1) + ')').hide();
 
     $('#loadMore-production').on('click', function() {
-        var $hiddenItems = $('.production_img .repeater-item:hidden');
-        var numToShow = Math.min(itemsToShow, $hiddenItems.length);
-        if (numToShow === 0) {
-            $(this).hide();
-        }
-        $hiddenItems.slice(0, numToShow).slideDown();
-        visibleItems += itemsToShow; 
+      var $hiddenItems = $('.production_img .repeater-item:hidden');
+      var numToShow = Math.min(itemsToShow, $hiddenItems.length);
+      if (numToShow === 0) {
+        $(this).hide();
+      }
+      $hiddenItems.slice(0, numToShow).slideDown();
+      visibleItems += itemsToShow;
     });
-});
+  });
 </script>
 
 
