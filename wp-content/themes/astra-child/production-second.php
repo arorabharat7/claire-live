@@ -408,7 +408,7 @@ $why_choose_us_section_main_heading = get_field('why_choose_us_section_main_head
 </script>
 
 <script>
-  jQuery(document).ready(function($) {
+  jQuery(document).ready(function() {
     var visibleItems = 4; // Number of initially visible items
     var itemsToShow = 2; // Number of items to show on each "Load More" click
 
