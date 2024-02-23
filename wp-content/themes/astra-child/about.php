@@ -16,7 +16,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
     <div
         class="relative before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
         <?php if (!empty($hero_banner_section_image)) : ?>
-        <img class="w-full lg:h-96 md:h-64 h-56 object-cover"
+        <img class="w-full md:h-64 h-56 object-cover"
             src="<?php echo $hero_banner_section_image['url']; ?>"
             width="<?php echo $hero_banner_section_image['width']; ?>"
             height="<?php echo $hero_banner_section_image['height']; ?>"

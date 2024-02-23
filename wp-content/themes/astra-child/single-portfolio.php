@@ -21,7 +21,7 @@ $image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), 'full'
     <div
         class="relative before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
         <?php if (!empty($image_url)) : ?>
-        <img class="w-full lg:h-[27rem] md:h-64 h-56 object-cover" src="<?php echo $image_url[0]; ?>"
+        <img class="w-full  md:h-64 h-56 object-cover" src="<?php echo $image_url[0]; ?>"
             width="<?php echo $hero_banner_section_image['width']; ?>"
             height="<?php echo $hero_banner_section_image['height']; ?>"
             alt="<?php echo $hero_banner_section_image['alt']; ?>">
