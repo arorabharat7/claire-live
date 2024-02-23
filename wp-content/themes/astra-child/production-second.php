@@ -271,7 +271,7 @@ $production_video_url = get_field('production_video_url');
   <section class="hero video lg:py-100 md:py-60 py-10">
     <div class="relative before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.4)]">
         <?php if (!empty($production_video_url)){ ?>
-            <video autoplay muted loop playsinline preload="metadata" class="w-full xl:h-[34rem] lg:h-[30rem] object-cover">
+            <video  muted loop playsinline preload="metadata" class="w-full xl:h-[34rem] lg:h-[30rem] object-cover">
         <source src="<?php echo $production_video_url; ?>" type="video/mp4">
       </video>
       <div class="absolute text-center top-2/4 left-2/4 transform-middle break-keep">
