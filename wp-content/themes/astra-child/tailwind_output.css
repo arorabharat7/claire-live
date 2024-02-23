@@ -3420,6 +3420,10 @@ a:hover{
   color: #000 !important;
 }
 
+.contact-us h3 a:hover{
+  color: #fff;
+}
+
 @media screen and (min-width:1600px){
   .navbar li:nth-child(3):before,
 .navbar li:nth-child(4):before,

@@ -35,7 +35,7 @@ get_header(); ?>
                             <p class="lg:xl md:text-lg text-base text-black md:my-5 my-2"><?php echo $contact_address; ?></p>
 
 
-                            <ul class="xl:!w-[65%] lg:!w-[85%] md:!w-[50%]">
+                            <ul class="lg:!w-[85%] md:!w-[80%]">
                                 <?php if (have_rows('contact_us_all_details')) :
 
                                     // Loop through rows.
