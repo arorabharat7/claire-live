@@ -248,7 +248,7 @@ $production_video_url = get_field('production_video_url');
 
 
 <?php if (!empty($production_video_url)) : ?>
-  <section class="video lg:py-100 md:py-60 py-10">
+  <!-- <section class="video lg:py-100 md:py-60 py-10">
     <div class="relative before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.29)]">
       <img class="w-full md:min-h-64 min-h-52 object-cover" src="<?php echo $production_video_url_image['url']; ?>" width="<?php echo $production_video_url_image['width']; ?>" height="<?php echo $production_video_url_image['height']; ?>" alt="<?php echo $production_video_url_image['alt']; ?>">
 
@@ -267,7 +267,21 @@ $production_video_url = get_field('production_video_url');
       </div>
 
 
-  </section>
+  </section> -->
+  <section class="hero video lg:py-100 md:py-60 py-10">
+    <div class="relative before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.4)]">
+        <?php if (!empty($production_video_url)){ ?>
+            <video autoplay muted loop playsinline preload="metadata" class="w-full xl:h-[34rem] lg:h-[30rem] object-cover">
+        <source src="<?php echo $production_video_url; ?>" type="video/mp4">
+      </video>
+      <div class="absolute text-center top-2/4 left-2/4 transform-middle break-keep">
+        <button id="openModalBtn"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_play-btn.svg" width="86" height="86" alt="play-btn" class="lg:w-[86px] md:w-[60px] w-[50px]"></button>
+      </div>
+        <?php } ?>
+            
+       
+    </div>
+</section>
 <?php endif; ?>
 
 <section class="result">
