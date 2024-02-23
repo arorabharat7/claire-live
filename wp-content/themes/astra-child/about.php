@@ -233,7 +233,7 @@ $how_we_work_contact_btn_url  = get_field('how_we_work_contact_btn_url');
                     <?php echo $how_we_work_help_btn_text; ?> </a></button>
             <button
                 class="btn-arrow group hover:bg-white rounded-none transition-all border border-i-primary py-3 md:px-9 px-4  bg-black lg:mt-2.5 mt-1.5"><a
-                    href=" <?php echo $how_we_work_contact_btn_text; ?>"
+                    href=" <?php echo $how_we_work_contact_btn_url; ?>"
                     class="group-hover:brightness-[0] group-hover:text-black md:text-17 text-sm bg-no-repeat bg-right brightness-[10] pr-7 font-michroma text-white">
                      <?php echo $how_we_work_contact_btn_text; ?>
                 </a></button>
