@@ -229,7 +229,7 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 	</section>
 <?php }else{ ?>
 
-	<section class="our-partners bg-dark-grey lg:py-100 md:py-60 py-10">
+	<!-- <section class="our-partners bg-dark-grey lg:py-100 md:py-60 py-10">
 		<div class="container m-auto">
 			<div class="mt-[150px]">
 				<?php $production_inner_company_main_heading = get_field('production_inner_company_main_heading', 'option'); ?>
@@ -275,7 +275,7 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 
 
 			</div>
-	</section>
+	</section> -->
 
 	<?php } ?>
 <footer class=" bg-dark-grey  border-t border-i-grey md:pb-4 pb-3 sm:overflow-auto overflow-hidden">
