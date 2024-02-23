@@ -387,10 +387,10 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 					$footer_settings_copyright_text = get_field('footer_settings_copyright_text', 'option');
 
 					?>
-					<li><button id="openFormBtn" class="group hover:bg-black transition-all btn-arrow rounded-none  py-3 px-9 border border-i-primary lg:mt-2.5 mt-1.5">
+					<li><button id="openFormBtnn" class="group hover:bg-black transition-all btn-arrow rounded-none  py-3 px-9 border border-i-primary lg:mt-2.5 mt-1.5">
 							<a href="javascript:void(0)" class="group-hover:brightness-[10] group-hover:text-white text-17 font-bold bg-no-repeat bg-right pr-7"><?php echo $footer_settings_consult_btn_text; ?> </a></button></li>
 				</ul>
-				<div id="myForm" class="modal hidden fixed left-0 top-0 w-full h-full overflow-auto bg-black/[0.7] z-50">
+				<div id="myFormm" class="modal hidden fixed left-0 top-0 w-full h-full overflow-auto bg-black/[0.7] z-50">
 					<div class="modal-content relative bg-white rounded-md shadow lg:w-1/2 md:w-3/4 w-11/12 md:px-7 md:py-7 px-4 py-6 mx-auto my-[3%] z-40">
 						<span id="closeFormBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-4 leading-[0]">&times;</span>
 						<div id="contact-form">
@@ -428,9 +428,9 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 
 
 <script>
-	let openModalBtn = document.getElementById("openFormBtn");
-	let modal = document.getElementById("myForm");
-	let closeModalBtn = document.getElementById("closeFormBtn");
+	let openModalBtn = document.getElementById("openFormBtnn");
+	let modal = document.getElementById("myFormm");
+	let closeModalBtn = document.getElementById("closeFormBtnn");
 
 	openModalBtn.addEventListener("click", function() {
 		modal.style.display = "block";
