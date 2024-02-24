@@ -3354,6 +3354,7 @@ a:hover{
   padding: 0;
   font-weight: 600;
   color: #fff;
+  background-color: transparent;
 }
 
 .contact-us #contact-form .btn-arrow:hover{
@@ -3422,6 +3423,10 @@ a:hover{
 
 .contact-us h3 a:hover{
   color: #fff;
+}
+
+.modal-content .wpcf7-response-output{
+  color: #000000;
 }
 
 @media screen and (min-width:1600px){
@@ -4099,10 +4104,6 @@ a:hover{
 
   .md\:min-h-64 {
     min-height: 16rem;
-  }
-
-  .md\:\!w-\[50\%\] {
-    width: 50% !important;
   }
 
   .md\:\!w-\[80\%\] {
@@ -4879,10 +4880,6 @@ a:hover{
     height: auto;
   }
 
-  .xl\:\!w-\[65\%\] {
-    width: 65% !important;
-  }
-
   .xl\:w-6 {
     width: 1.5rem;
   }
@@ -4947,14 +4944,14 @@ a:hover{
     line-height: 1;
   }
 
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .xl\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .xl\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 
