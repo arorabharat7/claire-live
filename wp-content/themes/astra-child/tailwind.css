@@ -141,6 +141,7 @@ a:hover{
   padding: 0;
   font-weight: 600;
   color: #fff;
+  background-color: transparent;
 }
 .contact-us #contact-form .btn-arrow:hover{
   background-color: #fff !important;
@@ -199,6 +200,9 @@ border-radius: 0;
 }
 .contact-us h3 a:hover{
   color: #fff;
+}
+.modal-content .wpcf7-response-output{
+  color: #000000;
 }
 
 @media screen and (min-width:1600px){
