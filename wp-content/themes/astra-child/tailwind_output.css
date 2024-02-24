@@ -2912,6 +2912,10 @@ video {
   -moz-osx-font-smoothing: auto;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .bg-blend-normal {
   background-blend-mode: normal;
 }
@@ -3436,6 +3440,14 @@ a:hover{
 .popup_form input.font-michroma{
   background-color: #000;
   font-family: "Michroma", sans-serif;
+}
+
+#playButton #pauseImage {
+  opacity: 0;
+}
+
+#playButton #pauseImage:hover {
+  opacity: 1;
 }
 
 @media screen and (min-width:1600px){
