@@ -276,8 +276,8 @@ $production_video_url = get_field('production_video_url');
       </video>
       <div class="absolute text-center top-2/4 left-2/4 transform-middle break-keep">
         <button id="playButton">
-          <img  class="lg:w-[86px] md:w-[60px] w-[50px]" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_play-btn.svg" width="86" height="86" alt="play-btn" >
-          <img class="hidden lg:w-[86px] md:w-[60px] w-[50px]"  src="<?php echo home_url(); ?>/wp-content/uploads/2024/02/claire_pause-button.svg" width="86" height="86" alt="play-btn" >
+          <img id="playImage"  class="lg:w-[86px] md:w-[60px] w-[50px]" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_play-btn.svg" width="86" height="86" alt="play-btn" >
+          <img id="pauseImage" class="hidden lg:w-[86px] md:w-[60px] w-[50px]"  src="<?php echo home_url(); ?>/wp-content/uploads/2024/02/claire_pause-button.svg" width="86" height="86" alt="play-btn" >
         
         </button>
       </div>
@@ -443,10 +443,16 @@ jQuery(document).ready(function() {
 
 $('#playButton').click(function () {
    var mediaVideo = $("#myVideo").get(0);
+   var playImage = document.getElementById("playImage");
+   var pauseImage = document.getElementById("pauseImage");
+
+   playImage.classList.toggle("hidden");
+        pauseImage.classList.toggle("hidden");
    if (mediaVideo.paused) {
        mediaVideo.play();
    } else {
        mediaVideo.pause();
+       
   }
 });
 });
