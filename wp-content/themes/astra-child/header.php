@@ -180,7 +180,7 @@
 				</li>
 
 				<li>
-					<button id="openFormBtnnn" class="btn-arrow group bg-[#008000] hover:bg-black transition-all rounded-none  xl:py-3 xl:px-5 lg:py-2 lg:px-3 border border-[#008000] lg:block hidden "><a href="javascript:void(0)" class="brightness-[10] group-hover:text-white xl:text-sm text-xs font-bold bg-no-repeat bg-right xl:pr-7 lg:pr-4 text-white"><?php echo $header_settings_help_btn_text; ?>
+					<button id="openFormBtnnn openFormBtnn" class="btn-arrow group bg-[#008000] hover:bg-black transition-all rounded-none  xl:py-3 xl:px-5 lg:py-2 lg:px-3 border border-[#008000] lg:block hidden "><a href="javascript:void(0)" class="brightness-[10] group-hover:text-white xl:text-sm text-xs font-bold bg-no-repeat bg-right xl:pr-7 lg:pr-4 text-white"><?php echo $header_settings_help_btn_text; ?>
 						</a></button>
 				</li>
 
@@ -189,7 +189,7 @@
 
 
 			<div class="ml-auto mr-3">
-				<button id="openFormBtnnn" class="btn-arrow group group bg-[#008000] hover:bg-black transition-all rounded-none sm:py-3 sm:px-6 py-2 px-3  border  border-[#008000] lg:hidden "><a href="javascript:void(0)" class="brightness-[10] group-hover:text-white sm:text-sm text-xs font-bold bg-no-repeat bg-right sm:pr-7 pr-5 text-white"><?php echo $header_settings_help_btn_text; ?>
+				<button id="openFormBtnnn openFormBtnn" class="btn-arrow group group bg-[#008000] hover:bg-black transition-all rounded-none sm:py-3 sm:px-6 py-2 px-3  border  border-[#008000] lg:hidden "><a href="javascript:void(0)" class="brightness-[10] group-hover:text-white sm:text-sm text-xs font-bold bg-no-repeat bg-right sm:pr-7 pr-5 text-white"><?php echo $header_settings_help_btn_text; ?>
 					</a></button>
 			</div>
 		</div>
