@@ -445,11 +445,15 @@ $('#playButton').click(function () {
    var mediaVideo = $("#myVideo").get(0);
    var playImage = document.getElementById("playImage");
    var pauseImage = document.getElementById("pauseImage");
-
    playImage.classList.toggle("hidden");
         pauseImage.classList.toggle("hidden");
    if (mediaVideo.paused) {
        mediaVideo.play();
+       setTimeout(function() {
+            pauseImage.classList.add("opacity-0");
+          
+           
+        }, 1000);
    } else {
        mediaVideo.pause();
        
