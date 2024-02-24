@@ -221,9 +221,9 @@ if ($page_id_string != 'page-id-18') { ?>
 
 </footer>
 <script>
-	let openModalBtn = document.getElementById("openFormBtnnn");
+	let openModalBtn = document.getElementById("openFormBtnn");
 	let modal = document.getElementById("myFormmm");
-	let closeModalBtn = document.getElementById("closeFormBtnnn");
+	let closeModalBtn = document.getElementById("closeFormBtnn");
 
 	openModalBtn.addEventListener("click", function() {
 		modal.style.display = "block";
