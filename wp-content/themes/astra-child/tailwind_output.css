@@ -3430,10 +3430,10 @@ a:hover{
 }
 
 .popup_form textarea{
-  border: 0;
+  border-radius: 0;
 }
 
-.popup_form input .font-michroma{
+.popup_form input.font-michroma{
   background-color: #000;
   font-family: "Michroma", sans-serif;
 }
