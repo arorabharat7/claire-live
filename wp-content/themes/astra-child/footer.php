@@ -428,7 +428,7 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 
 
 <script>
-	let openModalBtns = document.querySelectorAll(".openFormBtnn");
+	let openModalBtn = document.querySelectorAll(".openFormBtnn");
 	let modal = document.getElementById("myFormm");
 	let closeModalBtn = document.getElementById("closeFormBtnn");
 

@@ -221,7 +221,7 @@ if ($page_id_string != 'page-id-18') { ?>
 
 </footer>
 <script>
-	let openModalBtns = document.querySelectorAll(".openFormBtnn");
+	let openModalBtn = document.querySelectorAll(".openFormBtnn");
 	let modal = document.getElementById("myFormmm");
 	let closeModalBtn = document.getElementById("closeFormBtnn");
 
