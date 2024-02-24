@@ -182,7 +182,7 @@ if ($page_id_string != 'page-id-18') { ?>
 					$footer_settings_copyright_text = get_field('footer_settings_copyright_text', 'option');
 
 					?>
-					<li><button id="openFormBtnnn" class="group hover:bg-black transition-all btn-arrow rounded-none  py-3 px-9 border border-i-primary lg:mt-2.5 mt-1.5">
+					<li><button class="openFormBtnn" id="openFormBtnnn" class="group hover:bg-black transition-all btn-arrow rounded-none  py-3 px-9 border border-i-primary lg:mt-2.5 mt-1.5">
 							<a href="javascript:void(0) " class="group-hover:brightness-[10] group-hover:text-white text-17 font-bold bg-no-repeat bg-right pr-7"><?php echo $footer_settings_consult_btn_text; ?> </a></button></li>
 				</ul>
 				<div id="myFormmm" class="modal hidden fixed left-0 top-0 w-full h-full overflow-auto bg-black/[0.7] z-50">
@@ -221,7 +221,7 @@ if ($page_id_string != 'page-id-18') { ?>
 
 </footer>
 <script>
-	let openModalBtn = document.getElementById("openFormBtnn");
+	let openModalBtns = document.querySelectorAll(".openFormBtnn");
 	let modal = document.getElementById("myFormmm");
 	let closeModalBtn = document.getElementById("closeFormBtnn");
 
