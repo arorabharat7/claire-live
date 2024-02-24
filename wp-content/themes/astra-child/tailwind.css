@@ -204,7 +204,13 @@ border-radius: 0;
 .modal-content .wpcf7-response-output{
   color: #000000;
 }
-
+.popup_form textarea{
+  border: 0;
+}
+.popup_form input .font-michroma{
+  background-color: #000;
+  font-family: "Michroma", sans-serif;
+}
 @media screen and (min-width:1600px){
 
 .navbar li:nth-child(3):before,
