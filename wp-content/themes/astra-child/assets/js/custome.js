@@ -144,7 +144,7 @@ var swiper = new Swiper(".claire_team", {
   slidesPerView: 2,
   spaceBetween: 10,
   autoplay: true,
-  infinite: true,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
