@@ -3450,6 +3450,15 @@ a:hover{
   opacity: 1;
 }
 
+.popup_form button input {
+  background-color: #000;
+  font-family: "Michroma", sans-serif;
+}
+
+#contact-form .wpcf7-response-output {
+  color: #000 !important;
+}
+
 @media screen and (min-width:1600px){
   .navbar li:nth-child(3):before,
 .navbar li:nth-child(4):before,
@@ -3747,6 +3756,11 @@ a:hover{
   width: 100%;
 }
 
+.hover\:before\:bg-\[rgb\(0\2c 0\2c 0\2c 0\.5\)\]:hover::before {
+  content: var(--tw-content);
+  background-color: rgb(0,0,0,0.5);
+}
+
 .hover\:before\:bg-\[rgb\(0\2c 0\2c 0\2c 0\.8\)\]:hover::before {
   content: var(--tw-content);
   background-color: rgb(0,0,0,0.8);
@@ -3777,10 +3791,6 @@ a:hover{
 
 .focus-visible\:outline-0:focus-visible {
   outline-width: 0px;
-}
-
-.group:hover .group-hover\:h-1\/2 {
-  height: 50%;
 }
 
 .group:hover .group-hover\:h-3\/4 {

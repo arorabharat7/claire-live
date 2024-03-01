@@ -200,7 +200,7 @@ $all_projects_section_main_heading = get_field('all_projects_section_main_headin
                     <a href="<?php echo $production_services_btn_url; ?>">
                         <div class="group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]  overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
                             <img src="<?php echo $common_production_services_section_all_details_image['url']; ?>" width="<?php echo $common_production_services_section_all_details_image['width']; ?>" height="<?php echo $common_production_services_section_all_details_image['height']; ?>" alt="<?php echo $common_production_services_section_all_details_image['alt']; ?>" class="w-full">
-                            <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 group-hover:h-1/2  overflow-hidden">
+                            <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 group-hover:h-3/5  overflow-hidden">
                                 <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                                     <?php echo $common_production_services_section_all_details_heading; ?></h3>
                                 <p class="lg:text-17 text-sm text-white font-bold "><?php echo $common_production_services_section_all_details_description; ?></p>
