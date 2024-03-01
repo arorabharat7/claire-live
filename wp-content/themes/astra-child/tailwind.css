@@ -218,6 +218,13 @@ border-radius: 0;
 #playButton #pauseImage:hover {
   opacity: 1;
 }
+.popup_form button input {
+  background-color: #000;
+  font-family: "Michroma", sans-serif;
+}
+#contact-form .wpcf7-response-output {
+  color: #000 !important;
+}
 @media screen and (min-width:1600px){
 
 .navbar li:nth-child(3):before,
