@@ -128,11 +128,11 @@ var swiper = new Swiper(".claire-project", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 6,
+      slidesPerView: 3,
       spaceBetween: 30,
     },
     1024: {
-      slidesPerView: 6,
+      slidesPerView: 4,
       spaceBetween: 30,
     },
   },
@@ -151,11 +151,11 @@ var swiper = new Swiper(".claire_team", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 30,
     },
     1024: {
-      slidesPerView: 6,
+      slidesPerView: 4,
       spaceBetween: 30,
     },
   },

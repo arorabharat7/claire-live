@@ -3761,14 +3761,14 @@ a:hover{
   background-color: rgb(0,0,0,0.5);
 }
 
-.hover\:before\:bg-\[rgb\(0\2c 0\2c 0\2c 0\.8\)\]:hover::before {
-  content: var(--tw-content);
-  background-color: rgb(0,0,0,0.8);
-}
-
 .hover\:before\:bg-\[rgb\(0\2c 0\2c 0\2c 0\.6\)\]:hover::before {
   content: var(--tw-content);
   background-color: rgb(0,0,0,0.6);
+}
+
+.hover\:before\:bg-\[rgb\(0\2c 0\2c 0\2c 0\.8\)\]:hover::before {
+  content: var(--tw-content);
+  background-color: rgb(0,0,0,0.8);
 }
 
 .before\:hover\:text-center:hover::before {
@@ -4064,10 +4064,6 @@ a:hover{
   .md\:my-6 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-  }
-
-  .md\:-mr-48 {
-    margin-right: -12rem;
   }
 
   .md\:mb-10 {
@@ -4457,10 +4453,6 @@ a:hover{
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
-  }
-
-  .lg\:-mr-96 {
-    margin-right: -24rem;
   }
 
   .lg\:mb-11 {
