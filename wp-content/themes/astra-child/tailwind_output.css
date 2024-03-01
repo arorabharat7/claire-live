@@ -3766,6 +3766,11 @@ a:hover{
   background-color: rgb(0,0,0,0.8);
 }
 
+.hover\:before\:bg-\[rgb\(0\2c 0\2c 0\2c 0\.6\)\]:hover::before {
+  content: var(--tw-content);
+  background-color: rgb(0,0,0,0.6);
+}
+
 .before\:hover\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
