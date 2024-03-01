@@ -3285,6 +3285,10 @@ body.open .navigation-menu__labels {
   border-radius: 0px;
 }
 
+.claire-portfolio span.swiper-pagination-bullet{
+  width:35px;
+}
+
 #portfolio-box .active .overlay-loader {
   position: absolute;
   right: 0;
@@ -3481,7 +3485,7 @@ a:hover{
   .claire-portfolio span.swiper-pagination-bullet,
   .claire-project span.swiper-pagination-bullet,
   .claire_team span.swiper-pagination-bullet {
-    width:30px;
+    width:25px;
   }
 
   .protofolio-box .width-full{
