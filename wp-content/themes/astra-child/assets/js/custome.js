@@ -128,11 +128,11 @@ var swiper = new Swiper(".claire-project", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 3,
+      slidesPerView: 6,
       spaceBetween: 30,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 6,
       spaceBetween: 30,
     },
   },
@@ -142,7 +142,7 @@ var swiper = new Swiper(".claire-project", {
 
 var swiper = new Swiper(".claire_team", {
   slidesPerView: 2,
-  spaceBetween: 20,
+  spaceBetween: 10,
   autoplay: true,
   infinite: true,
   pagination: {
@@ -151,11 +151,11 @@ var swiper = new Swiper(".claire_team", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 30,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 6,
       spaceBetween: 30,
     },
   },
