@@ -244,12 +244,11 @@ $how_we_work_contact_btn_url  = get_field('how_we_work_contact_btn_url');
 
 
 <section class="our-team overflow-hidden">
-    <div class="container m-auto">
         <?php $our_people_main_heading = get_field('our_people_main_heading'); ?>
         <h2
             class="lg:text-4xl md:text-3xl  text-2xl font-michroma text-black relative text-center uppercase after:content-[''] after:absolute after:w-24 after:h-[1px] after:bottom-0 lg:pb-6 pb-3 after:left-[50%] after:translate-x-[-50%] after:bg-black">
             <?php echo $our_people_main_heading; ?></h2>
-        <div class="lg:-mr-96 md:-mr-48  lg:mt-12 md:mt-10 mt-6">
+        <div class=" lg:mt-12 md:mt-10 mt-6">
             <div class="swiper claire_team ">
                 <div class="swiper-wrapper lg:mb-16 md:mb-14 mb-10">
                     <?php if (have_rows('our_people_all_details')) :
@@ -294,8 +293,6 @@ $how_we_work_contact_btn_url  = get_field('how_we_work_contact_btn_url');
 
 
 
-
-    </div>
 </section>
 
 
