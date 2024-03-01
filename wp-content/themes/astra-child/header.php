@@ -143,7 +143,7 @@
 
 					?>
 							<a href="<?php echo $global_settings_contact_details_url; ?>" class="2xl:text-base text-xs  uppercase font-michroma " ;>
-								<?php echo $global_settings_contact_details_text; ?></a><br>
+								<?php echo $global_settings_contact_details_text; ?> <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_footer_whatsapp.svg"> </a><br>
 					<?php
 							$i++;
 						endwhile;
