@@ -26,13 +26,13 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 ?>
 <section class="hero">
     <div class="relative before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.4)]">
-        <?php if (!empty($hero_banner_video)){ ?>
+        <?php if (!empty($hero_banner_video)) { ?>
             <video autoplay muted loop playsinline preload="metadata" class="w-full xl:h-[34rem] lg:h-[30rem] object-cover">
-        <source src="<?php echo $hero_banner_video; ?>" type="video/mp4">
-      </video>
-        <?php }else{ ?>
+                <source src="<?php echo $hero_banner_video; ?>" type="video/mp4">
+            </video>
+        <?php } else { ?>
             <img class="w-full min-h-64 object-cover" src="<?php echo $hero_banner_section_image['url']; ?>" width="<?php echo $hero_banner_section_image['width']; ?>" height="<?php echo $hero_banner_section_image['height']; ?>" alt="<?php echo $hero_banner_section_image['alt']; ?>">
-            <?php } ?>
+        <?php } ?>
         <h1 class="absolute text-center xl:text-5xl uppercase md:text-5xl sm:text-4xl text-3xl  top-2/4 left-2/4 text-white transform-middle break-keep w-full">
             <?php echo $hero_banner_section_heading; ?></h1>
     </div>
@@ -108,8 +108,8 @@ $our_services_section_main_heading = get_field('our_services_section_main_headin
                 ?>
                 <h3 class="lg:text-2xl lg:pt-0 md:pt-12 pt-10 text-xl uppercase font-michroma text-black text-right border-b border-solid border-[#cfcfcf] pb-5">
                     <?php echo  $our_services_text_section_main_heading; ?></h3>
-                
-                    <?php echo  $our_services_text_section_description; ?>
+
+                <?php echo  $our_services_text_section_description; ?>
                 <div class="flex justify-end items-center">
                     <button class="openFormBtn group hover:bg-white transition-all rounded-none btn-arrow bg-black py-3 lg:px-9 px-5 border border-black">
                         <a href=" javascript:void(0)" class="group-hover:brightness-[0] group-hover:text-black lg:text-17 md:text-base text-sm  bg-no-repeat bg-right pr-7 font-michroma text-white brightness-[10]">
@@ -131,16 +131,15 @@ $all_projects_section_main_heading = get_field('all_projects_section_main_headin
 
 <?php $all_projects_section_sub_heading = get_field('all_projects_section_sub_heading'); ?>
 <section class="projects lg:py-12 md:py-10 py-6">
-    <div class="container m-auto">
-        <h2
-            class="text-right lg:mb-20 md:mb-12 mb-10 text-17 font-michroma text-[#030303] relative pr-6 uppercase after:content-[''] after:absolute after:w-52 after:h-[1px] md:after:bottom-[-20px] after:bottom-[-10px] after:right-6 after:bg-[#030303]">
-            ALL PROJECTS</h2>
-      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper claire-project ">
    
-        <?php echo do_shortcode('[portfolio_category_posts]'); ?>
+        <h2 class="text-right lg:mb-20 md:mb-12 mb-10 text-17 font-michroma text-[#030303] relative pr-6 uppercase after:content-[''] after:absolute after:w-52 after:h-[1px] md:after:bottom-[-20px] after:bottom-[-10px] after:right-6 after:bg-[#030303]">
+            ALL PROJECTS</h2>
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper claire-project ">
 
-    </div> 
-    </div>
+            <?php echo do_shortcode('[portfolio_category_posts]'); ?>
+
+        </div>
+    
 </section>
 
 
@@ -195,20 +194,20 @@ $all_projects_section_main_heading = get_field('all_projects_section_main_headin
                     $production_services_btn_url = get_sub_field('common_production_services_section_all_details_btn_url');
                     $production_services_btn_text = get_sub_field('common_production_services_section_all_details_btn_text');
             ?>
-           
+
                     <div class="lg:!col-span-4 sm:!col-span-6 col-span-12">
-                    <a href="<?php echo $production_services_btn_url; ?>">
-                        <div class="group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.6)]  overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
-                            <img src="<?php echo $common_production_services_section_all_details_image['url']; ?>" width="<?php echo $common_production_services_section_all_details_image['width']; ?>" height="<?php echo $common_production_services_section_all_details_image['height']; ?>" alt="<?php echo $common_production_services_section_all_details_image['alt']; ?>" class="w-full">
-                            <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 group-hover:h-3/5  overflow-hidden">
-                                <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
-                                    <?php echo $common_production_services_section_all_details_heading; ?></h3>
-                                <p class="lg:text-17 text-sm text-white font-bold "><?php echo $common_production_services_section_all_details_description; ?></p>
+                        <a href="<?php echo $production_services_btn_url; ?>">
+                            <div class="group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.6)]  overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
+                                <img src="<?php echo $common_production_services_section_all_details_image['url']; ?>" width="<?php echo $common_production_services_section_all_details_image['width']; ?>" height="<?php echo $common_production_services_section_all_details_image['height']; ?>" alt="<?php echo $common_production_services_section_all_details_image['alt']; ?>" class="w-full">
+                                <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 group-hover:h-3/5  overflow-hidden">
+                                    <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
+                                        <?php echo $common_production_services_section_all_details_heading; ?></h3>
+                                    <p class="lg:text-17 text-sm text-white font-bold "><?php echo $common_production_services_section_all_details_description; ?></p>
+                                </div>
                             </div>
-                        </div>
                         </a>
                     </div>
-                   
+
             <?php
 
                 endwhile;
@@ -285,35 +284,35 @@ $about_us_section_main_image = get_field('about_us_section_main_image');
         <?php echo $about_us_section_main_heading; ?></h2>
 
     <div class="container m-auto">
-    <div class="grid grid-cols-12 lg:gap-0 md:gap-10 gap-5 items-center lg:mt-10 md:mt-8 mt-6">
-        <div class="lg:col-span-6 col-span-12 lg:order-1 order-2">
+        <div class="grid grid-cols-12 lg:gap-0 md:gap-10 gap-5 items-center lg:mt-10 md:mt-8 mt-6">
+            <div class="lg:col-span-6 col-span-12 lg:order-1 order-2">
 
-            <div class="border border-black lg:ml-10 lg:mr-0 md:mx-5 mx-3 lg:p-10 md:p-7 p-4 lg:border-r-0">
-                <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black ">
-                    <?php echo $about_us_section_sub_heading; ?></h3>
+                <div class="border border-black lg:ml-10 lg:mr-0 md:mx-5 mx-3 lg:p-10 md:p-7 p-4 lg:border-r-0">
+                    <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black ">
+                        <?php echo $about_us_section_sub_heading; ?></h3>
 
-                <p class="lg:text-17 md:text-base text-sm text-light-grey md:my-5 my-3">
-                    <?php echo $about_us_section_all_details; ?></p>
+                    <p class="lg:text-17 md:text-base text-sm text-light-grey md:my-5 my-3">
+                        <?php echo $about_us_section_all_details; ?></p>
 
-                <div class="flex justify-end items-center">
-                    <button class="group hover:bg-black transition-all rounded-none btn-arrow  py-3 lg:px-9 md:px-5 px-3 border border-i-primary">
-                        <a href="<?php echo $about_us_section_btn_url; ?>" class="group-hover:brightness-[10] group-hover:text-white lg:text-17 text-base bg-no-repeat bg-right pr-7 font-michroma">
-                            <?php echo $about_us_section_btn_text; ?> </a></button>
+                    <div class="flex justify-end items-center">
+                        <button class="group hover:bg-black transition-all rounded-none btn-arrow  py-3 lg:px-9 md:px-5 px-3 border border-i-primary">
+                            <a href="<?php echo $about_us_section_btn_url; ?>" class="group-hover:brightness-[10] group-hover:text-white lg:text-17 text-base bg-no-repeat bg-right pr-7 font-michroma">
+                                <?php echo $about_us_section_btn_text; ?> </a></button>
 
-                    
+
+                    </div>
+
                 </div>
 
+
+            </div>
+
+            <div class="lg:col-span-6 col-span-12 lg:ml-0 lg:mr-0 md:mx-5 mx-3 lg:order-2 order-1">
+                <img src="<?php echo $about_us_section_main_image['url']; ?>" width="<?php echo $about_us_section_main_image['width']; ?>" height="<?php echo $about_us_section_main_image['height']; ?>" alt="<?php echo $about_us_section_main_image['alt']; ?>" class="w-full 2xl:h-[580px] object-cover  xl:h-auto lg:h-[revert-layer]">
             </div>
 
 
         </div>
-
-        <div class="lg:col-span-6 col-span-12 lg:ml-0 lg:mr-0 md:mx-5 mx-3 lg:order-2 order-1">
-            <img src="<?php echo $about_us_section_main_image['url']; ?>" width="<?php echo $about_us_section_main_image['width']; ?>" height="<?php echo $about_us_section_main_image['height']; ?>" alt="<?php echo $about_us_section_main_image['alt']; ?>" class="w-full 2xl:h-[580px] object-cover  xl:h-auto lg:h-[revert-layer]">
-        </div>
-
-
-    </div>
     </div>
 
 </section>
