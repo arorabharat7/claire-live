@@ -27,18 +27,45 @@ get_header(); ?>
             <div class="flex gap-0 justify-center mb-2 width-full">
                 <?php
                 $portfolio_categories = get_terms(array(
-                    'taxonomy' => 'portfolio_category', // Replace 'portfolio_category' with the actual taxonomy slug
+                    'taxonomy'   => 'portfolio_category', // Replace 'portfolio_category' with the actual taxonomy slug
                     'hide_empty' => false, // Set to true if you only want to retrieve categories with posts assigned to them
                 ));
 
                 if (!empty($portfolio_categories) && !is_wp_error($portfolio_categories)) {
 
+                    // Initialize an array to store categories except "Other"
+                    $categories_except_other = array();
+                    // Initialize a variable to store "Other" category
+                    $other_category = null;
+
                     // Loop through each category
                     foreach ($portfolio_categories as $category) {
-                        // Output the category name and link
+                        // Check if the category name is "Other"
+                        if ($category->name === 'Other') {
+                            // Store "Other" category in the separate variable
+                            $other_category = $category;
+                        } else {
+                            // Store other categories in the array
+                            $categories_except_other[] = $category;
+                        }
+                    }
 
+                    // Loop through categories except "Other"
+                    foreach ($categories_except_other as $category) {
+                        // Output the category name and link
                 ?>
-                        <button data-category="<?php echo esc_html($category->slug); ?>" class="relative rounded-none tab_btns  btn p-2.5 border text-sm w-44 hover:bg-black hover:text-white transition-all hover:font-bold uppercase border-black" id="<?php echo esc_html($category->slug); ?>"><?php echo esc_html($category->name); ?><div class="overlay-loader" style="display:none"></div></button>
+                        <button data-category="<?php echo esc_html($category->slug); ?>" class="relative rounded-none tab_btns  btn p-2.5 border text-sm w-44 hover:bg-black hover:text-white transition-all hover:font-bold uppercase border-black" id="<?php echo esc_html($category->slug); ?>"><?php echo esc_html($category->name); ?>
+                            <div class="overlay-loader" style="display:none"></div>
+                        </button>
+                    <?php
+                    }
+
+                    // Output the "Other" category if it's not empty
+                    if ($other_category) {
+                    ?>
+                        <button data-category="<?php echo esc_html($other_category->slug); ?>" class="relative rounded-none tab_btns  btn p-2.5 border text-sm w-44 hover:bg-black hover:text-white transition-all hover:font-bold uppercase border-black" id="<?php echo esc_html($other_category->slug); ?>"><?php echo esc_html($other_category->name); ?>
+                            <div class="overlay-loader" style="display:none"></div>
+                        </button>
                 <?php
                     }
                 } else {
