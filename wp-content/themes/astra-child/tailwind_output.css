@@ -3537,6 +3537,21 @@ a:hover{
   border-radius: 0px;
 }
 
+.post-type-archive-portfolio .protofolio-box .claire-portfolio span.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+  height: 4px;
+  width: 56px;
+  border-radius: 0px;
+}
+
+.post-type-archive-portfolio  .contact-us {
+  background-color: #fff !important;
+}
+
+.post-type-archive-portfolio .protofolio-box {
+  background-color: #fff !important;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
