@@ -41,7 +41,7 @@ get_header(); ?>
                     // Loop through each category
                     foreach ($portfolio_categories as $category) {
                         // Check if the category name is "Other"
-                        if ($category->name === 'Other') {
+                        if ($category->name === 'others') {
                             // Store "Other" category in the separate variable
                             $other_category = $category;
                         } else {
