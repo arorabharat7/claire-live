@@ -314,3 +314,13 @@ border-radius: 0;
 
 
  }
+
+
+
+
+ .protofolio-box .claire-portfolio span.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+  height: 4px;
+  width: 56px;
+  border-radius: 0px;
+}

@@ -81,7 +81,7 @@
 							?>
 									<a href="<?php echo $global_settings_contact_details_url; ?>" class="xl:text-sm text-xs xl:pb-5 md:pb-3 pb-2 inline-block  uppercase font-michroma " ;>
 
-										<img class="inline-block mr-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_whatsapp.svg" width="30" height="30" alt="claire_whatsapp">
+									<img src="<?php echo $global_settings_contact_details_type_image['url']; ?>" class="inline"  width="30" height="30" alt="claire_whatsapp">
 
 										<?php echo $global_settings_contact_details_text; ?></a><br>
 							<?php
@@ -143,7 +143,7 @@
 
 					?>
 							<a href="<?php echo $global_settings_contact_details_url; ?>" class="2xl:text-base text-xs  uppercase font-michroma " ;>
-								<?php echo $global_settings_contact_details_text; ?> <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_footer_whatsapp.svg"> </a><br>
+							<img src="<?php echo $global_settings_contact_details_type_image['url']; ?>" class="inline" style="width:1rem;"><?php echo $global_settings_contact_details_text; ?>  </a><br>
 					<?php
 							$i++;
 						endwhile;
