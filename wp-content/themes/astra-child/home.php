@@ -53,14 +53,15 @@ $our_services_section_main_heading = get_field('our_services_section_main_headin
 
                             // Loop through rows.
                             while (have_rows('our_services_section_slider_details')) : the_row();
-
+                            $image_dimensions = 'width: 790px; height: 535px;';
                                 // Load sub field value.
                                 $our_services_section_slider_details_main_images = get_sub_field('our_services_section_slider_details_main_images');
                         ?>
+                         <?php if(!empty($our_services_section_slider_details_main_images)){ ?>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo $our_services_section_slider_details_main_images['url']; ?>" width="801" height="580" alt="<?php echo $our_services_section_slider_details_main_images['alt']; ?>" class="w-full">
+                                    <img style="<?php echo $image_dimensions; ?>"  src="<?php echo $our_services_section_slider_details_main_images['url']; ?>" width="801" height="580" alt="<?php echo $our_services_section_slider_details_main_images['alt']; ?>" class="w-full">
                                 </div>
-                        <?php
+                        <?php }
 
                             endwhile;
                         endif; ?>
@@ -76,20 +77,21 @@ $our_services_section_main_heading = get_field('our_services_section_main_headin
 
                 </div>
 
-                <div thumbsSlider="" class="swiper claire-service-small xl:!pb-9 lg:!pb-8 !pb-0   lg:mt-[-10rem] md:mt-[-9.5rem] sm:mt-[-8rem] mt-[-9rem] w-[96%] m-auto">
+                <div thumbsSlider="" class="swiper claire-service-small xl:!pb-6 lg:!pb-6 !pb-0   lg:mt-[-10rem] md:mt-[-9.5rem] sm:mt-[-8rem] mt-[-9rem] w-[96%] m-auto">
                     <div class="swiper-wrapper ">
                         <?php if (have_rows('our_services_section_small_slider_details')) :
 
                             // Loop through rows.
                             while (have_rows('our_services_section_small_slider_details')) : the_row();
-
+                            $image_dimensions = 'width: 140px; height: 100px;';
                                 // Load sub field value.
                                 $our_services_section_small_slider_details_images = get_sub_field('our_services_section_small_slider_details_images');
                         ?>
+                        <?php if(!empty($our_services_section_small_slider_details_images)){ ?>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo $our_services_section_small_slider_details_images['url']; ?>" width="141" height="100" alt="<?php echo $our_services_section_small_slider_details_images['alt']; ?>" class="w-full  cursor-pointer">
+                                    <img style="<?php echo $image_dimensions; ?>" src="<?php echo $our_services_section_small_slider_details_images['url']; ?>" width="141" height="100" alt="<?php echo $our_services_section_small_slider_details_images['alt']; ?>" class="w-full  cursor-pointer">
                                 </div>
-                        <?php
+                        <?php }
 
                             endwhile;
                         endif; ?>
@@ -105,11 +107,12 @@ $our_services_section_main_heading = get_field('our_services_section_main_headin
                 $our_services_text_section_description = get_field('our_services_text_section_description');
                 $our_services_text_section_btn_url = get_field('our_services_text_section_btn_url');
                 $our_services_text_section_btn_text = get_field('our_services_text_section_btn_text');
+                $our_services_text_section_main_heading_url = get_field('our_services_text_section_main_heading_url');
                 ?>
-                <h3 class="lg:text-2xl lg:pt-0 md:pt-12 pt-10 text-xl uppercase font-michroma text-black text-right border-b border-solid border-[#cfcfcf] pb-5">
-                    <?php echo  $our_services_text_section_main_heading; ?></h3>
-
-                <?php echo  $our_services_text_section_description; ?>
+                <a href="<?php echo $our_services_text_section_main_heading_url; ?>"><h3 class="lg:text-2xl lg:pt-0 md:pt-12 pt-10 text-xl uppercase font-michroma text-black text-right border-b border-solid border-[#cfcfcf] pb-5">
+                    <?php echo  $our_services_text_section_main_heading; ?></h3></a>
+                
+                    <?php echo  $our_services_text_section_description; ?>
                 <div class="flex justify-end items-center">
                     <button class="openFormBtn group hover:bg-white transition-all rounded-none btn-arrow bg-black py-3 lg:px-9 px-5 border border-black">
                         <a href=" javascript:void(0)" class="group-hover:brightness-[0] group-hover:text-black lg:text-17 md:text-base text-sm  bg-no-repeat bg-right pr-7 font-michroma text-white brightness-[10]">
@@ -131,15 +134,16 @@ $all_projects_section_main_heading = get_field('all_projects_section_main_headin
 
 <?php $all_projects_section_sub_heading = get_field('all_projects_section_sub_heading'); ?>
 <section class="projects lg:py-12 md:py-10 py-6">
-   
-        <h2 class="text-right lg:mb-20 md:mb-12 mb-10 text-17 font-michroma text-[#030303] relative pr-6 uppercase after:content-[''] after:absolute after:w-52 after:h-[1px] md:after:bottom-[-20px] after:bottom-[-10px] after:right-6 after:bg-[#030303]">
-            ALL PROJECTS</h2>
-        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper claire-project ">
-
-            <?php echo do_shortcode('[portfolio_category_posts]'); ?>
-
-        </div>
     
+        <a href="<?php echo home_url(); ?>/portfolio/"><h2
+            class="text-right lg:mb-20 md:mb-12 mb-10 text-17 font-michroma text-[#030303] relative pr-6 uppercase after:content-[''] after:absolute after:w-52 after:h-[1px] md:after:bottom-[-20px] after:bottom-[-10px] after:right-6 after:bg-[#030303]">
+            ALL PROJECTS</h2></a>
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper claire-project ">
+   
+        <?php echo do_shortcode('[portfolio_category_posts]'); ?>
+
+    
+    </div>
 </section>
 
 
@@ -192,7 +196,9 @@ $all_projects_section_main_heading = get_field('all_projects_section_main_headin
                     $common_production_services_section_all_details_heading = get_sub_field('common_production_services_section_all_details_heading');
                     $common_production_services_section_all_details_description = get_sub_field('common_production_services_section_all_details_description');
                     $production_services_btn_url = get_sub_field('common_production_services_section_all_details_btn_url');
+                    
                     $production_services_btn_text = get_sub_field('common_production_services_section_all_details_btn_text');
+                    $description = substr($common_production_services_section_all_details_description, 0, 175);
             ?>
 
                     <div class="lg:!col-span-4 sm:!col-span-6 col-span-12">
@@ -202,7 +208,7 @@ $all_projects_section_main_heading = get_field('all_projects_section_main_headin
                                 <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 group-hover:h-3/5  overflow-hidden">
                                     <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                                         <?php echo $common_production_services_section_all_details_heading; ?></h3>
-                                    <p class="lg:text-17 text-sm text-white font-bold "><?php echo $common_production_services_section_all_details_description; ?></p>
+                                    <p class="lg:text-17 text-sm text-white font-bold "><?php echo $description; ?></p>
                                 </div>
                             </div>
                         </a>
@@ -268,54 +274,6 @@ $all_projects_section_main_heading = get_field('all_projects_section_main_headin
 </section>
 
 
-
-<?php
-$about_us_section_main_heading = get_field('about_us_section_main_heading');
-$about_us_section_sub_heading = get_field('about_us_section_sub_heading');
-$about_us_section_all_details = get_field('about_us_section_all_details');
-
-$about_us_section_btn_url = get_field('about_us_section_btn_url');
-$about_us_section_btn_text = get_field('about_us_section_btn_text');
-$about_us_section_main_image = get_field('about_us_section_main_image');
-?>
-<section class="about-us lg:pt-100 md:pt-60 pt-6">
-
-    <h2 class="lg:text-4xl md:text-3xl  text-2xl font-michroma text-black relative text-center uppercase after:content-[''] after:absolute after:w-24 after:h-[1px] after:bottom-0 lg:pb-6 pb-3 after:left-[50%] after:translate-x-[-50%] after:bg-black">
-        <?php echo $about_us_section_main_heading; ?></h2>
-
-    <div class="container m-auto">
-        <div class="grid grid-cols-12 lg:gap-0 md:gap-10 gap-5 items-center lg:mt-10 md:mt-8 mt-6">
-            <div class="lg:col-span-6 col-span-12 lg:order-1 order-2">
-
-                <div class="border border-black lg:ml-10 lg:mr-0 md:mx-5 mx-3 lg:p-10 md:p-7 p-4 lg:border-r-0">
-                    <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black ">
-                        <?php echo $about_us_section_sub_heading; ?></h3>
-
-                    <p class="lg:text-17 md:text-base text-sm text-light-grey md:my-5 my-3">
-                        <?php echo $about_us_section_all_details; ?></p>
-
-                    <div class="flex justify-end items-center">
-                        <button class="group hover:bg-black transition-all rounded-none btn-arrow  py-3 lg:px-9 md:px-5 px-3 border border-i-primary">
-                            <a href="<?php echo $about_us_section_btn_url; ?>" class="group-hover:brightness-[10] group-hover:text-white lg:text-17 text-base bg-no-repeat bg-right pr-7 font-michroma">
-                                <?php echo $about_us_section_btn_text; ?> </a></button>
-
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-            <div class="lg:col-span-6 col-span-12 lg:ml-0 lg:mr-0 md:mx-5 mx-3 lg:order-2 order-1">
-                <img src="<?php echo $about_us_section_main_image['url']; ?>" width="<?php echo $about_us_section_main_image['width']; ?>" height="<?php echo $about_us_section_main_image['height']; ?>" alt="<?php echo $about_us_section_main_image['alt']; ?>" class="w-full 2xl:h-[580px] object-cover  xl:h-auto lg:h-[revert-layer]">
-            </div>
-
-
-        </div>
-    </div>
-
-</section>
 
 
 

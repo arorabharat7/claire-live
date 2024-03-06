@@ -3655,6 +3655,11 @@ a:hover{
   --tw-gradient-to: rgb(0,0,0,0.81) var(--tw-gradient-to-position);
 }
 
+.before\:to-\[rgb\(0\2c 0\2c 0\2c 0\.31\)\]::before {
+  content: var(--tw-content);
+  --tw-gradient-to: rgb(0,0,0,0.31) var(--tw-gradient-to-position);
+}
+
 .before\:content-\[\'\'\]::before {
   --tw-content: '';
   content: var(--tw-content);
@@ -4809,6 +4814,10 @@ a:hover{
     padding-top: 2rem;
   }
 
+  .lg\:\!pb-6 {
+    padding-bottom: 1.5rem !important;
+  }
+
   .lg\:text-17 {
     font-size: 1rem;
   }
@@ -4982,6 +4991,10 @@ a:hover{
 
   .xl\:pt-100 {
     padding-top: 3rem;
+  }
+
+  .xl\:\!pb-6 {
+    padding-bottom: 1.5rem !important;
   }
 
   .xl\:text-5xl {
