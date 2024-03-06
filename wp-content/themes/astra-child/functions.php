@@ -100,12 +100,12 @@ function portfolio_category_posts_shortcode()
             while ($portfolio_query->have_posts()) {
                 $portfolio_query->the_post();
                 // Get post featured image
-                $featured_image_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
+                $featured_image_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
                 // Get post title
                 $post_title = get_the_title();
                 // Get post URL
                 $post_url = get_permalink();
-
+               
             // Start the loop
             
         ?>
@@ -115,7 +115,8 @@ function portfolio_category_posts_shortcode()
                             <?php if (has_post_thumbnail()) : ?>
                                 <?php
                                 $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-                                echo '<img class="w-full" src="' . $featured_image_url . '" alt="' . $post_title  . '" />';
+                                $image_dimensions = ' height: 210px;';
+                                echo '<img class="w-full object-cover" style="' . $image_dimensions . '" src="' . $featured_image_url . '" alt="' . $post_title  . '" />';
                                 ?>
                             <?php endif; ?>
                             <div class="absolute left-4 bottom-6">
@@ -133,8 +134,8 @@ function portfolio_category_posts_shortcode()
       
         ?>
     </div>
-    <div class="swiper-button-next !right-16 xl:!top-28 lg:!top-24 md:!top-20 sm:!top-24 !top-12"><img class="max-w-max sm:block hidden" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_project-right-arrow.svg" alt=""></div>
-    <div class="swiper-button-prev !left-16 xl:!top-28 lg:!top-24 md:!top-20 sm:!top-24 !top-12"><img class="max-w-max sm:block hidden" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_project-left-arrow.svg" alt=""></div>
+    <!-- <div class="swiper-button-next !right-16 xl:!top-28 lg:!top-24 md:!top-20 sm:!top-24 !top-12"><img class="max-w-max sm:block hidden" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_project-right-arrow.svg" alt=""></div>
+    <div class="swiper-button-prev !left-16 xl:!top-28 lg:!top-24 md:!top-20 sm:!top-24 !top-12"><img class="max-w-max sm:block hidden" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_project-left-arrow.svg" alt=""></div> -->
     <div class="swiper-pagination "></div>
 <?php }
 // Register shortcode
@@ -255,7 +256,7 @@ function fetch_portfolio_posts(){
          $page = $_POST['page'];
         $args = array(
             'post_type' => 'portfolio',
-            'posts_per_page' => 6, // Adjust the number of posts per page as needed
+            'posts_per_page' => 9, // Adjust the number of posts per page as needed
             'paged' => $page,
             'tax_query' => array(
                 array(
@@ -306,10 +307,10 @@ function fetch_portfolio_posts(){
 
                                         // Loop through each image in the gallery
                                         foreach ($gallery_images as $image) { ?>
-                                            <div class="swiper-slide !relative overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-gradient-to-b before:from-[rgb(0,0,0,0)] before:to-[rgb(0,0,0,0.81)]">
+                                            <div class="swiper-slide !relative overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-gradient-to-b before:from-[rgb(0,0,0,0)] before:to-[rgb(0,0,0,0.31)]">
                                                 <img src="<?php echo esc_url($image['url']) ?>" alt="<?php echo esc_attr($image['alt']) ?>" class="lg:!h-[352px] md:!h-[260px] h-[240px] object-cover w-full">
-                                                <h2 class="text-white lg:text-xl md:text-lg text-base font-michroma absolute left-7 bottom-16 uppercase">
-                                                    <?php the_title(); ?></h2>
+                                               <a href="<?php echo esc_url($post_url) ?>"><h2 class="text-white  md:text-lg text-base font-michroma absolute left-7 bottom-16 uppercase">
+                                                    <?php the_title(); ?></h2></a> 
                                             </div>
                                     <?php   }
                                     } else {
@@ -322,8 +323,9 @@ function fetch_portfolio_posts(){
                                 </div>
 
                                 <div class="swiper-pagination !text-left !left-7 !bottom-8 !w-3/4"></div>
-                                <a class="absolute right-7 bottom-8 z-20 inline-block" href="<?php echo esc_url($post_url) ?>">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_portfolio-Arrow.svg" width="25" height="23" alt="portfolio-Arrow"></a>
+                                <!-- <a class="absolute right-7 bottom-8 z-20 inline-block" href="<?php //echo esc_url($post_url) ?>">
+                                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_portfolio-Arrow.svg" width="25" height="23" alt="portfolio-Arrow"> 
+                                </a> -->
 
                             </div>
                 </div>
