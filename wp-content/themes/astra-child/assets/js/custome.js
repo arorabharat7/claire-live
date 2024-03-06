@@ -115,7 +115,7 @@ var swiper = new Swiper(".claire-production-full-second", {
 var swiper = new Swiper(".claire-project", {
   slidesPerView: 2,
   loop: true,
-  autoplay: false,
+  autoplay: true,
   spaceBetween: 10,
 
   navigation: {
