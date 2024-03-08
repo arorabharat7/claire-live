@@ -168,7 +168,7 @@ if ($page_id_string != 'page-id-18') { ?>
 					?>
 							<li><a href="<?php echo $global_settings_contact_details_url; ?>" class="lg:text-17 text-sm text-black uppercase font-michroma flex items-center lg:gap-2.5 gap-1">
 
-									<img src<?php echo $global_settings_contact_details_type_image['url']; ?>" width="30" height="30" alt="claire_footer_whatsapp" class="md:h-auto h-[26px] w-6">
+									<img src="<?php echo $global_settings_contact_details_type_image['url']; ?>" width="30" height="30" alt="claire_footer_whatsapp" class="md:h-auto h-[26px] w-6">
 
 									<?php echo $global_settings_contact_details_text; ?></a></li>
 					<?php
