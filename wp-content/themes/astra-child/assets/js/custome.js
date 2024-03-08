@@ -1,6 +1,6 @@
 var swiper = new Swiper(".claire-service-small", {
   loop: false,
-  autoplay: false,
+  autoplay: true,
   spaceBetween: 10,
   slidesPerView: 3,
   breakpoints: {
@@ -17,7 +17,7 @@ var swiper = new Swiper(".claire-service-small", {
 
 var swiper = new Swiper(".claire-service-full", {
   loop: false,
-  autoplay: false,
+  autoplay: true,
   spaceBetween: 0,
   pagination: {
     el: ".swiper-pagination",
