@@ -3469,7 +3469,7 @@ a:hover{
   }
 }
 
-@media screen  (min-width:1420px) and (max-width:1535px){
+@media screen and (min-width:1420px) and (max-width:1535px){
   header .navbar li a.text-sm{
     font-size: 1rem;
   }
