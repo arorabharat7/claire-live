@@ -3469,6 +3469,16 @@ a:hover{
   }
 }
 
+@media screen and (min-width:1420px) and (max-width:1535px){
+  header .navbar li a.text-sm{
+    font-size: 1rem;
+  }
+
+  header .navbar.gap-6 {
+    gap: 1.75rem;
+  }
+}
+
 @media screen and (max-width:1276px){
   .navbar li:nth-child(3):before,
   .navbar li:nth-child(4):before,
