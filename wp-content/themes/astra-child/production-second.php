@@ -47,19 +47,20 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
               // Loop through rows.
               while (have_rows('production_manufacturing_first_sec_main_image')) : the_row();
-
+              $image_dimensions = 'width: 790px; height: 535px;';
                 // Load sub field value.
                 $production_manufacturing_first_sec_image = get_sub_field('production_manufacturing_first_sec_image');
                 $tabs_id = get_sub_field('tabs_id');
             ?>
+             <?php if(!empty($production_manufacturing_second_sec_main_image)){ ?>
                 <div class="swiper-slide">
-                  <img src="<?php echo $production_manufacturing_first_sec_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
+                  <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
                 </div>
-            <?php
+            <?php }
 
               endwhile;
             endif; ?>
-
+ 
 
           </div>
 
@@ -83,13 +84,14 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
                 // Load sub field value.
                 $production_manufacturing_first_sec_small_img = get_sub_field('production_manufacturing_first_sec_small_img');
-
+                $image_dimensions = 'width: 140px; height: 100px;';
             ?>
+               <?php if(!empty($production_manufacturing_second_sec_small_image)){ ?>
                 <div class="swiper-slide">
 
-                  <img src="<?php echo $production_manufacturing_first_sec_small_img['url'] ?>" width="141" height="100" alt="clair-about-curtain" class="w-full  cursor-pointer">
+                  <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_small_img['url'] ?>" width="141" height="100" alt="clair-about-curtain" class="w-full  cursor-pointer">
                 </div>
-            <?php
+            <?php }
 
               endwhile;
             endif; ?>
@@ -145,15 +147,16 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
               // Loop through rows.
               while (have_rows('production_manufacturing_second_sec_main_image_details')) : the_row();
-
+              $image_dimensions = 'width: 790px; height: 535px;';
                 // Load sub field value.
                 $production_manufacturing_second_sec_main_image = get_sub_field('production_manufacturing_second_sec_main_image');
 
             ?>
+            <?php if(!empty($production_manufacturing_second_sec_main_image)){ ?>
                 <div class="swiper-slide">
-                  <img src="<?php echo $production_manufacturing_second_sec_main_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
+                  <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_main_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
                 </div>
-            <?php
+            <?php }
 
               endwhile;
             endif; ?>
@@ -185,11 +188,12 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
                 $production_manufacturing_second_sec_small_image = get_sub_field('production_manufacturing_second_sec_small_image');
 
             ?>
+             <?php if(!empty($production_manufacturing_second_sec_small_image)){ ?>
                 <div class="swiper-slide">
 
-                  <img src="<?php echo $production_manufacturing_second_sec_small_image['url'] ?>" width="141" height="100" alt="clair-about-curtain" class="w-full  cursor-pointer">
+                  <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_small_image['url'] ?>" width="141" height="100" alt="clair-about-curtain" class="w-full  cursor-pointer">
                 </div>
-            <?php
+            <?php }
 
               endwhile;
             endif; ?>
