@@ -52,7 +52,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
                 $production_manufacturing_first_sec_image = get_sub_field('production_manufacturing_first_sec_image');
                 $tabs_id = get_sub_field('tabs_id');
             ?>
-             <?php if(!empty($production_manufacturing_second_sec_main_image)){ ?>
+             <?php if(!empty($production_manufacturing_first_sec_image)){ ?>
                 <div class="swiper-slide">
                   <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
                 </div>
@@ -86,7 +86,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
                 $production_manufacturing_first_sec_small_img = get_sub_field('production_manufacturing_first_sec_small_img');
                 $image_dimensions = 'width: 140px; height: 100px;';
             ?>
-               <?php if(!empty($production_manufacturing_second_sec_small_image)){ ?>
+               <?php if(!empty($production_manufacturing_first_sec_small_img)){ ?>
                 <div class="swiper-slide">
 
                   <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_small_img['url'] ?>" width="141" height="100" alt="clair-about-curtain" class="w-full  cursor-pointer">
@@ -186,7 +186,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
                 // Load sub field value.
                 $production_manufacturing_second_sec_small_image = get_sub_field('production_manufacturing_second_sec_small_image');
-
+                $image_dimensions = 'width: 140px; height: 100px;';
             ?>
              <?php if(!empty($production_manufacturing_second_sec_small_image)){ ?>
                 <div class="swiper-slide">
