@@ -242,9 +242,9 @@ window.addEventListener("click", function(event) {
 });
 </script>
 <?php wp_footer(); ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/custome.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/custome.js"></script> -->
 
 
 </body>
