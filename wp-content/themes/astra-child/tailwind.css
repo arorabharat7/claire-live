@@ -239,10 +239,10 @@ border-radius: 0;
  
  }
  @media screen and (min-width:1420px) and (max-width:1535px){
-      header .navbar li a.xl:text-sm{
+      header .navbar li a.text-sm{
         font-size: 1rem;
       }
-      header .navbar.xl:gap-6 {
+      header .navbar.gap-6 {
         gap: 1.75rem;
     }
  } 
