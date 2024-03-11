@@ -286,7 +286,7 @@ $how_we_work_contact_btn_url  = get_field('how_we_work_contact_btn_url');
 
                 </div>
 
-                <div class="swiper-pagination md:!w-[80%] m-auto"></div>
+                <div class="swiper-pagination  m-auto"></div>
             </div>
         </div>
 
