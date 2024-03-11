@@ -3477,6 +3477,10 @@ a:hover{
   header .navbar.header-gap {
     gap: 1.75rem;
   }
+
+  .navbar li:nth-child(3):before, .navbar li:nth-child(4):before, .navbar li:nth-child(2):before {
+    left: -18px;
+  }
 }
 
 @media screen and (max-width:1276px){
@@ -3484,6 +3488,12 @@ a:hover{
   .navbar li:nth-child(4):before,
   .navbar li:nth-child(2):before {
     content: "";
+  }
+}
+
+@media screen and (min-width:1420px) and (max-width:1535px){
+  header .navbar.header-gap {
+    gap: 2rem;
   }
 }
 
