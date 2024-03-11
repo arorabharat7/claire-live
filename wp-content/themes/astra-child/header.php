@@ -102,7 +102,7 @@
 			<?php $logo_image = get_field('header_logo_image', 'option'); ?>
 			<a href="<?php echo home_url('/'); ?>" class="navbar-brand md:pr-6 pr-4 "><img src="<?php echo $logo_image['url']; ?>" width="220" height="61" alt="claire-logo" class="xl:w-60 lg:w-40 sm:w-60 w-40"></a>
 
-			<ul class="navbar lg:flex items-center 2xl:gap-12 xl:gap-6 lg:gap-3 hidden ml-auto">
+			<ul class="navbar header-gap lg:flex items-center 2xl:gap-12 xl:gap-6 lg:gap-3 hidden ml-auto">
 				<?php
 				$menu = 'Dekstop-Responsive Menu';
 				$args = array(
@@ -124,7 +124,7 @@
 				?>
 				<?php for ($i = 0; $i < count($items); $i++) { ?>
 					<li class="relative">
-						<a href="<?php echo $items[$i]->url; ?>" class=" 2xl:text-base xl:text-sm text-xs font-bold uppercase "><?php echo $items[$i]->title; ?></a>
+						<a href="<?php echo $items[$i]->url; ?>" class="font-rem 2xl:text-base xl:text-sm text-xs font-bold uppercase "><?php echo $items[$i]->title; ?></a>
 					</li>
 				<?php } ?>
 
