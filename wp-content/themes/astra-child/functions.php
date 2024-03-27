@@ -116,7 +116,7 @@ function portfolio_category_posts_shortcode()
                                 <?php
                                 $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
                                 $image_dimensions = ' height: 210px;';
-                                echo '<img class="w-full object-cover" style="' . $image_dimensions . '" src="' . $featured_image_url . '" alt="' . $post_title  . '" />';
+                                echo '<a href="'.the_title().'"><img class="w-full object-cover" style="' . $image_dimensions . '" src="' . $featured_image_url . '" alt="' . $post_title  . '" /></a>';
                                 ?>
                             <?php endif; ?>
                             <div class="absolute left-4 bottom-6">
