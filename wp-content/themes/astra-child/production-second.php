@@ -31,7 +31,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 </section>
 
 
-<?php if(!empty($production_manufacturing_first_sec_image)){ ?>
+
 <section class="services-production lg:py-100 md:py-60 py-10">
   <div class="container m-auto">
 
@@ -130,9 +130,9 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
   </div>
 </section>
-<?php } ?>
 
-<?php if(!empty($production_manufacturing_second_sec_main_image)){ ?>
+
+
 <section class="services-production lg:py-10 md:py-6 py-3">
   <div class="container m-auto">
 
@@ -242,7 +242,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
   </div>
 </section>
-<?php } ?>
+
 
 
 
@@ -252,7 +252,26 @@ $production_video_url = get_field('production_video_url');
 
 
 <?php if (!empty($production_video_url)) : ?>
- 
+  <!-- <section class="video lg:py-100 md:py-60 py-10">
+    <div class="relative before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.29)]">
+      <img class="w-full md:min-h-64 min-h-52 object-cover" src="<?php echo $production_video_url_image['url']; ?>" width="<?php echo $production_video_url_image['width']; ?>" height="<?php echo $production_video_url_image['height']; ?>" alt="<?php echo $production_video_url_image['alt']; ?>">
+
+
+
+      <div class="absolute text-center top-2/4 left-2/4 transform-middle break-keep">
+        <button id="openModalBtn"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_play-btn.svg" width="86" height="86" alt="play-btn" class="lg:w-[86px] md:w-[60px] w-[50px]"></button>
+      </div>
+      <div id="myModal" class="modal hidden fixed left-0 top-0 w-full h-full overflow-auto bg-black/[0.7] z-50">
+        <div class="modal-content relative bg-white rounded-md shadow lg:w-1/2 md:w-3/4 w-11/12 md:px-7 md:py-7 px-4 py-6 mx-auto my-[10%] z-40">
+          <span id="closeModalBtn" class="close text-black text-4xl font-medium cursor-pointer absolute right-2 top-3 leading-[0]">&times;</span>
+          <video autoplay muted loop playsinline preload="metadata" class="w-full xl:h-[34rem] lg:h-[30rem] object-cover">
+        <source src="<?php echo $production_video_url;   ?>" type="video/mp4">
+      </video>
+        </div>
+      </div>
+
+
+  </section> -->
   <section class="hero video lg:py-100 md:py-60 py-10">
     <div class="relative before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.4)]">
         <?php if (!empty($production_video_url)){ ?>
@@ -376,7 +395,25 @@ $why_choose_us_section_main_heading = get_field('why_choose_us_section_main_head
 
 
 
+<script>
+  // let openModalBtn = document.getElementById("openModalBtn");
+  // let modal = document.getElementById("myModal");
+  // let closeModalBtn = document.getElementById("closeModalBtn");
 
+  // openModalBtn.addEventListener("click", function() {
+  //   modal.style.display = "block";
+  // });
+
+  // closeModalBtn.addEventListener("click", function() {
+  //   modal.style.display = "none";
+  // });
+
+  // window.addEventListener("click", function(event) {
+  //   if (event.target === modal) {
+  //     modal.style.display = "none";
+  //   }
+  // });
+</script>
 
 <script>
   jQuery(document).ready(function() {
@@ -399,7 +436,13 @@ $why_choose_us_section_main_heading = get_field('why_choose_us_section_main_head
 
 <script> 
 jQuery(document).ready(function() {
+  // var video = document.getElementById("myVideo");
+  // video.pause(); // Pausing the video on page load
 
+  // jQuery("#playButton").click(function() {
+
+  //   video.play(); // Playing the video when the button is clicked
+  // });
 
 
 $('#playButton').click(function () {
