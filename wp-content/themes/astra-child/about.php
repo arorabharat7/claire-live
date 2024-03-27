@@ -34,7 +34,7 @@ $about_us_section_main_heading = get_field('about_us_section_main_heading');
 $about_us_section_all_details = get_field('about_us_section_all_details');
 
 ?>
-<section class="about_us_new lg:py-100 md:py-60 py-10">
+<section class="about_us_new pt-12">
     <div class="container m-auto">
         <h2 class="lg:text-4xl md:text-3xl  text-2xl font-michroma text-black relative text-center uppercase after:content-[''] after:absolute after:w-24 after:h-[1px] after:bottom-0 lg:pb-6 pb-3 after:left-[50%] after:translate-x-[-50%] after:bg-black">
             <?php echo $about_us_section_main_heading; ?></h2>
