@@ -31,7 +31,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 </section>
 
 
-
+<?php if(!empty($production_manufacturing_first_heading)){ ?>
 <section class="services-production lg:py-100 md:py-60 py-10">
   <div class="container m-auto">
 
@@ -130,9 +130,10 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
   </div>
 </section>
+<?php } ?>
 
 
-
+<?php if(!empty($production_manufacturing_second_sec_heading)){ ?>
 <section class="services-production lg:py-10 md:py-6 py-3">
   <div class="container m-auto">
 
@@ -210,17 +211,17 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
       </div>
       <?php
-      $production_manufacturing_first_heading = get_field('production_manufacturing_first_sec_main_heading');
-      $production_manufacturing_first_description = get_field('production_manufacturing_first_sec_description');
+      $production_manufacturing_second_sec_heading = get_field('production_manufacturing_first_sec_main_heading');
+      $production_manufacturing_first_sec_description = get_field('production_manufacturing_first_sec_description');
       ?>
       <div class="xl:col-span-6 lg:col-span-6 lg:mt-0 sm:mt-16 mt-12 lg:order-1">
 
         <div class="border border-black lg:p-10 md:p-7 p-4 lg:border-r-0">
-          <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black ">ABOUT CURTAIN
-            <?php echo $production_manufacturing_first_heading ?>
+          <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black ">
+            <?php echo $production_manufacturing_second_sec_heading ?>
           </h3>
 
-          <?php echo $production_manufacturing_first_description ?>
+          <?php echo $production_manufacturing_first_sec_description ?>
 
           <div class="lg:mt-5 mt-3">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-small-arrow.svg" width="71" height="15" alt="claire_description-small-arrow" class="md:mb-5 mb-3 ">
@@ -242,7 +243,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
   </div>
 </section>
-
+<?php } ?>
 
 
 
