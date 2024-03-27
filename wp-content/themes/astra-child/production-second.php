@@ -30,8 +30,11 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
   </div>
 </section>
 
-
-<?php if(!empty($production_manufacturing_first_heading)){ ?>
+<?php
+      $production_manufacturing_first_sec_main_heading = get_field('production_manufacturing_first_sec_main_heading');
+      $production_manufacturing_first_description = get_field('production_manufacturing_first_sec_description');
+      ?>
+<?php if(!empty($production_manufacturing_first_sec_main_heading)){ ?>
 <section class="services-production lg:py-100 md:py-60 py-10">
   <div class="container m-auto">
 
@@ -103,15 +106,12 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
         </div>
       </div>
 
-      <?php
-      $production_manufacturing_first_heading = get_field('production_manufacturing_first_sec_main_heading');
-      $production_manufacturing_first_description = get_field('production_manufacturing_first_sec_description');
-      ?>
+      
       <div class="lg:col-span-6 col-span-12 lg:mt-0 sm:mt-16 mt-12">
 
         <div class="border border-black  lg:p-10 md:p-7 p-4 lg:border-l-0">
           <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black text-right">
-            <?php echo $production_manufacturing_first_heading ?>
+            <?php echo $production_manufacturing_first_sec_main_heading ?>
           </h3>
 
           <?php echo $production_manufacturing_first_description ?>
@@ -132,7 +132,10 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 </section>
 <?php } ?>
 
-
+<?php
+      $production_manufacturing_second_sec_heading = get_field('production_manufacturing_second_sec_heading');
+      $production_manufacturing_first_sec_description = get_field('production_manufacturing_first_sec_description');
+      ?>
 <?php if(!empty($production_manufacturing_second_sec_heading)){ ?>
 <section class="services-production lg:py-10 md:py-6 py-3">
   <div class="container m-auto">
@@ -210,10 +213,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
 
       </div>
-      <?php
-      $production_manufacturing_second_sec_heading = get_field('production_manufacturing_first_sec_main_heading');
-      $production_manufacturing_first_sec_description = get_field('production_manufacturing_first_sec_description');
-      ?>
+
       <div class="xl:col-span-6 lg:col-span-6 lg:mt-0 sm:mt-16 mt-12 lg:order-1">
 
         <div class="border border-black lg:p-10 md:p-7 p-4 lg:border-r-0">

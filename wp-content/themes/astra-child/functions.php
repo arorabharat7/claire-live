@@ -309,13 +309,15 @@ function fetch_portfolio_posts()
                             // Loop through each image in the gallery
                             foreach ($gallery_images as $image) { ?>
                                 <div class="swiper-slide ">
-                                <a href="<?php echo esc_url($post_url) ?>"> <div class="!relative overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-gradient-to-b before:from-[rgb(0,0,0,0)] before:to-[rgb(0,0,0,0.31)]">
-                                <img src="<?php echo esc_url($image['url']) ?>" alt="<?php echo esc_attr($image['alt']) ?>" class="lg:!h-[352px] md:!h-[260px] h-[240px] object-cover w-full">
                                     <a href="<?php echo esc_url($post_url) ?>">
-                                        <h2 class="text-white  md:text-lg text-base font-michroma absolute left-7 bottom-16 uppercase">
-                                            <?php the_title(); ?></h2>
+                                        <div class="!relative overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-gradient-to-b before:from-[rgb(0,0,0,0)] before:to-[rgb(0,0,0,0.31)]">
+                                            <img src="<?php echo esc_url($image['url']) ?>" alt="<?php echo esc_attr($image['alt']) ?>" class="lg:!h-[352px] md:!h-[260px] h-[240px] object-cover w-full">
+                                            <a href="<?php echo esc_url($post_url) ?>">
+                                                <h2 class="text-white  md:text-lg text-base font-michroma absolute left-7 bottom-16 uppercase">
+                                                    <?php the_title(); ?></h2>
+                                            </a>
+                                        </div>
                                     </a>
-                                    </div></a>
                                 </div>
                         <?php   }
                         } else {
