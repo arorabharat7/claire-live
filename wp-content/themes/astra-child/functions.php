@@ -19,30 +19,30 @@ define('CHILD_THEME_ASTRA_CHILD_VERSION', '1.0.0');
  */
 
 
- function clair_enqueue_scripts()
- {
-     // Enqueue the script 'pgu' with its dependencies
-     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css', array(), '6.5.1', 'all');
-     wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), '6.5.1', 'all');
-     wp_enqueue_style('tailwind_font', 'https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap', array(), null, 'all');
-     wp_enqueue_style('tailwind_output', get_stylesheet_directory_uri() . '/tailwind_output.css', array(), null, 'all');
- 
-     // Enqueue the jQuery script
-     wp_enqueue_script('jquery-min', 'https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js', array(), '3.7.1', true);
- 
-     // Enqueue the Swiper script with jQuery as dependency
-     wp_enqueue_script('swiper-min', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'), '6.5.1', true);
- 
-     // Enqueue your custom scripts
+function clair_enqueue_scripts()
+{
+    // Enqueue the script 'pgu' with its dependencies
+    wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css', array(), '6.5.1', 'all');
+    wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), '6.5.1', 'all');
+    wp_enqueue_style('tailwind_font', 'https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap', array(), null, 'all');
+    wp_enqueue_style('tailwind_output', get_stylesheet_directory_uri() . '/tailwind_output.css', array(), null, 'all');
+
+    // Enqueue the jQuery script
+    wp_enqueue_script('jquery-min', 'https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js', array(), '3.7.1', true);
+
+    // Enqueue the Swiper script with jQuery as dependency
+    wp_enqueue_script('swiper-min', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'), '6.5.1', true);
+
+    // Enqueue your custom scripts
     wp_enqueue_script('pgu', get_stylesheet_directory_uri() . '/assets/js/custome.js', array('jquery'), null, true);
- 
-     // Localize the scripts 'pgu' and 'pgua' with the ajaxurl parameter
-    
-     wp_localize_script('pgu', 'pguajax', array('ajaxurl' => admin_url('admin-ajax.php')));
- }
- 
- add_action('wp_enqueue_scripts', 'clair_enqueue_scripts');
- 
+
+    // Localize the scripts 'pgu' and 'pgua' with the ajaxurl parameter
+
+    wp_localize_script('pgu', 'pguajax', array('ajaxurl' => admin_url('admin-ajax.php')));
+}
+
+add_action('wp_enqueue_scripts', 'clair_enqueue_scripts');
+
 
 
 
@@ -83,16 +83,16 @@ if (function_exists('acf_add_options_page')) {
 
 
 function portfolio_category_posts_shortcode()
-{ 
+{
     $args = array(
         'post_type' => 'portfolio', // Custom post type name
         'posts_per_page' => -1, // Retrieve all posts
     );
-    
+
     // The Query
     $portfolio_query = new WP_Query($args);
-    
-    ?>
+
+?>
     <div class="swiper-wrapper lg:mb-16 mb-10">
         <?php
         // Get the portfolio category ID
@@ -105,33 +105,33 @@ function portfolio_category_posts_shortcode()
                 $post_title = get_the_title();
                 // Get post URL
                 $post_url = get_permalink();
-               
-            // Start the loop
-            
+
+                // Start the loop
+
         ?>
 
-                    <a class="swiper-slide" href="<?php echo get_permalink(); ?>">
-                        <div class=" relative">
-                            <?php if (has_post_thumbnail()) : ?>
-                                <?php
-                                $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-                                $image_dimensions = ' height: 210px;';
-                                echo '<img class="w-full object-cover" style="' . $image_dimensions . '" src="' . $featured_image_url . '" alt="' . $post_title  . '" />';
-                                ?>
-                            <?php endif; ?>
-                            <div class="absolute left-4 bottom-6">
-                                <h3 class="lg:text-17 text-sm font-michroma text-white uppercase"><?php the_title(); ?> </h3>
-                            </div>
+                <a class="swiper-slide" href="<?php echo get_permalink(); ?>">
+                    <div class=" relative">
+                        <?php if (has_post_thumbnail()) : ?>
+                            <?php
+                            $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
+                            $image_dimensions = ' height: 210px;';
+                            echo '<img class="w-full object-cover" style="' . $image_dimensions . '" src="' . $featured_image_url . '" alt="' . $post_title  . '" />';
+                            ?>
+                        <?php endif; ?>
+                        <div class="absolute left-4 bottom-6">
+                            <h3 class="lg:text-17 text-sm font-michroma text-white uppercase"><?php the_title(); ?> </h3>
                         </div>
-                    </a>
+                    </div>
+                </a>
 
         <?php
-                }
-                wp_reset_postdata(); // Restore global post data
-            } else {
-                echo '<p>No posts found.</p>';
             }
-      
+            wp_reset_postdata(); // Restore global post data
+        } else {
+            echo '<p>No posts found.</p>';
+        }
+
         ?>
     </div>
     <!-- <div class="swiper-button-next !right-16 xl:!top-28 lg:!top-24 md:!top-20 sm:!top-24 !top-12"><img class="max-w-max sm:block hidden" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_project-right-arrow.svg" alt=""></div>
@@ -248,111 +248,117 @@ add_action('init', 'create_portfolio_category_taxonomy', 0);
 
 
 
-function fetch_portfolio_posts(){
+function fetch_portfolio_posts()
+{
     ob_start();
-    ?>
-        <?php
-         $category = $_POST['category'];
-         $page = $_POST['page'];
-        $args = array(
-            'post_type' => 'portfolio',
-            'posts_per_page' => 9, // Adjust the number of posts per page as needed
-            'paged' => $page,
-            'tax_query' => array(
-                array(
-                    'taxonomy' => 'portfolio_category', // Replace with your custom category taxonomy
-                    'field'    => 'slug',
-                    'terms'    => $category,
-                ),
+?>
+    <?php
+    $category = $_POST['category'];
+    $page = $_POST['page'];
+    $args = array(
+        'post_type' => 'portfolio',
+        'posts_per_page' => 9, // Adjust the number of posts per page as needed
+        'paged' => $page,
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'portfolio_category', // Replace with your custom category taxonomy
+                'field'    => 'slug',
+                'terms'    => $category,
             ),
-        );
-    
-        $query = new WP_Query($args);
-    
-        // Check if there are any posts
-        if ($query->have_posts()) {
-            // Start the loop
-            $i = 1;
-            while ($query->have_posts()) {
-                $query->the_post();
-                $post_url = get_permalink();
-                $post_categories = get_the_terms(get_the_ID(), 'portfolio_category'); // Get the categories for the current post
-                //echo $i;
-        ?>
-    
-                <?php if ($i == 1 || $i == 6 || $i == 7 || $i == 12 || $i == 13) {
-                    $column_span = 6;
-                } else {
-                    $column_span = 3;
-                }
-                ?>
-                <div class="total_counts lg:!col-span-<?php echo  $column_span; ?> sm:col-span-6 col-span-12 box <?php
-                                                                                                    if ($post_categories && !is_wp_error($post_categories)) {
-                                                                                                        $category_names = array();
-                                                                                                        foreach ($post_categories as $category) {
-                                                                                                            $category_names[] = $category->name;
-                                                                                                        }
-                                                                                                        echo  implode(' ', $category_names);
-                                                                                                    }
-    
-                                                                                                    ?>">
-                     <div class="swiper claire-portfolio relative">
-                                <div class="swiper-wrapper ">
-                                    <?php
-                                    // Check if the ACF function exists (to avoid errors if ACF is not installed/activated)
+        ),
+    );
 
-                                    // Get the gallery field data for the current post
-                                    $gallery_images = get_field('portfolio_gallery_details');
-                                    if ($gallery_images) {
+    $query = new WP_Query($args);
 
-                                        // Loop through each image in the gallery
-                                        foreach ($gallery_images as $image) { ?>
-                                             <a href="<?php echo esc_url($post_url) ?>"><div class="swiper-slide !relative overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-gradient-to-b before:from-[rgb(0,0,0,0)] before:to-[rgb(0,0,0,0.31)]">
-                                            <img src="<?php echo esc_url($image['url']) ?>" alt="<?php echo esc_attr($image['alt']) ?>" class="lg:!h-[352px] md:!h-[260px] h-[240px] object-cover w-full">
-                                               <a href="<?php echo esc_url($post_url) ?>"><h2 class="text-white  md:text-lg text-base font-michroma absolute left-7 bottom-16 uppercase">
-                                                    <?php the_title(); ?></h2></a> 
-                                            </div></a>
-                                    <?php   }
-                                    } else {
-                                        // Output a message if the gallery is empty
-                                        echo '<p>No images found.</p>';
-                                    }
+    // Check if there are any posts
+    if ($query->have_posts()) {
+        // Start the loop
+        $i = 1;
+        while ($query->have_posts()) {
+            $query->the_post();
+            $post_url = get_permalink();
+            $post_categories = get_the_terms(get_the_ID(), 'portfolio_category'); // Get the categories for the current post
+            //echo $i;
+    ?>
 
+            <?php if ($i == 1 || $i == 6 || $i == 7 || $i == 12 || $i == 13) {
+                $column_span = 6;
+            } else {
+                $column_span = 3;
+            }
+            ?>
+            <div class="total_counts lg:!col-span-<?php echo  $column_span; ?> sm:col-span-6 col-span-12 box <?php
+                                                                                                                if ($post_categories && !is_wp_error($post_categories)) {
+                                                                                                                    $category_names = array();
+                                                                                                                    foreach ($post_categories as $category) {
+                                                                                                                        $category_names[] = $category->name;
+                                                                                                                    }
+                                                                                                                    echo  implode(' ', $category_names);
+                                                                                                                }
 
-                                    ?>
+                                                                                                                ?>">
+                <div class="swiper claire-portfolio relative">
+                    <div class="swiper-wrapper ">
+                        <?php
+                        // Check if the ACF function exists (to avoid errors if ACF is not installed/activated)
+
+                        // Get the gallery field data for the current post
+                        $gallery_images = get_field('portfolio_gallery_details');
+                        if ($gallery_images) {
+
+                            // Loop through each image in the gallery
+                            foreach ($gallery_images as $image) { ?>
+                                <div class="swiper-slide ">
+                                <a href="<?php echo esc_url($post_url) ?>"> <div class="!relative overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-gradient-to-b before:from-[rgb(0,0,0,0)] before:to-[rgb(0,0,0,0.31)]">
+                                <img src="<?php echo esc_url($image['url']) ?>" alt="<?php echo esc_attr($image['alt']) ?>" class="lg:!h-[352px] md:!h-[260px] h-[240px] object-cover w-full">
+                                    <a href="<?php echo esc_url($post_url) ?>">
+                                        <h2 class="text-white  md:text-lg text-base font-michroma absolute left-7 bottom-16 uppercase">
+                                            <?php the_title(); ?></h2>
+                                    </a>
+                                    </div></a>
                                 </div>
+                        <?php   }
+                        } else {
+                            // Output a message if the gallery is empty
+                            echo '<p>No images found.</p>';
+                        }
 
-                                <div class="swiper-pagination !text-left !left-7 !bottom-8 !w-3/4"></div>
-                                <!-- <a class="absolute right-7 bottom-8 z-20 inline-block" href="<?php //echo esc_url($post_url) ?>">
+
+                        ?>
+                    </div>
+
+                    <div class="swiper-pagination !text-left !left-7 !bottom-8 !w-3/4"></div>
+                    <!-- <a class="absolute right-7 bottom-8 z-20 inline-block" href="<?php //echo esc_url($post_url) 
+                                                                                        ?>">
                                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_portfolio-Arrow.svg" width="25" height="23" alt="portfolio-Arrow"> 
                                 </a> -->
 
-                            </div>
                 </div>
-    
-    
-    
-    
-        <?php $i++;
-            }
-            $posts_html = ob_get_clean(); // Get the output buffer contents and clean (end) the buffer
-            $total_posts= $query->found_posts; 
-            // Send response as JSON
-            wp_send_json_success(array(
-                'posts_html' => $posts_html, // HTML content of the posts
-                'total_posts' => $total_posts // Total number of posts
-            ));
-            // Restore global post data
-            wp_reset_postdata();
-        } else {
-            // If no posts are found
-            wp_send_json_error('No more posts to load.');
+            </div>
+
+
+
+
+<?php $i++;
         }
-        // $html = ob_get_clean(); // Get the output buffer contents and clean (end) the buffer
-    
-        // echo json_encode(array()); // Send the HTML in the AJAX response as JSON
-    
-        wp_die();
+        $posts_html = ob_get_clean(); // Get the output buffer contents and clean (end) the buffer
+        $total_posts = $query->found_posts;
+        // Send response as JSON
+        wp_send_json_success(array(
+            'posts_html' => $posts_html, // HTML content of the posts
+            'total_posts' => $total_posts // Total number of posts
+        ));
+        // Restore global post data
+        wp_reset_postdata();
+    } else {
+        // If no posts are found
+        wp_send_json_error('No more posts to load.');
+    }
+    // $html = ob_get_clean(); // Get the output buffer contents and clean (end) the buffer
+
+    // echo json_encode(array()); // Send the HTML in the AJAX response as JSON
+
+    wp_die();
 }
 add_action('wp_ajax_fetch_portfolio_posts', 'fetch_portfolio_posts');
 add_action('wp_ajax_nopriv_fetch_portfolio_posts', 'fetch_portfolio_posts');
