@@ -341,7 +341,7 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 							$global_settings_social_icons_url = get_sub_field('global_settings_social_icons_repeater_url');
 
 					?>
-							<li><a href="<?php echo $global_settings_social_icons_url; ?>">
+							<li><a  target="_blank" href="<?php echo $global_settings_social_icons_url; ?>">
 									<?php if (!empty($global_settings_social_icons)) : ?>
 										<img src="<?php echo $global_settings_social_icons['url']; ?>" width="30" height="30" alt="<?php echo $global_settings_social_icons['alt']; ?>" class="md:h-auto h-[26px]">
 									<?php endif; ?>
