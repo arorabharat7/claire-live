@@ -74,7 +74,7 @@ get_header(); ?>
                                         $contact_us_social_image = get_sub_field('contact_us_social_image');
 
                                 ?>
-                                        <li><a href="<?php echo $contact_us_social_url; ?>">
+                                        <li><a target="_blank" href="<?php echo $contact_us_social_url; ?>">
                                                 <?php if (!empty($contact_us_social_image)) : ?>
                                                     <img src="<?php echo $contact_us_social_image['url']; ?>" width="30" height="30" alt="<?php echo $contact_us_social_image['alt']; ?>" class="md:h-auto h-[26px]">
                                                 <?php endif; ?>
