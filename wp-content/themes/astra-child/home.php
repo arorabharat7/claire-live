@@ -207,7 +207,7 @@ $all_projects_section_main_heading = get_field('all_projects_section_main_headin
                                 <img src="<?php echo $common_production_services_section_all_details_image['url']; ?>" width="<?php echo $common_production_services_section_all_details_image['width']; ?>" height="<?php echo $common_production_services_section_all_details_image['height']; ?>" alt="<?php echo $common_production_services_section_all_details_image['alt']; ?>" class="w-full">
                                
                                 <div class="main_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4  text-center ">
-                                    <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
+                                    <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  ">
                                         <?php echo $common_production_services_section_all_details_heading; ?></h3>
                                    
                                 </div>
