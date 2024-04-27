@@ -48,7 +48,7 @@ get_header(); ?>
                                         $contact_type_image = get_sub_field('contact_us_all_details_contact_type_image');
 
                                 ?>
-                                        <li class="lg:text-xl md:text-lg  text-base text-black font-bold flex items-center border-t border-black/20 md:py-4 py-3">
+                                        <li class="lg:text-xl md:text-lg  text-base text-black  flex items-center border-t border-black/20 md:py-4 py-3">
                                             <?php echo $contact_type_name; ?> <a href=" <?php echo $contact_type_link; ?>" class="lg:text-17 md:text-base text-sm text-black font-michroma md:ml-4 ml-2 flex items-center md:gap-4 gap-2">
                                                 <?php echo $contact_type_text; ?>
                                                 <?php if (!empty($contact_type_image)) : ?>
