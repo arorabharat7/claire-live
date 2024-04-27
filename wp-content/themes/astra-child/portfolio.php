@@ -32,7 +32,7 @@ get_header(); ?>
 
                 usort($portfolio_categories, function($a, $b) {
                     // Define the custom order of categories
-                    $custom_order = array('all-categories', 'hotels', 'restaurants', 'spa-resourts','residential' ,'others');
+                    $custom_order = array('all-categories', 'hotels', 'restaurants', 'spa-resorts','residential' ,'others');
                 
                     // Get the index of category in the custom order array
                     $index_a = array_search($a->slug, $custom_order);
