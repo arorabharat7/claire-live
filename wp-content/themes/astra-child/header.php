@@ -116,7 +116,7 @@
 					'update_post_term_cache' => false
 				);
 				$items = wp_get_nav_menu_items($menu, $args);
-				//echo "<pre>"; print_r($items); echo "</pre>";
+				echo "<pre>"; print_r($items); echo "</pre>";
 
 				global $wp_query;
 				$pagename = $wp_query->queried_object->post_title;
