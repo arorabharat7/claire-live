@@ -88,9 +88,13 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
         <div class="grid grid-cols-12 gap-5 lg:my-8 md:my-6 my-4">
 
             <div class="md:col-span-8 col-span-12">
-                <div class="group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]  overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
+                <div class="group main_box relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]  overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
                     <img src="<?php echo $how_we_work_first_column_image['url']; ?>" width="<?php echo $how_we_work_first_column_image['width']; ?>" height="<?php echo $how_we_work_first_column_image['height']; ?>" alt="<?php echo $how_we_work_first_column_image['alt']; ?>" class="w-full lg:h-[386px] md:h-[300px] h-[290px] object-cover">
-                    <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
+                    <div class="main_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4  text-center ">
+                                    <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  ">
+                                    <?php echo $how_we_work_first_column_heading; ?></h3>
+                        </div>
+                    <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                             <?php echo $how_we_work_first_column_heading; ?></h3>
                         <p class="lg:text-17 text-sm text-white font-bold">
@@ -102,9 +106,13 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
 
 
             <div class="md:col-span-4 col-span-12">
-                <div class="group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]   overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
+                <div class="main_box group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]   overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
                     <img src="<?php echo $how_we_work_second_column_image['url']; ?>" width="<?php echo $how_we_work_second_column_image['width']; ?>" height="<?php echo $how_we_work_second_column_image['height']; ?>" alt="<?php echo $how_we_work_second_column_image['alt']; ?>" class="w-full lg:h-[386px] md:h-[300px] h-[250px] object-cover">
-                    <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center  duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
+                    <div class="main_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4  text-center ">
+                                    <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  ">
+                                    <?php echo $how_we_work_second_column_heading; ?></h3>
+                        </div>
+                    <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center  duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                             <?php echo $how_we_work_second_column_heading; ?></h3>
                         <p class="lg:text-17 text-sm text-white font-bold">
@@ -116,9 +124,13 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
 
 
             <div class="md:col-span-4 col-span-12">
-                <div class="group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]  overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
+                <div class="main_box group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]  overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
                     <img src="<?php echo $how_we_work_three_column_image['url']; ?>" width="<?php echo $how_we_work_three_column_image['width']; ?>" height="<?php echo $how_we_work_three_column_image['height']; ?>" alt="<?php echo $how_we_work_three_column_image['alt']; ?>" class="w-full lg:h-[310px] md:h-[250px] h-[250px] object-cover">
-                    <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
+                    <div class="main_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4  text-center ">
+                                    <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  ">
+                                    <?php echo $how_we_work_three_column_heading; ?></h3>
+                        </div>
+                    <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                             <?php echo $how_we_work_three_column_heading; ?></h3>
                         <p class="lg:text-17 text-sm text-white font-bold ">
@@ -130,9 +142,13 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
 
 
             <div class="md:col-span-4 col-span-12">
-                <div class="group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]   overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
+                <div class="main_box group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]   overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
                     <img src="<?php echo $how_we_work_four_column_image['url']; ?>" width="<?php echo $how_we_work_four_column_image['width']; ?>" height="<?php echo $how_we_work_four_column_image['height']; ?>" alt="<?php echo $how_we_work_four_column_image['alt']; ?>" class="w-full lg:h-[310px] md:h-[250px] h-[250px] object-cover">
-                    <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
+                    <div class="main_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4  text-center ">
+                                    <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  ">
+                                    <?php echo $how_we_work_four_column_heading; ?></h3>
+                        </div>
+                    <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                             <?php echo $how_we_work_four_column_heading; ?></h3>
                         <p class="lg:text-17 text-sm text-white font-bold">
@@ -144,9 +160,13 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
 
 
             <div class="md:col-span-4 col-span-12">
-                <div class="group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]   overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
+                <div class="main_box group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]   overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
                     <img src="<?php echo $how_we_work_five_column_image['url']; ?>" width="<?php echo $how_we_work_five_column_image['width']; ?>" height="<?php echo $how_we_work_five_column_image['height']; ?>" alt="<?php echo $how_we_work_five_column_image['alt']; ?>" class="w-full lg:h-[310px] md:h-[250px] h-[250px] object-cover">
-                    <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
+                    <div class="main_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4  text-center ">
+                                    <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  ">
+                                    <?php echo $how_we_work_five_column_heading; ?></h3>
+                        </div>
+                    <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                             <?php echo $how_we_work_five_column_heading; ?></h3>
                         <p class="lg:text-17 text-sm text-white font-bold ">
@@ -158,9 +178,13 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
 
 
             <div class="md:col-span-4 col-span-12">
-                <div class="group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]   overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
+                <div class="main_box group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]   overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
                     <img src="<?php echo $how_we_work_six_column_image['url']; ?>" width="<?php echo $how_we_work_six_column_image['width']; ?>" height="<?php echo $how_we_work_six_column_image['height']; ?>" alt="<?php echo $how_we_work_six_column_image['alt']; ?>" class="w-full lg:h-[386px] md:h-[300px] h-[250px] object-cover">
-                    <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
+                    <div class="main_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4  text-center ">
+                                    <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  ">
+                                    <?php echo $how_we_work_six_column_heading; ?></h3>
+                        </div>
+                    <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                             <?php echo $how_we_work_six_column_heading; ?></h3>
                         <p class="lg:text-17 text-sm text-white font-bold">
@@ -171,9 +195,13 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
 
 
             <div class="md:col-span-8 col-span-12">
-                <div class="group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]   overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
+                <div class="main_box group relative hover:before:content-[''] hover:before:absolute hover:before:h-full hover:before:w-full hover:before:left-0 hover:before:top-0 hover:before:bg-[rgb(0,0,0,0.8)]   overflow-hidden before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.15)]">
                     <img src="<?php echo $how_we_work_seven_column_image['url']; ?>" width="<?php echo $how_we_work_seven_column_image['width']; ?>" height="<?php echo $how_we_work_seven_column_image['height']; ?>" alt="<?php echo $how_we_work_seven_column_image['alt']; ?>" class="w-full lg:h-[386px] md:h-[300px] h-[290px] object-cover">
-                    <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
+                    <div class="main_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4  text-center ">
+                                    <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  ">
+                                    <?php echo $how_we_work_seven_column_heading; ?></h3>
+                        </div>
+                    <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">ARCH
                             <?php echo $how_we_work_seven_column_heading; ?></h3>
                         <p class="lg:text-17 text-sm text-white font-bold">
