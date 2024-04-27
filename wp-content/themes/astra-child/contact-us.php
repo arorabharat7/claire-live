@@ -19,7 +19,7 @@ get_header(); ?>
                 // Load sub field value.
                 $contact_main_heading = get_sub_field('contact_main_heading');
                 $contact_address = get_sub_field('contact_address');
-                $contact_us_main_image = get_sub_field('contact_us_main_image');
+                $contact_us_map_url = get_sub_field('contact_us_map_url');
 
         ?>
 
@@ -85,7 +85,7 @@ get_header(); ?>
                                 endif; ?>
                             </ul>
 
-                        </div>
+                        </div> 
 
 
                     </div>
@@ -94,11 +94,11 @@ get_header(); ?>
                         <div class="relative">
                             <!-- <img src="<?php echo $contact_us_main_image['url']; ?>" width="<?php echo $contact_us_main_image['width']; ?>" height="<?php echo $contact_us_main_image['height']; ?>" alt="<?php echo $contact_us_main_image['alt']; ?>" class="w-full xl:h-auto lg:h-[revert-layer]">
                             <img class="absolute top-1/2 left-1/2 transform-middle md:w-auto w-14" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_map-icon.svg" width="103" height="132" alt="claire_map-icon"> -->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.922260455141!2d2.2672224752101764!3d41.46260139132777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4ba56fcca8931%3A0xc789c72b5850409c!2sPtge.%20Pare%20Claret%2C%2008390%2C%20Barcelona%2C%20Spain!5e0!3m2!1sen!2sin!4v1708068800886!5m2!1sen!2sin" class="w-full xl:h-[600px] lg:h-[550px] md:h-[400px] h-96" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="<?php echo $contact_us_map_url; ?>" class="w-full xl:h-[600px] lg:h-[550px] md:h-[400px] h-96" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                    </div>
+                    </div> 
                 </div>
-
+   
         <?php
 
             endwhile;
