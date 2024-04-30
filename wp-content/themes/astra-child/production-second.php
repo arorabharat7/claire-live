@@ -221,7 +221,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
             <?php echo $production_manufacturing_second_sec_heading ?>
           </h3>
 
-          <?php echo $production_manufacturing_first_sec_description ?>
+          <?php echo $production_manufacturing_second_sec_description ?>
 
           <div class="lg:mt-5 mt-3">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-small-arrow.svg" width="71" height="15" alt="claire_description-small-arrow" class="md:mb-5 mb-3 ">
