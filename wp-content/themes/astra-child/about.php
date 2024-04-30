@@ -231,8 +231,8 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
 </section>
 
 
-
-<section class="our-team overflow-hidden">
+<?php  $our_people_display_property = get_field('our_people_display_property'); ?>
+<section class="our-team overflow-hidden" style="display: <?php echo $our_people_display_property; ?>;">
     <?php $our_people_main_heading = get_field('our_people_main_heading'); ?>
     <h2 class="lg:text-4xl md:text-3xl  text-2xl font-michroma text-black relative text-center uppercase after:content-[''] after:absolute after:w-24 after:h-[1px] after:bottom-0 lg:pb-6 pb-3 after:left-[50%] after:translate-x-[-50%] after:bg-black">
         <?php echo $our_people_main_heading; ?></h2>
