@@ -314,7 +314,7 @@ if (!in_array($page_ids, $excluded_idss)) {  ?>
 					//echo "<pre>"; print_r($items); echo "</pre>";
 
 					global $wp_query;
-					//$pagename = $wp_query->queried_object->post_title;
+					////$pagename = $wp_query->queried_object->post_title;
 
 					?>
 					<?php for ($i = 0; $i < count($items); $i++) { ?>
