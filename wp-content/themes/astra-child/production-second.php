@@ -134,7 +134,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
 <?php
       $production_manufacturing_second_sec_heading = get_field('production_manufacturing_second_sec_heading');
-      $production_manufacturing_first_sec_description = get_field('production_manufacturing_first_sec_description');
+      $production_manufacturing_second_sec_description = get_field('production_manufacturing_second_sec_description');
       ?>
 <?php if(!empty($production_manufacturing_second_sec_heading)){ ?>
 <section class="services-production lg:py-10 md:py-6 py-3">
@@ -220,7 +220,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
           <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black ">
             <?php echo $production_manufacturing_second_sec_heading ?>
           </h3>
-
+ 
           <?php echo $production_manufacturing_second_sec_description ?>
 
           <div class="lg:mt-5 mt-3">
