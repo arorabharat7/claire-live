@@ -58,7 +58,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
             ?>
              <?php if(!empty($production_manufacturing_first_sec_image)){ ?>
                 <div class="swiper-slide">
-                  <img style="<?php //echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full  lg:h-[43rem] h-auto object-cover">
+                  <img style="<?php //echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
                 </div>
             <?php }
 
@@ -161,7 +161,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
             ?>
             <?php if(!empty($production_manufacturing_second_sec_main_image)){ ?>
                 <div class="swiper-slide">
-                  <img style="<?php //echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_main_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full  lg:h-[43rem] h-auto object-cover">
+                  <img style="<?php //echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_main_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
                 </div>
             <?php }
 
