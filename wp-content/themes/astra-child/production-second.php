@@ -31,220 +31,220 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 </section>
 
 <?php
-      $production_manufacturing_first_sec_main_heading = get_field('production_manufacturing_first_sec_main_heading');
-      $production_manufacturing_first_description = get_field('production_manufacturing_first_sec_description');
-      ?>
-<?php if(!empty($production_manufacturing_first_sec_main_heading)){ ?>
-<section class="services-production lg:py-100 md:py-60 py-10">
-  <div class="container m-auto">
+$production_manufacturing_first_sec_main_heading = get_field('production_manufacturing_first_sec_main_heading');
+$production_manufacturing_first_description = get_field('production_manufacturing_first_sec_description');
+?>
+<?php if (!empty($production_manufacturing_first_sec_main_heading)) { ?>
+  <section class="services-production lg:py-100 md:py-60 py-10">
+    <div class="container m-auto">
 
 
-    <div class="lg:grid lg:grid-cols-12  items-center">
+      <div class="lg:grid lg:grid-cols-12  items-center">
 
 
 
-      <div class="xl:col-span-6 lg:col-span-6">
-        <div class="swiper claire-production-full  xl:!pb-24 !pb-24 overflow-hidden">
-          <div class="swiper-wrapper">
-            <?php if (have_rows('production_manufacturing_first_sec_main_image')) :
+        <div class="xl:col-span-6 lg:col-span-6">
+          <div class="swiper claire-production-full  xl:!pb-24 !pb-24 overflow-hidden">
+            <div class="swiper-wrapper">
+              <?php if (have_rows('production_manufacturing_first_sec_main_image')) :
 
-              // Loop through rows.
-              while (have_rows('production_manufacturing_first_sec_main_image')) : the_row();
-              $image_dimensions = 'width: 650px; height: 570px;';
-                // Load sub field value.
-                $production_manufacturing_first_sec_image = get_sub_field('production_manufacturing_first_sec_image');
-                $tabs_id = get_sub_field('tabs_id');
-            ?>
-             <?php if(!empty($production_manufacturing_first_sec_image)){ ?>
-                <div class="swiper-slide">
-                  <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
-                </div>
-            <?php }
+                // Loop through rows.
+                while (have_rows('production_manufacturing_first_sec_main_image')) : the_row();
+                  $image_dimensions = 'width: 650px; height: 570px;';
+                  // Load sub field value.
+                  $production_manufacturing_first_sec_image = get_sub_field('production_manufacturing_first_sec_image');
+                  $tabs_id = get_sub_field('tabs_id');
+              ?>
+                  <?php if (!empty($production_manufacturing_first_sec_image)) { ?>
+                    <div class="swiper-slide">
+                      <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
+                    </div>
+              <?php }
 
-              endwhile;
-            endif; ?>
- 
+                endwhile;
+              endif; ?>
+
+
+            </div>
+
+
+            <div class="swiper-pagination xl:!left-1/3 lg:!left-[29%] sm:!left-1/3 !left-[20%] sm:!top-auto !top-[87%]"></div>
+            <div class="text-xl swiper-button-next xl:!right-[2%] xl:!top-[97.9%] lg:!right-[2%] lg:!top-[97.9%] md:!right-[3%] md:!top-[97.9%] sm:!right-[0%] !right-[0%] sm:!top-[97.6%] !top-[90%]">
+              <i class="fa-solid fa-arrow-right-long text-black"></i>
+            </div>
+            <div class="text-xl  swiper-button-prev xl:!left-[69%] xl:!top-[97.9%] lg:!left-[60%] lg:!top-[97.9%] md:!left-[70%] md:!top-[97.9%] sm:!left-[67%] sm:!top-[97.6%] !left-[41%] !top-[90%]">
+              <i class="fa-solid fa-arrow-left-long text-black"></i>
+            </div>
 
           </div>
 
+          <div thumbsSlider="" class="swiper claire-production-small xl:mt-[-10rem] lg:mt-[-8rem] md:mt-[-11.5rem] sm:mt-[-10rem] mt-[-9rem] w-[96%] m-auto">
+            <div class="swiper-wrapper ">
+              <?php if (have_rows('production_manufacturing_first_sec_small_image')) :
 
-          <div class="swiper-pagination xl:!left-1/3 lg:!left-[29%] sm:!left-1/3 !left-[20%] sm:!top-auto !top-[87%]"></div>
-          <div class="text-xl swiper-button-next xl:!right-[2%] xl:!top-[97.9%] lg:!right-[2%] lg:!top-[97.9%] md:!right-[3%] md:!top-[97.9%] sm:!right-[0%] !right-[0%] sm:!top-[97.6%] !top-[90%]">
-            <i class="fa-solid fa-arrow-right-long text-black"></i>
-          </div>
-          <div class="text-xl  swiper-button-prev xl:!left-[69%] xl:!top-[97.9%] lg:!left-[60%] lg:!top-[97.9%] md:!left-[70%] md:!top-[97.9%] sm:!left-[67%] sm:!top-[97.6%] !left-[41%] !top-[90%]">
-            <i class="fa-solid fa-arrow-left-long text-black"></i>
-          </div>
+                // Loop through rows.
+                while (have_rows('production_manufacturing_first_sec_small_image')) : the_row();
 
+                  // Load sub field value.
+                  $production_manufacturing_first_sec_small_img = get_sub_field('production_manufacturing_first_sec_small_img');
+                  $image_dimensions = 'width: 140px; height: 100px;';
+              ?>
+                  <?php if (!empty($production_manufacturing_first_sec_small_img)) { ?>
+                    <div class="swiper-slide">
+
+                      <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_small_img['url'] ?>" width="141" height="100" alt="clair-about-curtain" class="w-full  cursor-pointer">
+                    </div>
+              <?php }
+
+                endwhile;
+              endif; ?>
+
+
+
+
+            </div>
+          </div>
         </div>
 
-        <div thumbsSlider="" class="swiper claire-production-small xl:mt-[-10rem] lg:mt-[-8rem] md:mt-[-11.5rem] sm:mt-[-10rem] mt-[-9rem] w-[96%] m-auto">
-          <div class="swiper-wrapper ">
-            <?php if (have_rows('production_manufacturing_first_sec_small_image')) :
 
-              // Loop through rows.
-              while (have_rows('production_manufacturing_first_sec_small_image')) : the_row();
+        <div class="lg:col-span-6 col-span-12 lg:mt-0 sm:mt-16 mt-12">
 
-                // Load sub field value.
-                $production_manufacturing_first_sec_small_img = get_sub_field('production_manufacturing_first_sec_small_img');
-                $image_dimensions = 'width: 140px; height: 100px;';
-            ?>
-               <?php if(!empty($production_manufacturing_first_sec_small_img)){ ?>
-                <div class="swiper-slide">
-
-                  <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_small_img['url'] ?>" width="141" height="100" alt="clair-about-curtain" class="w-full  cursor-pointer">
-                </div>
-            <?php }
-
-              endwhile;
-            endif; ?>
+          <div class="border border-black  lg:p-10 md:p-7 p-4 lg:border-l-0">
+            <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black text-left">
+              <?php echo $production_manufacturing_first_sec_main_heading ?>
+            </h3>
+            <div class="text-left">
+              <?php echo $production_manufacturing_first_description ?>
+            </div>
 
 
-
+            <div class="lg:mt-5 mt-3">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-small-arrow.svg" width="71" height="15" alt="claire_description-small-arrow" class="md:mb-5 mb-3 rotate-180">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-big-arrow.svg" width="141" height="16" alt="claire_description-big-arrow" class="rotate-180">
+            </div>
 
           </div>
-        </div>
-      </div>
 
-      
-      <div class="lg:col-span-6 col-span-12 lg:mt-0 sm:mt-16 mt-12">
-
-        <div class="border border-black  lg:p-10 md:p-7 p-4 lg:border-l-0">
-          <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black text-left">
-            <?php echo $production_manufacturing_first_sec_main_heading ?>
-          </h3>
-<div class="text-left">
-<?php echo $production_manufacturing_first_description ?>
-</div>
-        
-
-          <div class="lg:mt-5 mt-3">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-small-arrow.svg" width="71" height="15" alt="claire_description-small-arrow" class="md:mb-5 mb-3 rotate-180">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-big-arrow.svg" width="141" height="16" alt="claire_description-big-arrow" class="rotate-180">
-          </div>
 
         </div>
-
 
       </div>
 
     </div>
-
-  </div>
-</section>
+  </section>
 <?php } ?>
 
-<?php 
-      $production_manufacturing_second_sec_heading = get_field('production_manufacturing_second_sec_heading');
-      $production_manufacturing_second_sec_description  = get_field('production_manufacturing_second_sec_description');
-      ?> 
-<?php if(!empty($production_manufacturing_second_sec_heading)){ ?>
-<section class="services-production lg:py-10 md:py-6 py-3">
-  <div class="container m-auto">
-
- 
-    <div class="lg:grid lg:grid-cols-12  items-center">
-
-      <div class="xl:col-span-6 lg:col-span-6  lg:order-2">
-        <div class="swiper claire-production-full-second xl:!pb-24 !pb-24 overflow-hidden">
-          <div class="swiper-wrapper">
-
-            <?php if (have_rows('production_manufacturing_second_sec_main_image_details')) :
-
-              // Loop through rows.
-              while (have_rows('production_manufacturing_second_sec_main_image_details')) : the_row();
-              $image_dimensions = 'width: 650px; height: 570px;';
-                // Load sub field value.
-                $production_manufacturing_second_sec_main_image = get_sub_field('production_manufacturing_second_sec_main_image');
-
-            ?>
-            <?php if(!empty($production_manufacturing_second_sec_main_image)){ ?>
-                <div class="swiper-slide">
-                  <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_main_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
-                </div>
-            <?php }
-
-              endwhile;
-            endif; ?>
+<?php
+$production_manufacturing_second_sec_heading = get_field('production_manufacturing_second_sec_heading');
+$production_manufacturing_second_sec_description  = get_field('production_manufacturing_second_sec_description');
+?>
+<?php if (!empty($production_manufacturing_second_sec_heading)) { ?>
+  <section class="services-production lg:py-10 md:py-6 py-3">
+    <div class="container m-auto">
 
 
+      <div class="lg:grid lg:grid-cols-12  items-center">
+
+        <div class="xl:col-span-6 lg:col-span-6  lg:order-2">
+          <div class="swiper claire-production-full-second xl:!pb-24 !pb-24 overflow-hidden">
+            <div class="swiper-wrapper">
+
+              <?php if (have_rows('production_manufacturing_second_sec_main_image_details')) :
+
+                // Loop through rows.
+                while (have_rows('production_manufacturing_second_sec_main_image_details')) : the_row();
+                  $image_dimensions = 'width: 650px; height: 570px;';
+                  // Load sub field value.
+                  $production_manufacturing_second_sec_main_image = get_sub_field('production_manufacturing_second_sec_main_image');
+
+              ?>
+                  <?php if (!empty($production_manufacturing_second_sec_main_image)) { ?>
+                    <div class="swiper-slide">
+                      <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_main_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
+                    </div>
+              <?php }
+
+                endwhile;
+              endif; ?>
+
+
+
+            </div>
+
+
+            <div class="swiper-pagination xl:!left-1/3 lg:!left-[29%] sm:!left-1/3 !left-[20%] sm:!top-auto !top-[87%]"></div>
+            <div class="text-xl swiper-button-next xl:!right-[2%] xl:!top-[97.9%] lg:!right-[2%] lg:!top-[97.9%] md:!right-[3%] md:!top-[97.9%] sm:!right-[0%] !right-[0%] sm:!top-[97.6%] !top-[90%]">
+              <i class="fa-solid fa-arrow-right-long text-black"></i>
+            </div>
+            <div class="text-xl  swiper-button-prev xl:!left-[69%] xl:!top-[97.9%] lg:!left-[60%] lg:!top-[97.9%] md:!left-[70%] md:!top-[97.9%] sm:!left-[67%] sm:!top-[97.6%] !left-[41%] !top-[90%]">
+              <i class="fa-solid fa-arrow-left-long text-black"></i>
+            </div>
 
           </div>
 
+          <div thumbsSlider="" class="swiper claire-production-small-second xl:mt-[-10rem]   lg:mt-[-8rem] md:mt-[-11.5rem] sm:mt-[-10rem] mt-[-9rem] w-[96%] m-auto">
+            <div class="swiper-wrapper ">
 
-          <div class="swiper-pagination xl:!left-1/3 lg:!left-[29%] sm:!left-1/3 !left-[20%] sm:!top-auto !top-[87%]"></div>
-          <div class="text-xl swiper-button-next xl:!right-[2%] xl:!top-[97.9%] lg:!right-[2%] lg:!top-[97.9%] md:!right-[3%] md:!top-[97.9%] sm:!right-[0%] !right-[0%] sm:!top-[97.6%] !top-[90%]">
-            <i class="fa-solid fa-arrow-right-long text-black"></i>
+              <?php if (have_rows('production_manufacturing_second_sec_small_image_details')) :
+
+                // Loop through rows.
+                while (have_rows('production_manufacturing_second_sec_small_image_details')) : the_row();
+
+                  // Load sub field value.
+                  $production_manufacturing_second_sec_small_image = get_sub_field('production_manufacturing_second_sec_small_image');
+                  $image_dimensions = 'width: 140px; height: 100px;';
+              ?>
+                  <?php if (!empty($production_manufacturing_second_sec_small_image)) { ?>
+                    <div class="swiper-slide">
+
+                      <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_small_image['url'] ?>" width="141" height="100" alt="clair-about-curtain" class="w-full  cursor-pointer">
+                    </div>
+              <?php }
+
+                endwhile;
+              endif; ?>
+
+
+
+
+
+            </div>
           </div>
-          <div class="text-xl  swiper-button-prev xl:!left-[69%] xl:!top-[97.9%] lg:!left-[60%] lg:!top-[97.9%] md:!left-[70%] md:!top-[97.9%] sm:!left-[67%] sm:!top-[97.6%] !left-[41%] !top-[90%]">
-            <i class="fa-solid fa-arrow-left-long text-black"></i>
-          </div>
+
+
+
 
         </div>
 
-        <div thumbsSlider="" class="swiper claire-production-small-second xl:mt-[-10rem]   lg:mt-[-8rem] md:mt-[-11.5rem] sm:mt-[-10rem] mt-[-9rem] w-[96%] m-auto">
-          <div class="swiper-wrapper ">
+        <div class="xl:col-span-6 lg:col-span-6 lg:mt-0 sm:mt-16 mt-12 lg:order-1">
 
-            <?php if (have_rows('production_manufacturing_second_sec_small_image_details')) :
-
-              // Loop through rows.
-              while (have_rows('production_manufacturing_second_sec_small_image_details')) : the_row();
-
-                // Load sub field value.
-                $production_manufacturing_second_sec_small_image = get_sub_field('production_manufacturing_second_sec_small_image');
-                $image_dimensions = 'width: 140px; height: 100px;';
-            ?>
-             <?php if(!empty($production_manufacturing_second_sec_small_image)){ ?>
-                <div class="swiper-slide">
-
-                  <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_small_image['url'] ?>" width="141" height="100" alt="clair-about-curtain" class="w-full  cursor-pointer">
-                </div>
-            <?php }
-
-              endwhile;
-            endif; ?>
-
-
-
-
+          <div class="border border-black lg:p-10 md:p-7 p-4 lg:border-r-0">
+            <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black ">
+              <?php echo $production_manufacturing_second_sec_heading ?>
+            </h3>
+            <div class="text-left">
+              <?php echo $production_manufacturing_second_sec_description; ?>
+            </div>
+            <div class="lg:mt-5 mt-3">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-small-arrow.svg" width="71" height="15" alt="claire_description-small-arrow" class="md:mb-5 mb-3 ">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-big-arrow.svg" width="141" height="16" alt="claire_description-big-arrow">
+            </div>
 
           </div>
+
+
         </div>
+
+
+
 
 
 
 
       </div>
-
-      <div class="xl:col-span-6 lg:col-span-6 lg:mt-0 sm:mt-16 mt-12 lg:order-1">
-
-        <div class="border border-black lg:p-10 md:p-7 p-4 lg:border-r-0">
-          <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black ">
-            <?php echo $production_manufacturing_second_sec_heading ?>
-          </h3>
-          <div class="text-left">
-          <?php echo $production_manufacturing_second_sec_description; ?>
-          </div>
-          <div class="lg:mt-5 mt-3">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-small-arrow.svg" width="71" height="15" alt="claire_description-small-arrow" class="md:mb-5 mb-3 ">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-big-arrow.svg" width="141" height="16" alt="claire_description-big-arrow">
-          </div>
-
-        </div>
-
-
-      </div>
-
-
-
-
-
-
 
     </div>
-
-  </div>
-</section>
+  </section>
 <?php } ?>
 
 
@@ -277,22 +277,22 @@ $production_video_url = get_field('production_video_url');
   </section> -->
   <section class="hero video lg:py-100 md:py-60 py-10">
     <div class="relative before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.4)]">
-        <?php if (!empty($production_video_url)){ ?>
-            <video id="myVideo" controls  muted loop playsinline preload="metadata" class="w-full xl:h-[34rem] lg:h-[30rem] object-cover">
-        <source src="<?php echo $production_video_url; ?>" type="video/mp4">
-      </video>
-      <div class="absolute text-center top-2/4 left-2/4 transform-middle break-keep">
-        <button id="playButton">
-          <img id="playImage"  class="lg:w-[86px] md:w-[60px] w-[50px]" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_play-btn.svg" width="86" height="86" alt="play-btn" >
-          <img id="pauseImage" class="hidden lg:w-[86px] md:w-[60px] w-[50px]"  src="<?php echo home_url(); ?>/wp-content/uploads/2024/02/claire_pause-button.svg" width="86" height="86" alt="play-btn" >
-        
-        </button>
-      </div>
-        <?php } ?>
-            
-       
+      <?php if (!empty($production_video_url)) { ?>
+        <video id="myVideo" controls muted loop playsinline preload="metadata" class="w-full xl:h-[34rem] lg:h-[30rem] object-cover">
+          <source src="<?php echo $production_video_url; ?>" type="video/mp4">
+        </video>
+        <div class="absolute text-center top-2/4 left-2/4 transform-middle break-keep">
+          <button id="playButton">
+            <img id="playImage" class="lg:w-[86px] md:w-[60px] w-[50px]" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_play-btn.svg" width="86" height="86" alt="play-btn">
+            <img id="pauseImage" class="hidden lg:w-[86px] md:w-[60px] w-[50px]" src="<?php echo home_url(); ?>/wp-content/uploads/2024/02/claire_pause-button.svg" width="86" height="86" alt="play-btn">
+
+          </button>
+        </div>
+      <?php } ?>
+
+
     </div>
-</section>
+  </section>
 <?php endif; ?>
 
 <section class="result">
@@ -437,36 +437,36 @@ $why_choose_us_section_main_heading = get_field('why_choose_us_section_main_head
   });
 </script>
 
-<script> 
-jQuery(document).ready(function() {
-  // var video = document.getElementById("myVideo");
-  // video.pause(); // Pausing the video on page load
+<script>
+  jQuery(document).ready(function() {
+    // var video = document.getElementById("myVideo");
+    // video.pause(); // Pausing the video on page load
 
-  // jQuery("#playButton").click(function() {
+    // jQuery("#playButton").click(function() {
 
-  //   video.play(); // Playing the video when the button is clicked
-  // });
+    //   video.play(); // Playing the video when the button is clicked
+    // });
 
 
-$('#playButton').click(function () {
-   var mediaVideo = $("#myVideo").get(0);
-   var playImage = document.getElementById("playImage");
-   var pauseImage = document.getElementById("pauseImage");
-   playImage.classList.toggle("hidden");
-        pauseImage.classList.toggle("hidden");
-   if (mediaVideo.paused) {
-       mediaVideo.play();
-       setTimeout(function() {
-            pauseImage.classList.add("opacity-0");
-          
-           
+    $('#playButton').click(function() {
+      var mediaVideo = $("#myVideo").get(0);
+      var playImage = document.getElementById("playImage");
+      var pauseImage = document.getElementById("pauseImage");
+      playImage.classList.toggle("hidden");
+      pauseImage.classList.toggle("hidden");
+      if (mediaVideo.paused) {
+        mediaVideo.play();
+        setTimeout(function() {
+          pauseImage.classList.add("opacity-0");
+
+
         }, 1000);
-   } else {
-       mediaVideo.pause();
-       
-  }
-});
-});
+      } else {
+        mediaVideo.pause();
+
+      }
+    });
+  });
 </script>
 
 <?php get_footer(); ?>
