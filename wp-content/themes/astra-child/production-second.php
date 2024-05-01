@@ -32,7 +32,6 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
 <?php
       $production_manufacturing_first_sec_main_heading = get_field('production_manufacturing_first_sec_main_heading');
-      
       $production_manufacturing_first_description = get_field('production_manufacturing_first_sec_description');
       ?>
 <?php if(!empty($production_manufacturing_first_sec_main_heading)){ ?>
@@ -51,14 +50,14 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
               // Loop through rows.
               while (have_rows('production_manufacturing_first_sec_main_image')) : the_row();
-              //$image_dimensions = 'width: 790px; height: 535px;';
+              $image_dimensions = 'width: 790px; height: 535px;';
                 // Load sub field value.
                 $production_manufacturing_first_sec_image = get_sub_field('production_manufacturing_first_sec_image');
                 $tabs_id = get_sub_field('tabs_id');
             ?>
              <?php if(!empty($production_manufacturing_first_sec_image)){ ?>
                 <div class="swiper-slide">
-                  <img style="<?php //echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
+                  <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
                 </div>
             <?php }
 
@@ -111,13 +110,13 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
       <div class="lg:col-span-6 col-span-12 lg:mt-0 sm:mt-16 mt-12">
 
         <div class="border border-black  lg:p-10 md:p-7 p-4 lg:border-l-0">
-          <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black text-left">
+          <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black text-right">
             <?php echo $production_manufacturing_first_sec_main_heading ?>
           </h3>
-<div class="text-left">
+<div class="text-right">
 <?php echo $production_manufacturing_first_description ?>
 </div>
-      
+        
 
           <div class="lg:mt-5 mt-3">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-small-arrow.svg" width="71" height="15" alt="claire_description-small-arrow" class="md:mb-5 mb-3 rotate-180">
@@ -135,15 +134,15 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 </section>
 <?php } ?>
 
-<?php
+<?php 
       $production_manufacturing_second_sec_heading = get_field('production_manufacturing_second_sec_heading');
-      $production_manufacturing_second_sec_description = get_field('production_manufacturing_second_sec_description');
-      ?>
+      $production_manufacturing_second_sec_description  = get_field('production_manufacturing_second_sec_description');
+      ?> 
 <?php if(!empty($production_manufacturing_second_sec_heading)){ ?>
 <section class="services-production lg:py-10 md:py-6 py-3">
   <div class="container m-auto">
 
-
+ 
     <div class="lg:grid lg:grid-cols-12  items-center">
 
       <div class="xl:col-span-6 lg:col-span-6  lg:order-2">
@@ -154,14 +153,14 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
               // Loop through rows.
               while (have_rows('production_manufacturing_second_sec_main_image_details')) : the_row();
-              //$image_dimensions = 'width: 790px; height: 535px;';
+              $image_dimensions = 'width: 790px; height: 535px;';
                 // Load sub field value.
                 $production_manufacturing_second_sec_main_image = get_sub_field('production_manufacturing_second_sec_main_image');
 
             ?>
             <?php if(!empty($production_manufacturing_second_sec_main_image)){ ?>
                 <div class="swiper-slide">
-                  <img style="<?php //echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_main_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
+                  <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_main_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
                 </div>
             <?php }
 
@@ -212,7 +211,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
           </div>
         </div>
 
- 
+
 
 
       </div>
@@ -223,11 +222,9 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
           <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black ">
             <?php echo $production_manufacturing_second_sec_heading ?>
           </h3>
- <div class="text-left">
- <?php echo $production_manufacturing_second_sec_description; ?>
- </div>
-          
-
+          <div class="text-left">
+          <?php echo $production_manufacturing_second_sec_description; ?>
+          </div>
           <div class="lg:mt-5 mt-3">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-small-arrow.svg" width="71" height="15" alt="claire_description-small-arrow" class="md:mb-5 mb-3 ">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-big-arrow.svg" width="141" height="16" alt="claire_description-big-arrow">
