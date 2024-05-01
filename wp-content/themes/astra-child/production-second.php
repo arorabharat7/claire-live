@@ -50,7 +50,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
               // Loop through rows.
               while (have_rows('production_manufacturing_first_sec_main_image')) : the_row();
-              $image_dimensions = 'width: 790px; height: 535px;';
+              $image_dimensions = 'width: 650px; height: 570px;';
                 // Load sub field value.
                 $production_manufacturing_first_sec_image = get_sub_field('production_manufacturing_first_sec_image');
                 $tabs_id = get_sub_field('tabs_id');
@@ -153,7 +153,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
               // Loop through rows.
               while (have_rows('production_manufacturing_second_sec_main_image_details')) : the_row();
-              $image_dimensions = 'width: 790px; height: 535px;';
+              $image_dimensions = 'width: 650px; height: 570px;';
                 // Load sub field value.
                 $production_manufacturing_second_sec_main_image = get_sub_field('production_manufacturing_second_sec_main_image');
 
