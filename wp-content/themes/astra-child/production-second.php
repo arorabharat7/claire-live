@@ -114,7 +114,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
           <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black text-right">
             <?php echo $production_manufacturing_first_sec_main_heading ?>
           </h3>
-<div class="text-right">
+<div class="text-left">
 <?php echo $production_manufacturing_first_description ?>
 </div>
       
