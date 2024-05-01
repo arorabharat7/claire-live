@@ -32,6 +32,15 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
 <?php
       $production_manufacturing_first_sec_main_heading = get_field('production_manufacturing_first_sec_main_heading');
+      $words = preg_split('/\s+/', $production_manufacturing_first_sec_main_heading);
+
+// Take the first 8 words
+$limited_words = array_slice($words, 0, 8);
+
+// Join the limited words back into a string
+$limited_heading = implode(' ', $limited_words);
+
+
       $production_manufacturing_first_description = get_field('production_manufacturing_first_sec_description');
       ?>
 <?php if(!empty($production_manufacturing_first_sec_main_heading)){ ?>
@@ -111,7 +120,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
         <div class="border border-black  lg:p-10 md:p-7 p-4 lg:border-l-0">
           <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black text-right">
-            <?php echo $production_manufacturing_first_sec_main_heading ?>
+            <?php echo $limited_heading ?>
           </h3>
 
           <?php echo $production_manufacturing_first_description ?>
