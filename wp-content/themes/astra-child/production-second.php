@@ -32,15 +32,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 
 <?php
       $production_manufacturing_first_sec_main_heading = get_field('production_manufacturing_first_sec_main_heading');
-      $words = preg_split('/\s+/', $production_manufacturing_first_sec_main_heading);
-
-// Take the first 8 words
-$limited_words = array_slice($words, 0, 6);
-
-// Join the limited words back into a string
-$limited_heading = implode(' ', $limited_words);
-
-
+      
       $production_manufacturing_first_description = get_field('production_manufacturing_first_sec_description');
       ?>
 <?php if(!empty($production_manufacturing_first_sec_main_heading)){ ?>
@@ -120,7 +112,7 @@ $limited_heading = implode(' ', $limited_words);
 
         <div class="border border-black  lg:p-10 md:p-7 p-4 lg:border-l-0">
           <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black text-right">
-            <?php echo $limited_heading ?>
+            <?php echo $production_manufacturing_first_sec_main_heading ?>
           </h3>
 
           <?php echo $production_manufacturing_first_description ?>
@@ -143,14 +135,6 @@ $limited_heading = implode(' ', $limited_words);
 
 <?php
       $production_manufacturing_second_sec_heading = get_field('production_manufacturing_second_sec_heading');
-      $production_manufacturing_second_words = preg_split('/\s+/', $production_manufacturing_second_sec_heading);
-
-      // Take the first 8 words
-      $production_manufacturing_second_limited_words = array_slice($production_manufacturing_second_words, 0, 6);
-      
-      // Join the limited words back into a string
-      $production_manufacturing_second_limited_heading = implode(' ', $production_manufacturing_second_limited_words);
-
       $production_manufacturing_second_sec_description = get_field('production_manufacturing_second_sec_description');
       ?>
 <?php if(!empty($production_manufacturing_second_sec_heading)){ ?>
@@ -235,7 +219,7 @@ $limited_heading = implode(' ', $limited_words);
 
         <div class="border border-black lg:p-10 md:p-7 p-4 lg:border-r-0">
           <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black ">
-            <?php echo $production_manufacturing_second_limited_heading ?>
+            <?php echo $production_manufacturing_second_sec_heading ?>
           </h3>
  
           <?php echo $production_manufacturing_second_sec_description; ?>
