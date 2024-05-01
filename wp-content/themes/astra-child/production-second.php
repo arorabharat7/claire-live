@@ -149,7 +149,7 @@ $limited_heading = implode(' ', $limited_words);
       $production_manufacturing_second_limited_words = array_slice($production_manufacturing_second_words, 0, 6);
       
       // Join the limited words back into a string
-      $production_manufacturing_second_limited_heading = implode(' ', $production_manufacturing_second_limited_heading);
+      $production_manufacturing_second_limited_heading = implode(' ', $production_manufacturing_second_limited_words);
 
       $production_manufacturing_second_sec_description = get_field('production_manufacturing_second_sec_description');
       ?>
