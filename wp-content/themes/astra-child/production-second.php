@@ -114,8 +114,10 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
           <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black text-right">
             <?php echo $production_manufacturing_first_sec_main_heading ?>
           </h3>
-
-          <?php echo $production_manufacturing_first_description ?>
+<div class="text-right">
+<?php echo $production_manufacturing_first_description ?>
+</div>
+      
 
           <div class="lg:mt-5 mt-3">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-small-arrow.svg" width="71" height="15" alt="claire_description-small-arrow" class="md:mb-5 mb-3 rotate-180">
@@ -221,8 +223,10 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
           <h3 class="lg:text-2xl md:text-xl text-lg uppercase font-michroma text-black ">
             <?php echo $production_manufacturing_second_sec_heading ?>
           </h3>
- 
-          <?php echo $production_manufacturing_second_sec_description; ?>
+ <div class="text-left">
+ <?php echo $production_manufacturing_second_sec_description; ?>
+ </div>
+          
 
           <div class="lg:mt-5 mt-3">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/claire_description-small-arrow.svg" width="71" height="15" alt="claire_description-small-arrow" class="md:mb-5 mb-3 ">
