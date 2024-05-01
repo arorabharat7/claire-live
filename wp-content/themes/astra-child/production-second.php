@@ -143,7 +143,7 @@ $limited_heading = implode(' ', $limited_words);
 
 <?php
       $production_manufacturing_second_sec_heading = get_field('production_manufacturing_second_sec_heading');
-      $production_manufacturing_second_words = preg_split('/\s+/', $production_manufacturing_first_sec_main_heading);
+      $production_manufacturing_second_words = preg_split('/\s+/', $production_manufacturing_second_sec_heading);
 
       // Take the first 8 words
       $production_manufacturing_second_limited_words = array_slice($production_manufacturing_second_words, 0, 6);
