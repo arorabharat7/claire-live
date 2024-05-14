@@ -97,7 +97,7 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
                     <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                             <?php echo $how_we_work_first_column_heading; ?></h3>
-                        <p class="lg:text-17 text-sm text-white font-bold">
+                        <p class="lg:text-17 text-sm text-white ">
                             <?php echo $how_we_work_first_column_description; ?></p>
                     </div>
                 </div>
@@ -115,7 +115,7 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
                     <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center  duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                             <?php echo $how_we_work_second_column_heading; ?></h3>
-                        <p class="lg:text-17 text-sm text-white font-bold">
+                        <p class="lg:text-17 text-sm text-white ">
                             <?php echo $how_we_work_second_column_description; ?></p>
                     </div>
                 </div>
@@ -133,7 +133,7 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
                     <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                             <?php echo $how_we_work_three_column_heading; ?></h3>
-                        <p class="lg:text-17 text-sm text-white font-bold ">
+                        <p class="lg:text-17 text-sm text-white  ">
                             <?php echo $how_we_work_three_column_description; ?></p>
                     </div>
                 </div>
@@ -151,7 +151,7 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
                     <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                             <?php echo $how_we_work_four_column_heading; ?></h3>
-                        <p class="lg:text-17 text-sm text-white font-bold">
+                        <p class="lg:text-17 text-sm text-white ">
                             <?php echo $how_we_work_four_column_description; ?></p>
                     </div>
                 </div>
@@ -169,7 +169,7 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
                     <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                             <?php echo $how_we_work_five_column_heading; ?></h3>
-                        <p class="lg:text-17 text-sm text-white font-bold ">
+                        <p class="lg:text-17 text-sm text-white  ">
                             <?php echo $how_we_work_five_column_description; ?></p>
                     </div>
                 </div>
@@ -187,7 +187,7 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
                     <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                             <?php echo $how_we_work_six_column_heading; ?></h3>
-                        <p class="lg:text-17 text-sm text-white font-bold">
+                        <p class="lg:text-17 text-sm text-white ">
                             <?php echo $how_we_work_six_column_description; ?></p>
                     </div>
                 </div>
@@ -204,7 +204,7 @@ $how_we_work_seven_column_description = get_field('how_we_work_seven_column_desc
                     <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 lg:group-hover:h-1/2  group-hover:h-3/5 overflow-hidden">
                         <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">ARCH
                             <?php echo $how_we_work_seven_column_heading; ?></h3>
-                        <p class="lg:text-17 text-sm text-white font-bold">
+                        <p class="lg:text-17 text-sm text-white ">
                             <?php echo $how_we_work_seven_column_description; ?></p>
                     </div>
                 </div>
