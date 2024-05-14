@@ -215,7 +215,7 @@ $all_projects_section_main_heading = get_field('all_projects_section_main_headin
                                 <div class="alternate_heading absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 lg:w-10/12 w-11/12 text-center duration-300 h-9 group-hover:h-3/5  overflow-hidden">
                                     <h3 class="lg:text-2xl text-xl text-white font-michroma uppercase  lg:mb-7 mb-2">
                                         <?php echo $common_production_services_section_all_details_heading; ?></h3>
-                                    <p class="lg:text-17 text-sm text-white font-bold "><?php echo $description; ?></p>
+                                    <p class="lg:text-17 text-sm text-white  "><?php echo $description; ?></p>
                                 </div>
                             </div>
                         </a>
