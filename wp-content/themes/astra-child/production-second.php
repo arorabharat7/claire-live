@@ -57,7 +57,7 @@ $production_manufacturing_first_description = get_field('production_manufacturin
               ?>
                   <?php if (!empty($production_manufacturing_first_sec_image)) { ?>
                     <div class="swiper-slide">
-                      <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
+                      <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover services-responsive">
                     </div>
               <?php }
 
@@ -92,7 +92,7 @@ $production_manufacturing_first_description = get_field('production_manufacturin
                   <?php if (!empty($production_manufacturing_first_sec_small_img)) { ?>
                     <div class="swiper-slide">
 
-                      <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_small_img['url'] ?>" width="141" height="100" alt="clair-about-curtain" class="w-full  cursor-pointer">
+                      <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_first_sec_small_img['url'] ?>" width="141" height="100" alt="clair-about-curtain" class="w-full  cursor-pointer services-responsive-small">
                     </div>
               <?php }
 
@@ -160,7 +160,7 @@ $production_manufacturing_second_sec_description  = get_field('production_manufa
               ?>
                   <?php if (!empty($production_manufacturing_second_sec_main_image)) { ?>
                     <div class="swiper-slide">
-                      <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_main_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover">
+                      <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_main_image['url']; ?>" width="801" height="580" alt="clair-service" class="w-full xl:h-[37rem] lg:h-[43rem] h-auto object-cover services-responsive">
                     </div>
               <?php }
 
@@ -197,7 +197,7 @@ $production_manufacturing_second_sec_description  = get_field('production_manufa
                   <?php if (!empty($production_manufacturing_second_sec_small_image)) { ?>
                     <div class="swiper-slide">
 
-                      <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_small_image['url'] ?>" width="141" height="100" alt="clair-about-curtain" class="w-full  cursor-pointer">
+                      <img style="<?php echo $image_dimensions; ?>" src="<?php echo $production_manufacturing_second_sec_small_image['url'] ?>" width="141" height="100" alt="clair-about-curtain" class="w-full  cursor-pointer services-responsive-small">
                     </div>
               <?php }
 
