@@ -293,6 +293,10 @@ border-radius: 0;
   right: 10px;
   bottom: 10px;
 }
+.services-responsive-small,.services-responsive {
+  width: 100% !important;
+  height: 100% !important;
+}
 
  }
  
