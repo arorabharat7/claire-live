@@ -43,7 +43,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 <?php
 $our_services_section_main_heading = get_field('our_services_section_main_heading');
 ?>
-<section class="services lg:pt-16 md:pt-10 pt-6">
+<section id="other-services-sec" class="services lg:pt-16 md:pt-10 pt-6">
     <div class="container m-auto">
 
         <div class="lg:grid lg:grid-cols-12 lg:gap-x-10 sm:p-8 p-3 border border-[#030303] items-center">

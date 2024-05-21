@@ -35,6 +35,9 @@ get_header(); ?>
 
                     <p class="lg:text-17 md:text-base text-sm text-light-grey md:my-5 my-3"><?php echo $about_us_section_all_details; ?></p>
 
+                    <button class=" group hover:bg-white transition-all rounded-none btn-arrow bg-black py-3 lg:px-9 px-5 border border-black">
+                        <a href="https://dmprojects.xyz/vijay/claire/#other-services-sec" class="group-hover:brightness-[0] group-hover:text-black lg:text-17 md:text-base text-sm  bg-no-repeat bg-right pr-7 font-michroma text-white brightness-[10]">
+                            OTHER SERVICES </a></button>
 
 
                 </div>
@@ -44,6 +47,7 @@ get_header(); ?>
 
 
         </div>
+
 
     </div>
 
