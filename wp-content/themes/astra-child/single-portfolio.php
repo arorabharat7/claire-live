@@ -50,7 +50,7 @@ $our_services_section_main_heading = get_field('our_services_section_main_headin
                        ?>
                          <?php if(!empty($our_services_section_slider_details_main_images)){ ?>
                                 <div class="swiper-slide">
-                                    <img style="<?php echo $image_dimensions; ?>" src="<?php echo $our_services_section_slider_details_main_images['url']; ?>" width="801" height="580" alt="<?php echo $our_services_section_slider_details_main_images['alt']; ?>" class="w-full services-responsive">
+                                    <img style="<?php echo $image_dimensions; ?>" src="<?php echo $our_services_section_slider_details_main_images['url']; ?>" width="801" height="580" alt="<?php echo $our_services_section_slider_details_main_images['alt']; ?>" class="w-full services-responsive object-cover">
                                 </div>
                         <?php }
 
@@ -81,7 +81,7 @@ $our_services_section_main_heading = get_field('our_services_section_main_headin
                         ?>
                          <?php if(!empty($our_services_section_small_slider_details_images)){ ?>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo $our_services_section_small_slider_details_images['url']; ?>" style="<?php echo $image_dimensions; ?>" width="141" height="100" alt="<?php echo $our_services_section_small_slider_details_images['alt']; ?>" class="w-full  cursor-pointer services-responsive-small">
+                                    <img src="<?php echo $our_services_section_small_slider_details_images['url']; ?>" style="<?php echo $image_dimensions; ?>" width="141" height="100" alt="<?php echo $our_services_section_small_slider_details_images['alt']; ?>" class="w-full  cursor-pointer services-responsive-small object-cover">
                                 </div>
                         <?php }
 
