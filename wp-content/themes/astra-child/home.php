@@ -43,7 +43,7 @@ $hero_banner_section_description = get_field('hero_banner_section_description');
 <?php
 $our_services_section_main_heading = get_field('our_services_section_main_heading');
 ?>
-<section id="other-services-sec" class="services lg:pt-16 md:pt-10 pt-6">
+<section  class="services lg:pt-16 md:pt-10 pt-6">
     <div class="container m-auto">
 
         <div class="lg:grid lg:grid-cols-12 lg:gap-x-10 sm:p-8 p-3 border border-[#030303] items-center">
@@ -181,7 +181,7 @@ $all_projects_section_main_heading = get_field('all_projects_section_main_headin
 </section>
 
 
-<section class="work-description lg:py-100 md:py-60 py-10">
+<section id="other-services-sec" class="work-description lg:py-100 md:py-60 py-10">
     <div class="container m-auto">
         <?php $common_production_services_section_main_heading = get_field('common_production_services_section_main_heading'); ?>
         <h2 class="lg:text-4xl md:text-3xl  text-2xl font-michroma text-black relative text-center uppercase after:content-[''] after:absolute after:w-24 after:h-[1px] after:bottom-0 lg:pb-6 pb-3 after:left-[50%] after:translate-x-[-50%] after:bg-black">
