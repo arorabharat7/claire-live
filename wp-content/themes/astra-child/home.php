@@ -25,7 +25,8 @@ $hero_banner_section_heading = get_field('hero_banner_section_heading');
 $hero_banner_section_description = get_field('hero_banner_section_description');
 ?>
 <section class="hero">
-    <div class="relative before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.4)]">
+    <!-- before:content-[''] before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-[rgb(0,0,0,0.4)] -->
+    <div class="relative ">
         <?php if (!empty($hero_banner_video)) { ?>
             <video autoplay muted loop playsinline preload="metadata" class="w-full xl:h-[34rem] lg:h-[30rem] object-cover">
                 <source src="<?php echo $hero_banner_video; ?>" type="video/mp4">
