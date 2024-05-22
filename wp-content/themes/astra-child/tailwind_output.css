@@ -3465,7 +3465,7 @@ a:hover{
 .claire-production-small-second .swiper-wrapper,
 .claire-production-small .swiper-wrapper,
 .claire-service-small .swiper-wrapper{
-  margin-left: -10%;
+  margin-left: -12%;
 }
 
 
@@ -3546,6 +3546,11 @@ a:hover{
   .protofolio-box .width-full{
     width: 180%;
   }
+  .claire-production-small-second .swiper-wrapper,
+.claire-production-small .swiper-wrapper,
+.claire-service-small .swiper-wrapper{
+  margin-left: -17%;
+}
 }
 
 @media screen and (max-width:500px){
