@@ -227,6 +227,11 @@ border-radius: 0;
 #contact-form .wpcf7-response-output {
   color: #000 !important;
 }
+.claire-production-small-second .swiper-wrapper,
+.claire-production-small .swiper-wrapper,
+.claire-service-small .swiper-wrapper{
+  margin-left: -10%;
+}
 @media screen and (min-width:1600px){
 
 .navbar li:nth-child(3):before,

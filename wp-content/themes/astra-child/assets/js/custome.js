@@ -2,14 +2,14 @@ var swiper = new Swiper(".claire-service-small", {
   loop: false,
   autoplay: false,
   spaceBetween: 10,
-  slidesPerView: 3.4,
+  slidesPerView: 3,
   breakpoints: {
     500: {
-      slidesPerView: 4.4,
+      slidesPerView: 4,
       spaceBetween: 10,
     },
     1024: {
-      slidesPerView: 5.4,
+      slidesPerView: 5,
       spaceBetween: 15,
     },
   },
@@ -39,14 +39,14 @@ var swiper = new Swiper(".claire-production-small", {
   zoom: false,
   autoplay: false,
   spaceBetween: 10,
-  slidesPerView: 3.4,
+  slidesPerView: 3,
   breakpoints: {
     500: {
-      slidesPerView: 4.4,
+      slidesPerView: 4,
       spaceBetween: 10,
     },
     1024: {
-      slidesPerView: 4.4,
+      slidesPerView: 4,
       spaceBetween: 15,
     },
   },
@@ -79,14 +79,14 @@ var swiper = new Swiper(".claire-production-small-second", {
   zoom: false,
   autoplay: false,
   spaceBetween: 10,
-  slidesPerView: 3.4,
+  slidesPerView: 3,
   breakpoints: {
     500: {
-      slidesPerView: 4.4,
+      slidesPerView: 4,
       spaceBetween: 10,
     },
     1024: {
-      slidesPerView: 4.4,
+      slidesPerView: 4,
       spaceBetween: 15,
     },
   },
